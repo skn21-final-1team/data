@@ -23,7 +23,11 @@ backend (url/urls 전송)
 # 폴더구조
 
 ```
-├── main.py              # 애플리케이션 진입점 (FastAPI 인스턴스 생성 + 라우팅)
+├── main.py              # 애플리케이션 진입점 (FastAPI 인스턴스 생성 + 라우터 등록)
+├── api/                 # 엔드포인트 라우터 (파이프라인 단계별 1파일)
+│   ├── crawl.py         # /crawl 라우터
+│   ├── chunk.py         # /chunk 라우터
+│   └── embed.py         # /embed 라우터
 ├── core/
 │   └── config.py        # 환경변수(pydantic-settings) 및 설정
 ├── crawl/               # 크롤링 로직 (URL → 원본 데이터 수집)
@@ -79,7 +83,7 @@ depth가 깊게 코딩하지 마세요. 깊이는 최소한으로 합니다.
 
 - `crawl/`, `chunk/`, `embed/`은 각각 독립적인 모듈이며, 서로를 직접 import하지 않습니다.
 - 각 모듈은 순수 함수처럼 입력을 받아 출력만 반환합니다.
-- 파이프라인 조합(오케스트레이션)은 `main.py`의 엔드포인트에서 수행합니다.
+- 파이프라인 조합(오케스트레이션)은 `api/` 라우터의 엔드포인트에서 수행합니다.
 
 ```python
 # crawl/ — URL → 원본 데이터

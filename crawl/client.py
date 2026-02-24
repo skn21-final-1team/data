@@ -8,6 +8,7 @@ from core.exceptions.crawl import CrawlFailedException
 from crawl.config import get_crawl_settings
 from crawl.normalizer import normalize
 from crawl.parser import parse_duckduckgo_html, parse_html
+from crawl.robots import RobotsChecker
 from crawl.validator import validate
 
 
@@ -19,8 +20,13 @@ class ScrapeResult:
 
 
 class HybridClient:
+    def __init__(self) -> None:
+        self._robots = RobotsChecker()
+
     async def scrape(self, url: str) -> ScrapeResult:
         url = normalize(url)
+        if not await self._robots.is_allowed(url):
+            raise CrawlFailedException(f"robots.txt에 의해 차단된 URL: {url}")
         settings = get_crawl_settings()
         try:
             title, content = await self._scrape_static(url)
