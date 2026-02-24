@@ -1,11 +1,19 @@
+from contextlib import asynccontextmanager
+from collections.abc import AsyncGenerator
+
 from fastapi import FastAPI
 
-from api.crawl import router as crawl_router
-from api.chunk import router as chunk_router
-from api.embed import router as embed_router
+from api.route import router
+from db.database import Base, engine
+import models  # noqa: F401 — Base.metadata에 모델 등록
 
-app = FastAPI()
 
-app.include_router(crawl_router)
-app.include_router(chunk_router)
-app.include_router(embed_router)
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncGenerator[None]:
+    Base.metadata.create_all(bind=engine)
+    yield
+
+
+app = FastAPI(lifespan=lifespan)
+
+app.include_router(router)
