@@ -31,8 +31,10 @@ backend → POST /crawl (urls)
 │   ├── crawl.py         # /crawl 라우터
 │   ├── chunk.py         # /chunk 라우터
 │   └── embed.py         # /embed 라우터
+├── services/            # 파이프라인 오케스트레이션 (chunk → embed → callback 등 비동기 백그라운드 처리)
 ├── core/
-│   └── config.py        # 환경변수(pydantic-settings) 및 설정
+│   ├── config.py        # 환경변수(pydantic-settings) 및 설정
+│   └── exceptions/      # 커스텀 예외 클래스 + FastAPI exception_handler 등록
 ├── db/
 │   └── database.py      # DB 엔진, 세션, Base 정의
 ├── models/              # SQLAlchemy ORM 모델 (DB 테이블 정의)
@@ -90,7 +92,7 @@ depth가 깊게 코딩하지 마세요. 깊이는 최소한으로 합니다.
 
 - `crawl/`, `chunk/`, `embed/`은 각각 독립적인 모듈이며, 서로를 직접 import하지 않습니다.
 - 각 모듈은 순수 함수처럼 입력을 받아 출력만 반환합니다.
-- 파이프라인 조합(오케스트레이션)은 `api/` 라우터의 엔드포인트에서 수행합니다.
+- 파이프라인 조합(오케스트레이션)은 `services/`에서 수행하며, `api/`는 요청/응답만 담당하는 thin endpoint입니다.
 
 ```python
 # crawl/ — URL → 원본 데이터
@@ -109,7 +111,13 @@ def embed(chunks: list[str]) -> list[list[float]]: ...
 - 크롤링 결과, 임베딩 벡터 등 backend 통신에 필요한 Request/Response Schema를 정의합니다.
 - 각 파이프라인 모듈의 내부 로직과 분리하여, backend와의 계약(contract)만 담당합니다.
 
-## 5. DB 레이어 책임 분리
+## 5. 예외 처리
+
+- 커스텀 예외 클래스는 `core/exceptions/`에 정의합니다.
+- HTTP 응답 변환은 `core/exceptions/handlers.py`의 `register_exception_handlers()`에서 중앙 처리합니다.
+- `api/` 엔드포인트에서 직접 `try/except → HTTPException` 변환을 하지 않습니다.
+
+## 6. DB 레이어 책임 분리
 
 - `models/`는 SQLAlchemy ORM 모델(테이블 정의)만 담당합니다.
 - `crud/`는 DB 조작 로직만 담당하며, 원시 데이터를 반환합니다.
