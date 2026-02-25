@@ -12,6 +12,7 @@ dependencies = [
     "langchain-experimental>=0.4.1",
     "langchain-huggingface>=1.2.0",
     "langchain-text-splitters>=1.1.1",
+    "pgvector>=0.4.2",
     "playwright>=1.58.0",
     "playwright-stealth>=2.0.2",
     "psycopg[binary]>=3.3.3",
