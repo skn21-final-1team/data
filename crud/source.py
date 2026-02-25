@@ -20,7 +20,7 @@ def create_source(
     url: str,
     title: str | None,
     summary: str,
-    notebook_id: int | None = None,
+    notebook_id: int,
     directory_id: int | None = None,
 ) -> SourceModel:
     source = SourceModel(
