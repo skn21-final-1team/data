@@ -1,4 +1,6 @@
-from sqlalchemy import Boolean, Column, Integer, String, Text
+from datetime import datetime
+
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, Integer, String, Text, func
 
 from db.database import Base
 
@@ -10,7 +12,7 @@ class SourceModel(Base):
     url = Column(String, nullable=False)
     title = Column(String, nullable=True)
     summary = Column(Text, nullable=True)
-    notebook_id = Column(Integer, nullable=True)  # TODO: ForeignKey("notebook.id") - notebook 테이블 생성 후 연결
-    directory_id = Column(Integer, nullable=True)  # TODO: ForeignKey("directory.id") - directory 테이블 생성 후 연결
-    user_id = Column(Integer, nullable=False)  # TODO: ForeignKey("user.id") - user 테이블 연결 후 수정
+    notebook_id = Column(Integer, ForeignKey("notebook.id", ondelete="CASCADE"), nullable=True)
+    directory_id = Column(Integer, ForeignKey("directory.id", ondelete="CASCADE"), nullable=True)
     is_active = Column(Boolean, default=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=True)

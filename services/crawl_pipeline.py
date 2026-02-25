@@ -2,6 +2,7 @@ import logging
 
 import httpx
 
+from chunk.service import chunk_text
 from core.config import get_settings
 from crawl.client import ScrapeResult
 from schemas.crawl import CrawlRequest
@@ -16,17 +17,16 @@ async def process_and_callback(
 ) -> None:
     for scraped in scraped_list:
         try:
-            # TODO: chunk/ 모듈 구현 후 교체
-            chunks = [scraped.content]
+            chunk_results = chunk_text(scraped.content)
+            chunks = [c.content for c in chunk_results]
 
             # TODO: embed/ 모듈 구현 후 교체
-            embeddings = [[0.0] * 768]
+            embeddings = [[0.0] * 768 for _ in chunks]
 
             payload = EmbeddingCallbackPayload(
                 source_url=scraped.url,
                 notebook_id=request.notebook_id,
                 directory_id=request.directory_id,
-                user_id=request.user_id,
                 chunks=chunks,
                 embeddings=embeddings,
             )

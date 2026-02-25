@@ -42,8 +42,13 @@ class HybridClient:
 
     async def _scrape_static(self, url: str) -> tuple[str | None, str]:
         settings = get_crawl_settings()
-        headers = {"User-Agent": settings.user_agent, "Accept-Language": settings.accept_language}
-        async with httpx.AsyncClient(headers=headers, timeout=30.0, follow_redirects=True) as client:
+        headers = {
+            "User-Agent": settings.user_agent,
+            "Accept-Language": settings.accept_language,
+        }
+        async with httpx.AsyncClient(
+            headers=headers, timeout=30.0, follow_redirects=True
+        ) as client:
             response = await client.get(url)
             response.raise_for_status()
         html = response.text
@@ -62,8 +67,12 @@ class HybridClient:
                     viewport={"width": 1920, "height": 1080},
                 )
                 page = await context.new_page()
-                await page.goto(url, wait_until="networkidle", timeout=settings.playwright_timeout)
-                await page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)")
+                await page.goto(
+                    url, wait_until="networkidle", timeout=settings.playwright_timeout
+                )
+                await page.evaluate(
+                    "window.scrollTo(0, document.body.scrollHeight / 2)"
+                )
                 await page.wait_for_timeout(1000)
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 await page.wait_for_timeout(1000)

@@ -1,0 +1,3636 @@
+{
+  "strategy_name": "계층적_Hierarchical_1000c",
+  "source_count": 121,
+  "sources": [
+    {
+      "source_id": "303",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/templates",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "303",
+        "chunk_count": 8,
+        "total_chars": 2393,
+        "avg_chunk_chars": 299.125,
+        "min_chunk_chars": 14,
+        "max_chunk_chars": 934,
+        "std_chunk_chars": 394.2444627747756,
+        "median_chunk_chars": 36.0,
+        "elapsed_seconds": 0.00043120002374053,
+        "chars_per_second": 5549628.636940804
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "303",
+        "paragraph_integrity": 0.5,
+        "sentence_integrity": 0.625,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.2667,
+        "coverage": 0.9183,
+        "boundary_quality": 0.875,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "304",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/product/ai",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "304",
+        "chunk_count": 6,
+        "total_chars": 2152,
+        "avg_chunk_chars": 358.6666666666667,
+        "min_chunk_chars": 119,
+        "max_chunk_chars": 932,
+        "std_chunk_chars": 350.13521197769677,
+        "median_chunk_chars": 156.5,
+        "elapsed_seconds": 0.0007343000033870339,
+        "chars_per_second": 2930682.268927795
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "304",
+        "paragraph_integrity": 0.9016,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9526,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0.83
+      }
+    },
+    {
+      "source_id": "305",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/pricing",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "305",
+        "chunk_count": 8,
+        "total_chars": 4883,
+        "avg_chunk_chars": 610.375,
+        "min_chunk_chars": 15,
+        "max_chunk_chars": 962,
+        "std_chunk_chars": 469.5867293999815,
+        "median_chunk_chars": 935.0,
+        "elapsed_seconds": 0.0007780999876558781,
+        "chars_per_second": 6275543.088890977
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "305",
+        "paragraph_integrity": 0.9518,
+        "sentence_integrity": 0.875,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0631,
+        "boundary_quality": 0.875,
+        "avg_metadata_count": 1.62
+      }
+    },
+    {
+      "source_id": "306",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "306",
+        "chunk_count": 15,
+        "total_chars": 12610,
+        "avg_chunk_chars": 840.6666666666666,
+        "min_chunk_chars": 150,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 226.80629452926397,
+        "median_chunk_chars": 935,
+        "elapsed_seconds": 0.0010598000371828675,
+        "chars_per_second": 11898470.992244508
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "306",
+        "paragraph_integrity": 0.878,
+        "sentence_integrity": 0.4,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.0627,
+        "boundary_quality": 0.8,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "307",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat/tree/master/dev",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "307",
+        "chunk_count": 1,
+        "total_chars": 126,
+        "avg_chunk_chars": 126,
+        "min_chunk_chars": 126,
+        "max_chunk_chars": 126,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 126,
+        "elapsed_seconds": 3.6400044336915016e-05,
+        "chars_per_second": 3461534.245226658
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "307",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.008,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "308",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat/blob/master/dev/LOG.md",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "308",
+        "chunk_count": 54,
+        "total_chars": 49111,
+        "avg_chunk_chars": 909.4629629629629,
+        "min_chunk_chars": 392,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 106.62519666870543,
+        "median_chunk_chars": 944.5,
+        "elapsed_seconds": 0.006135800038464367,
+        "chars_per_second": 8004009.206970705
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "308",
+        "paragraph_integrity": 0.8395,
+        "sentence_integrity": 0.2778,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 0.9723,
+        "boundary_quality": 0.9074,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "309",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/schhp?hl=ko",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "309",
+        "chunk_count": 1,
+        "total_chars": 855,
+        "avg_chunk_chars": 855,
+        "min_chunk_chars": 855,
+        "max_chunk_chars": 855,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 855,
+        "elapsed_seconds": 0.00025859999004751444,
+        "chars_per_second": 3306264.6284050695
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "309",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "310",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/scholar_labs/search?hl=ko",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "310",
+        "chunk_count": 1,
+        "total_chars": 149,
+        "avg_chunk_chars": 149,
+        "min_chunk_chars": 149,
+        "max_chunk_chars": 149,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 149,
+        "elapsed_seconds": 5.6399963796138763e-05,
+        "chars_per_second": 2641845.667464786
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "310",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "311",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/scholar_labs/search/example/single-molecule-footprinting-and-tf-binding?hl=ko",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "311",
+        "chunk_count": 1,
+        "total_chars": 149,
+        "avg_chunk_chars": 149,
+        "min_chunk_chars": 149,
+        "max_chunk_chars": 149,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 149,
+        "elapsed_seconds": 5.759997293353081e-05,
+        "chars_per_second": 2586806.7711063502
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "311",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "312",
+      "notebook_id": null,
+      "url": "https://huggingface.co/zai-org/GLM-5",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "312",
+        "chunk_count": 12,
+        "total_chars": 6878,
+        "avg_chunk_chars": 573.1666666666666,
+        "min_chunk_chars": 71,
+        "max_chunk_chars": 974,
+        "std_chunk_chars": 300.3981701110388,
+        "median_chunk_chars": 628.5,
+        "elapsed_seconds": 0.000659800018183887,
+        "chars_per_second": 10424370.734229192
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "312",
+        "paragraph_integrity": 0.7255,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9728,
+        "boundary_quality": 0.6667,
+        "avg_metadata_count": 2.33
+      }
+    },
+    {
+      "source_id": "313",
+      "notebook_id": null,
+      "url": "https://huggingface.co/openbmb/MiniCPM-SALA",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "313",
+        "chunk_count": 14,
+        "total_chars": 7294,
+        "avg_chunk_chars": 521,
+        "min_chunk_chars": 72,
+        "max_chunk_chars": 989,
+        "std_chunk_chars": 346.3724096313766,
+        "median_chunk_chars": 541.5,
+        "elapsed_seconds": 0.0008586000185459852,
+        "chars_per_second": 8495224.601033881
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "313",
+        "paragraph_integrity": 0.7681,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.5161,
+        "coverage": 0.9736,
+        "boundary_quality": 0.7143,
+        "avg_metadata_count": 1.29
+      }
+    },
+    {
+      "source_id": "314",
+      "notebook_id": null,
+      "url": "https://section.cafe.naver.com/ca-fe/home",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "314",
+        "chunk_count": 2,
+        "total_chars": 1277,
+        "avg_chunk_chars": 638.5,
+        "min_chunk_chars": 311,
+        "max_chunk_chars": 966,
+        "std_chunk_chars": 463.1549416771886,
+        "median_chunk_chars": 638.5,
+        "elapsed_seconds": 0.00024770002346485853,
+        "chars_per_second": 5155429.467212664
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "314",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0668,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "315",
+      "notebook_id": null,
+      "url": "https://cafe.naver.com/casuallydressed?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D19943558%2526articleid%3D837718%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjgzNzcxOCwiaXNzdWVkQXQiOjE3NzA5NTIxODQ5NjksImNhZmVJZCI6MTk5NDM1NTh9.Xx0XNMuhQGTHa0tN37rP4Cj4p_gJ-NysMbb_o0s58CI",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "315",
+        "chunk_count": 1,
+        "total_chars": 552,
+        "avg_chunk_chars": 552,
+        "min_chunk_chars": 552,
+        "max_chunk_chars": 552,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 552,
+        "elapsed_seconds": 0.00015300000086426735,
+        "chars_per_second": 3607843.1168748955
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "315",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0279,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "372",
+      "notebook_id": null,
+      "url": "https://ko.wikipedia.org/wiki/Hello",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "372",
+        "chunk_count": 8,
+        "total_chars": 4191,
+        "avg_chunk_chars": 523.875,
+        "min_chunk_chars": 63,
+        "max_chunk_chars": 966,
+        "std_chunk_chars": 370.7966086684181,
+        "median_chunk_chars": 463.0,
+        "elapsed_seconds": 0.0006899000145494938,
+        "chars_per_second": 6074793.320212832
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "372",
+        "paragraph_integrity": 0.6316,
+        "sentence_integrity": 0.375,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.5,
+        "heading_integrity": 0.0,
+        "coverage": 0.9817,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 2
+      }
+    },
+    {
+      "source_id": "373",
+      "notebook_id": null,
+      "url": "https://www.i-boss.co.kr/ab-6141-58333",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "373",
+        "chunk_count": 3,
+        "total_chars": 2837,
+        "avg_chunk_chars": 945.6666666666666,
+        "min_chunk_chars": 852,
+        "max_chunk_chars": 993,
+        "std_chunk_chars": 81.11925377697537,
+        "median_chunk_chars": 992,
+        "elapsed_seconds": 0.000687299994751811,
+        "chars_per_second": 4127746.284974818
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "373",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0949,
+        "boundary_quality": 0.6667,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "316",
+      "notebook_id": null,
+      "url": "https://cafe.naver.com/simpleliving?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D27713102%2526articleid%3D415585%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjQxNTU4NSwiaXNzdWVkQXQiOjE3NzA5NTIxODQ5NjksImNhZmVJZCI6Mjc3MTMxODJ9.PskXfdaJJntySq253DBUINp6XM3N0KXCPv9YsQL4dtU",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "316",
+        "chunk_count": 1,
+        "total_chars": 552,
+        "avg_chunk_chars": 552,
+        "min_chunk_chars": 552,
+        "max_chunk_chars": 552,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 552,
+        "elapsed_seconds": 9.129999671131372e-05,
+        "chars_per_second": 6046002.408361502
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "316",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0279,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "317",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "317",
+        "chunk_count": 9,
+        "total_chars": 4073,
+        "avg_chunk_chars": 452.55555555555554,
+        "min_chunk_chars": 147,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 389.26472711739217,
+        "median_chunk_chars": 208,
+        "elapsed_seconds": 0.001175300101749599,
+        "chars_per_second": 3465497.870660241
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "317",
+        "paragraph_integrity": 0.7353,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.027,
+        "boundary_quality": 0.1111,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "318",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/world/sise.naver?symbol=DJI@DJI&fdtc=0",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "318",
+        "chunk_count": 2,
+        "total_chars": 918,
+        "avg_chunk_chars": 459,
+        "min_chunk_chars": 142,
+        "max_chunk_chars": 776,
+        "std_chunk_chars": 448.3056992722711,
+        "median_chunk_chars": 459.0,
+        "elapsed_seconds": 0.0001498000929132104,
+        "chars_per_second": 6128167.093540197
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "318",
+        "paragraph_integrity": 0.4,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.985,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0.5
+      }
+    },
+    {
+      "source_id": "319",
+      "notebook_id": null,
+      "url": "https://ad-kbcard.com/checkcard_comb_global/2601/pc/index.html?media=gfa&solicitorcode=7030072838&utm_source=gfa&utm_medium=cpc&utm_campaign=check_mo_da_native_traffic&utm_content=nori2_all_non&utm_term=nori2_5",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "319",
+        "chunk_count": 1,
+        "total_chars": 504,
+        "avg_chunk_chars": 504,
+        "min_chunk_chars": 504,
+        "max_chunk_chars": 504,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 504,
+        "elapsed_seconds": 9.059999138116837e-05,
+        "chars_per_second": 5562914.4364881115
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "319",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0202,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "320",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/research/industry_read.naver?nid=43423",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "320",
+        "chunk_count": 1,
+        "total_chars": 287,
+        "avg_chunk_chars": 287,
+        "min_chunk_chars": 287,
+        "max_chunk_chars": 287,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 287,
+        "elapsed_seconds": 3.970006946474314e-05,
+        "chars_per_second": 7229206.494333194
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "320",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0035,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "321",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/item/main.naver?code=005930",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "321",
+        "chunk_count": 1,
+        "total_chars": 255,
+        "avg_chunk_chars": 255,
+        "min_chunk_chars": 255,
+        "max_chunk_chars": 255,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 255,
+        "elapsed_seconds": 6.230000872164965e-05,
+        "chars_per_second": 4093097.3403120227
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "321",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0282,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "322",
+      "notebook_id": null,
+      "url": "https://aws.amazon.com/ko/console/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "322",
+        "chunk_count": 1,
+        "total_chars": 348,
+        "avg_chunk_chars": 348,
+        "min_chunk_chars": 348,
+        "max_chunk_chars": 348,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 348,
+        "elapsed_seconds": 0.00010109995491802692,
+        "chars_per_second": 3442138.0334161636
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "322",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0265,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "323",
+      "notebook_id": null,
+      "url": "https://aws.amazon.com/ko/free/?nc2=h_pr_ft",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "323",
+        "chunk_count": 6,
+        "total_chars": 1003,
+        "avg_chunk_chars": 167.16666666666666,
+        "min_chunk_chars": 18,
+        "max_chunk_chars": 393,
+        "std_chunk_chars": 138.7074859791881,
+        "median_chunk_chars": 158.5,
+        "elapsed_seconds": 0.0003029999788850546,
+        "chars_per_second": 3310231.2537800404
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "323",
+        "paragraph_integrity": 0.76,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9012,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 1.17
+      }
+    },
+    {
+      "source_id": "324",
+      "notebook_id": null,
+      "url": "https://www.acmicpc.net/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "324",
+        "chunk_count": 2,
+        "total_chars": 1292,
+        "avg_chunk_chars": 646,
+        "min_chunk_chars": 299,
+        "max_chunk_chars": 993,
+        "std_chunk_chars": 490.73210614346397,
+        "median_chunk_chars": 646.0,
+        "elapsed_seconds": 0.0004350000526756048,
+        "chars_per_second": 2970114.5828676275
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "324",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0794,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "325",
+      "notebook_id": null,
+      "url": "https://www.acmicpc.net/problem/3190",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "325",
+        "chunk_count": 1,
+        "total_chars": 998,
+        "avg_chunk_chars": 998,
+        "min_chunk_chars": 998,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 998,
+        "elapsed_seconds": 0.00017739995382726192,
+        "chars_per_second": 5625706.086551599
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "325",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0153,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "326",
+      "notebook_id": null,
+      "url": "https://solved.ac/ranking/tier?page=1",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "326",
+        "chunk_count": 2,
+        "total_chars": 1955,
+        "avg_chunk_chars": 977.5,
+        "min_chunk_chars": 974,
+        "max_chunk_chars": 981,
+        "std_chunk_chars": 4.949747468305833,
+        "median_chunk_chars": 977.5,
+        "elapsed_seconds": 0.00023570004850625992,
+        "chars_per_second": 8294440.380431562
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "326",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0404,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "327",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/3916/교육-콘텐츠-기획-운영-매니저",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "327",
+        "chunk_count": 6,
+        "total_chars": 4731,
+        "avg_chunk_chars": 788.5,
+        "min_chunk_chars": 9,
+        "max_chunk_chars": 992,
+        "std_chunk_chars": 386.93087237903364,
+        "median_chunk_chars": 964.5,
+        "elapsed_seconds": 0.0012972999829798937,
+        "chars_per_second": 3646804.950334547
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "327",
+        "paragraph_integrity": 0.9945,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.1098,
+        "boundary_quality": 0.6667,
+        "avg_metadata_count": 0.83
+      }
+    },
+    {
+      "source_id": "328",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/4100/토스-devops-engineer",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "328",
+        "chunk_count": 6,
+        "total_chars": 4069,
+        "avg_chunk_chars": 678.1666666666666,
+        "min_chunk_chars": 10,
+        "max_chunk_chars": 992,
+        "std_chunk_chars": 469.51226466053754,
+        "median_chunk_chars": 969.0,
+        "elapsed_seconds": 0.0015191000420600176,
+        "chars_per_second": 2678559.599328376
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "328",
+        "paragraph_integrity": 0.9949,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.1087,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0.83
+      }
+    },
+    {
+      "source_id": "329",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/4093/해외-콘텐츠-md-인턴",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "329",
+        "chunk_count": 5,
+        "total_chars": 3851,
+        "avg_chunk_chars": 770.2,
+        "min_chunk_chars": 9,
+        "max_chunk_chars": 995,
+        "std_chunk_chars": 427.3730220779033,
+        "median_chunk_chars": 974,
+        "elapsed_seconds": 0.0013377000577747822,
+        "chars_per_second": 2878821.7340784194
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "329",
+        "paragraph_integrity": 0.9945,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.1277,
+        "boundary_quality": 0.6,
+        "avg_metadata_count": 0.8
+      }
+    },
+    {
+      "source_id": "330",
+      "notebook_id": null,
+      "url": "https://www.wanted.co.kr/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "330",
+        "chunk_count": 1,
+        "total_chars": 640,
+        "avg_chunk_chars": 640,
+        "min_chunk_chars": 640,
+        "max_chunk_chars": 640,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 640,
+        "elapsed_seconds": 6.630003917962313e-05,
+        "chars_per_second": 9653086.30159452
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "330",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0016,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "331",
+      "notebook_id": null,
+      "url": "https://www.wanted.co.kr/wd/335641",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "331",
+        "chunk_count": 2,
+        "total_chars": 1077,
+        "avg_chunk_chars": 538.5,
+        "min_chunk_chars": 134,
+        "max_chunk_chars": 943,
+        "std_chunk_chars": 572.0493859799169,
+        "median_chunk_chars": 538.5,
+        "elapsed_seconds": 0.0002215999411419034,
+        "chars_per_second": 4860109.594119133
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "331",
+        "paragraph_integrity": 0.8571,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9872,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 1.5
+      }
+    },
+    {
+      "source_id": "332",
+      "notebook_id": null,
+      "url": "https://event.wanted.co.kr/swmaestro17_busan",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "332",
+        "chunk_count": 3,
+        "total_chars": 273,
+        "avg_chunk_chars": 91,
+        "min_chunk_chars": 23,
+        "max_chunk_chars": 184,
+        "std_chunk_chars": 83.3606621854697,
+        "median_chunk_chars": 66,
+        "elapsed_seconds": 0.00011840008664876223,
+        "chars_per_second": 2305741.5558306435
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "332",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9545,
+        "boundary_quality": 0.3333,
+        "avg_metadata_count": 0.67
+      }
+    },
+    {
+      "source_id": "409",
+      "notebook_id": null,
+      "url": "https://sugarslayer.tistory.com/category/내집마련🏡/HUG 버팀목 전세 대출(청년) 후기",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "409",
+        "chunk_count": 5,
+        "total_chars": 4028,
+        "avg_chunk_chars": 805.6,
+        "min_chunk_chars": 610,
+        "max_chunk_chars": 968,
+        "std_chunk_chars": 176.58793843295186,
+        "median_chunk_chars": 861,
+        "elapsed_seconds": 0.0007523000240325928,
+        "chars_per_second": 5354246.804896407
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "409",
+        "paragraph_integrity": 0.9286,
+        "sentence_integrity": 0.6,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.5,
+        "heading_integrity": 0.0,
+        "coverage": 0.9907,
+        "boundary_quality": 0.8,
+        "avg_metadata_count": 0.8
+      }
+    },
+    {
+      "source_id": "333",
+      "notebook_id": null,
+      "url": "https://op.gg/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "333",
+        "chunk_count": 2,
+        "total_chars": 1082,
+        "avg_chunk_chars": 541,
+        "min_chunk_chars": 345,
+        "max_chunk_chars": 737,
+        "std_chunk_chars": 277.18585822512665,
+        "median_chunk_chars": 541.0,
+        "elapsed_seconds": 0.0002405999694019556,
+        "chars_per_second": 4497091.178728992
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "333",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9918,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0.5
+      }
+    },
+    {
+      "source_id": "334",
+      "notebook_id": null,
+      "url": "https://games.op.gg/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "334",
+        "chunk_count": 2,
+        "total_chars": 1916,
+        "avg_chunk_chars": 958,
+        "min_chunk_chars": 930,
+        "max_chunk_chars": 986,
+        "std_chunk_chars": 39.59797974644666,
+        "median_chunk_chars": 958.0,
+        "elapsed_seconds": 0.00036660011392086744,
+        "chars_per_second": 5226403.176769276
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "334",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0527,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "335",
+      "notebook_id": null,
+      "url": "https://esports.op.gg/leagues/LCK/2026/Cup?hl=en_US",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "335",
+        "chunk_count": 1,
+        "total_chars": 965,
+        "avg_chunk_chars": 965,
+        "min_chunk_chars": 965,
+        "max_chunk_chars": 965,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 965,
+        "elapsed_seconds": 0.0002767000114545226,
+        "chars_per_second": 3487531.4783230643
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "335",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "336",
+      "notebook_id": null,
+      "url": "https://www.inflearn.com/course/에이전트빌드-azureai-copilotstudio?cid=337583",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "336",
+        "chunk_count": 7,
+        "total_chars": 1065,
+        "avg_chunk_chars": 152.14285714285714,
+        "min_chunk_chars": 2,
+        "max_chunk_chars": 426,
+        "std_chunk_chars": 160.31056169347107,
+        "median_chunk_chars": 100,
+        "elapsed_seconds": 0.00043050001841038465,
+        "chars_per_second": 2473867.4900235725
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "336",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.2857,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.8927,
+        "boundary_quality": 0.4286,
+        "avg_metadata_count": 1.86
+      }
+    },
+    {
+      "source_id": "337",
+      "notebook_id": null,
+      "url": "https://mentoring.inflearn.com/mentors",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "337",
+        "chunk_count": 3,
+        "total_chars": 2468,
+        "avg_chunk_chars": 822.6666666666666,
+        "min_chunk_chars": 478,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 298.5051646677714,
+        "median_chunk_chars": 992,
+        "elapsed_seconds": 0.0013985000550746918,
+        "chars_per_second": 1764747.8747279618
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "337",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.156,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "338",
+      "notebook_id": null,
+      "url": "https://bbq.co.kr/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "338",
+        "chunk_count": 1,
+        "total_chars": 372,
+        "avg_chunk_chars": 372,
+        "min_chunk_chars": 372,
+        "max_chunk_chars": 372,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 372,
+        "elapsed_seconds": 9.630003478378057e-05,
+        "chars_per_second": 3862926.9536115937
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "338",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0136,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "339",
+      "notebook_id": null,
+      "url": "https://bbq.co.kr/products/3105",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "339",
+        "chunk_count": 1,
+        "total_chars": 372,
+        "avg_chunk_chars": 372,
+        "min_chunk_chars": 372,
+        "max_chunk_chars": 372,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 372,
+        "elapsed_seconds": 0.00010459998156875372,
+        "chars_per_second": 3556405.980391917
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "339",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0136,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "340",
+      "notebook_id": null,
+      "url": "https://www.lotteeatz.com/brand/ria",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "340",
+        "chunk_count": 1,
+        "total_chars": 548,
+        "avg_chunk_chars": 548,
+        "min_chunk_chars": 548,
+        "max_chunk_chars": 548,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 548,
+        "elapsed_seconds": 0.0002484999131411314,
+        "chars_per_second": 2205232.1591306655
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "340",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "341",
+      "notebook_id": null,
+      "url": "https://www.lotteeatz.com/event/main",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "341",
+        "chunk_count": 2,
+        "total_chars": 1592,
+        "avg_chunk_chars": 796,
+        "min_chunk_chars": 612,
+        "max_chunk_chars": 980,
+        "std_chunk_chars": 260.2152954766495,
+        "median_chunk_chars": 796.0,
+        "elapsed_seconds": 0.0006207000697031617,
+        "chars_per_second": 2564845.8534269934
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "341",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0599,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "342",
+      "notebook_id": null,
+      "url": "https://en.wikipedia.org/wiki/Tensor",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "342",
+        "chunk_count": 77,
+        "total_chars": 49826,
+        "avg_chunk_chars": 647.0909090909091,
+        "min_chunk_chars": 106,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 257.58607053188535,
+        "median_chunk_chars": 694,
+        "elapsed_seconds": 0.003156399936415255,
+        "chars_per_second": 15785705.551809043
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "342",
+        "paragraph_integrity": 0.7967,
+        "sentence_integrity": 0.5195,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0882,
+        "coverage": 0.9988,
+        "boundary_quality": 0.6623,
+        "avg_metadata_count": 2.36
+      }
+    },
+    {
+      "source_id": "343",
+      "notebook_id": null,
+      "url": "https://ridibooks.com/webtoon/recommendation",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "343",
+        "chunk_count": 6,
+        "total_chars": 3371,
+        "avg_chunk_chars": 561.8333333333334,
+        "min_chunk_chars": 410,
+        "max_chunk_chars": 638,
+        "std_chunk_chars": 81.74941386130341,
+        "median_chunk_chars": 568.0,
+        "elapsed_seconds": 0.0006897000130265951,
+        "chars_per_second": 4887632.211585898
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "343",
+        "paragraph_integrity": 0.6154,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 0.0,
+        "coverage": 0.9588,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "344",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/home",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "344",
+        "chunk_count": 1,
+        "total_chars": 199,
+        "avg_chunk_chars": 199,
+        "min_chunk_chars": 199,
+        "max_chunk_chars": 199,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 199,
+        "elapsed_seconds": 8.939998224377632e-05,
+        "chars_per_second": 2225951.225106128
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "344",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0365,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "345",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/o/172802",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "345",
+        "chunk_count": 2,
+        "total_chars": 1464,
+        "avg_chunk_chars": 732,
+        "min_chunk_chars": 501,
+        "max_chunk_chars": 963,
+        "std_chunk_chars": 326.683332908185,
+        "median_chunk_chars": 732.0,
+        "elapsed_seconds": 0.0003435000544413924,
+        "chars_per_second": 4262008.058137836
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "345",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0139,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "346",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/o/172799",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "346",
+        "chunk_count": 2,
+        "total_chars": 1658,
+        "avg_chunk_chars": 829,
+        "min_chunk_chars": 785,
+        "max_chunk_chars": 873,
+        "std_chunk_chars": 62.22539674441618,
+        "median_chunk_chars": 829.0,
+        "elapsed_seconds": 0.00048669998068362474,
+        "chars_per_second": 3406616.120409853
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "346",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0697,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "347",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/index",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "347",
+        "chunk_count": 2,
+        "total_chars": 1962,
+        "avg_chunk_chars": 981,
+        "min_chunk_chars": 970,
+        "max_chunk_chars": 992,
+        "std_chunk_chars": 15.556349186104045,
+        "median_chunk_chars": 981.0,
+        "elapsed_seconds": 0.0005611000815406442,
+        "chars_per_second": 3496702.3968573054
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "347",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.047,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "348",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/board/all/list",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "348",
+        "chunk_count": 1,
+        "total_chars": 330,
+        "avg_chunk_chars": 330,
+        "min_chunk_chars": 330,
+        "max_chunk_chars": 330,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 330,
+        "elapsed_seconds": 8.28000484034419e-05,
+        "chars_per_second": 3985504.916519859
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "348",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0185,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "349",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/board/free/view?articleId=698e9c2d76941606cf936f8a",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "349",
+        "chunk_count": 2,
+        "total_chars": 282,
+        "avg_chunk_chars": 141,
+        "min_chunk_chars": 135,
+        "max_chunk_chars": 147,
+        "std_chunk_chars": 8.48528137423857,
+        "median_chunk_chars": 141.0,
+        "elapsed_seconds": 0.00014600006397813559,
+        "chars_per_second": 1931506.0029167607
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "349",
+        "paragraph_integrity": 0.8889,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.8368,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1.5
+      }
+    },
+    {
+      "source_id": "350",
+      "notebook_id": null,
+      "url": "https://pokemonkorea.co.kr/pokedex?word=&characters=&area=성도지방&snumber=1&snumber2=1025&typetextc[]=풀&sortselval=number+asc%2Cnumber_count+asc&typetextcs=_풀________________",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "350",
+        "chunk_count": 1,
+        "total_chars": 999,
+        "avg_chunk_chars": 999,
+        "min_chunk_chars": 999,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 999,
+        "elapsed_seconds": 5.7999975979328156e-05,
+        "chars_per_second": 17224145.0644058
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "350",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "351",
+      "notebook_id": null,
+      "url": "https://www.yonhapnewstv.co.kr/news/AKR202602131021397DQ",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "351",
+        "chunk_count": 2,
+        "total_chars": 1215,
+        "avg_chunk_chars": 607.5,
+        "min_chunk_chars": 217,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 552.2503961066936,
+        "median_chunk_chars": 607.5,
+        "elapsed_seconds": 0.00030150008387863636,
+        "chars_per_second": 4029849.6251466293
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "351",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0966,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "352",
+      "notebook_id": null,
+      "url": "https://lolesports.com/ko-KR/leagues/first_stand,lck,msi,worlds",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "352",
+        "chunk_count": 2,
+        "total_chars": 1534,
+        "avg_chunk_chars": 767,
+        "min_chunk_chars": 535,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 328.09754647055803,
+        "median_chunk_chars": 767.0,
+        "elapsed_seconds": 0.0011405000695958734,
+        "chars_per_second": 1345024.030155088
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "352",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0675,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "353",
+      "notebook_id": null,
+      "url": "https://news.blizzard.com/ko-kr/article/24244446/2026-2-11",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "353",
+        "chunk_count": 10,
+        "total_chars": 7411,
+        "avg_chunk_chars": 741.1,
+        "min_chunk_chars": 12,
+        "max_chunk_chars": 992,
+        "std_chunk_chars": 375.41338696310646,
+        "median_chunk_chars": 920.0,
+        "elapsed_seconds": 0.0013846999499946833,
+        "chars_per_second": 5352062.011722074
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "353",
+        "paragraph_integrity": 0.9829,
+        "sentence_integrity": 0.4,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.8571,
+        "heading_integrity": 0.8462,
+        "coverage": 1.0691,
+        "boundary_quality": 0.9,
+        "avg_metadata_count": 1.7
+      }
+    },
+    {
+      "source_id": "354",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/joo5hk/220933701107",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "354",
+        "chunk_count": 17,
+        "total_chars": 15969,
+        "avg_chunk_chars": 939.3529411764706,
+        "min_chunk_chars": 188,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 193.83496239600024,
+        "median_chunk_chars": 990,
+        "elapsed_seconds": 0.006805800017900765,
+        "chars_per_second": 2346381.0217752485
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "354",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1439,
+        "boundary_quality": 0.6471,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "355",
+      "notebook_id": null,
+      "url": "http://metizen.co.kr/점심-베스트-10/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "355",
+        "chunk_count": 3,
+        "total_chars": 2148,
+        "avg_chunk_chars": 716,
+        "min_chunk_chars": 337,
+        "max_chunk_chars": 990,
+        "std_chunk_chars": 338.9262456641563,
+        "median_chunk_chars": 821,
+        "elapsed_seconds": 0.00034769997000694275,
+        "chars_per_second": 6177739.96344351
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "355",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0337,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "356",
+      "notebook_id": null,
+      "url": "https://www.otoki.com/product/product_cat",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "356",
+        "chunk_count": 2,
+        "total_chars": 196,
+        "avg_chunk_chars": 98,
+        "min_chunk_chars": 91,
+        "max_chunk_chars": 105,
+        "std_chunk_chars": 9.899494936611665,
+        "median_chunk_chars": 98.0,
+        "elapsed_seconds": 8.849997539073229e-05,
+        "chars_per_second": 2214689.881377358
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "356",
+        "paragraph_integrity": 0.7778,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9074,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1.5
+      }
+    },
+    {
+      "source_id": "357",
+      "notebook_id": null,
+      "url": "https://mojing.tistory.com/entry/ProgrammersC-PCCP-기출문제-1번-동영상-재생기",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "357",
+        "chunk_count": 4,
+        "total_chars": 2078,
+        "avg_chunk_chars": 519.5,
+        "min_chunk_chars": 189,
+        "max_chunk_chars": 983,
+        "std_chunk_chars": 394.57529910863235,
+        "median_chunk_chars": 453.0,
+        "elapsed_seconds": 0.0003462000750005245,
+        "chars_per_second": 6002309.502667935
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "357",
+        "paragraph_integrity": 0.5,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.8727,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "358",
+      "notebook_id": null,
+      "url": "https://www.en-core.com/resource/playdata2",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "358",
+        "chunk_count": 2,
+        "total_chars": 1224,
+        "avg_chunk_chars": 612,
+        "min_chunk_chars": 246,
+        "max_chunk_chars": 978,
+        "std_chunk_chars": 517.6021638285528,
+        "median_chunk_chars": 612.0,
+        "elapsed_seconds": 0.0004509000573307276,
+        "chars_per_second": 2714570.5131330616
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "358",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0699,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "359",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@sungdairi/27",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "359",
+        "chunk_count": 4,
+        "total_chars": 3693,
+        "avg_chunk_chars": 923.25,
+        "min_chunk_chars": 779,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 98.48646269073396,
+        "median_chunk_chars": 958.0,
+        "elapsed_seconds": 0.0009312999900430441,
+        "chars_per_second": 3965424.7175814016
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "359",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.75,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0606,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "360",
+      "notebook_id": null,
+      "url": "https://platform.claude.com/docs/ko/overview",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "360",
+        "chunk_count": 3,
+        "total_chars": 2245,
+        "avg_chunk_chars": 748.3333333333334,
+        "min_chunk_chars": 274,
+        "max_chunk_chars": 994,
+        "std_chunk_chars": 410.8726485583256,
+        "median_chunk_chars": 977,
+        "elapsed_seconds": 0.00046639994252473116,
+        "chars_per_second": 4813465.430221312
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "360",
+        "paragraph_integrity": 0.9333,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.8333,
+        "heading_integrity": 1.0,
+        "coverage": 1.0665,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "361",
+      "notebook_id": null,
+      "url": "https://tech.hyperithm.com/claude_code_guides",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "361",
+        "chunk_count": 44,
+        "total_chars": 9583,
+        "avg_chunk_chars": 217.79545454545453,
+        "min_chunk_chars": 10,
+        "max_chunk_chars": 966,
+        "std_chunk_chars": 164.37048050845164,
+        "median_chunk_chars": 185.0,
+        "elapsed_seconds": 0.01525030005723238,
+        "chars_per_second": 628381.0786696823
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "361",
+        "paragraph_integrity": 0.7378,
+        "sentence_integrity": 0.1818,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.875,
+        "heading_integrity": 0.1343,
+        "coverage": 0.9162,
+        "boundary_quality": 0.4091,
+        "avg_metadata_count": 2.07
+      }
+    },
+    {
+      "source_id": "362",
+      "notebook_id": null,
+      "url": "https://github.com/skn21-final-1team",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "362",
+        "chunk_count": 2,
+        "total_chars": 1837,
+        "avg_chunk_chars": 918.5,
+        "min_chunk_chars": 844,
+        "max_chunk_chars": 993,
+        "std_chunk_chars": 105.35891039679558,
+        "median_chunk_chars": 918.5,
+        "elapsed_seconds": 0.000655700103379786,
+        "chars_per_second": 2801585.649493175
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "362",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0509,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "363",
+      "notebook_id": null,
+      "url": "https://content.rview.com/ko/blog/claudecode/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "363",
+        "chunk_count": 4,
+        "total_chars": 3516,
+        "avg_chunk_chars": 879,
+        "min_chunk_chars": 571,
+        "max_chunk_chars": 982,
+        "std_chunk_chars": 205.33387445816143,
+        "median_chunk_chars": 981.5,
+        "elapsed_seconds": 0.002938099903985858,
+        "chars_per_second": 1196691.7786662586
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "363",
+        "paragraph_integrity": 0.9925,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0974,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "364",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/picture-in-novel/222349596538",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "364",
+        "chunk_count": 12,
+        "total_chars": 11414,
+        "avg_chunk_chars": 951.1666666666666,
+        "min_chunk_chars": 735,
+        "max_chunk_chars": 996,
+        "std_chunk_chars": 73.75984782735897,
+        "median_chunk_chars": 980.5,
+        "elapsed_seconds": 0.002107999986037612,
+        "chars_per_second": 5414611.041556404
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "364",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.75,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0998,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "365",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/VGC/comments/owczh9/tips_on_competitive_pokemon/?tl=ko",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "365",
+        "chunk_count": 2,
+        "total_chars": 306,
+        "avg_chunk_chars": 153,
+        "min_chunk_chars": 35,
+        "max_chunk_chars": 271,
+        "std_chunk_chars": 166.87720036002523,
+        "median_chunk_chars": 153.0,
+        "elapsed_seconds": 9.119999594986439e-05,
+        "chars_per_second": 3355263.3068999057
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "365",
+        "paragraph_integrity": 0.6,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9474,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "366",
+      "notebook_id": null,
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=pokemontcgpocket&no=568804",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "366",
+        "chunk_count": 4,
+        "total_chars": 3576,
+        "avg_chunk_chars": 894,
+        "min_chunk_chars": 694,
+        "max_chunk_chars": 981,
+        "std_chunk_chars": 135.14683372786308,
+        "median_chunk_chars": 950.5,
+        "elapsed_seconds": 0.0007668000180274248,
+        "chars_per_second": 4663536.666573348
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "366",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0417,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "367",
+      "notebook_id": null,
+      "url": "https://debateforall.org/blog/?bmode=view&idx=6582418",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "367",
+        "chunk_count": 2,
+        "total_chars": 1841,
+        "avg_chunk_chars": 920.5,
+        "min_chunk_chars": 875,
+        "max_chunk_chars": 966,
+        "std_chunk_chars": 64.34671708797582,
+        "median_chunk_chars": 920.5,
+        "elapsed_seconds": 0.0011292999843135476,
+        "chars_per_second": 1630213.4291793725
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "367",
+        "paragraph_integrity": 0.9333,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0199,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "368",
+      "notebook_id": null,
+      "url": "https://kin.naver.com/qna/detail.naver?d1id=4&dirId=40102&docId=491942462&enc=utf8&kinsrch_src=pc_tab_kin&qb=7ZmY7Jyo",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "368",
+        "chunk_count": 1,
+        "total_chars": 779,
+        "avg_chunk_chars": 779,
+        "min_chunk_chars": 779,
+        "max_chunk_chars": 779,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 779,
+        "elapsed_seconds": 0.0001335000852122903,
+        "chars_per_second": 5835202.267932963
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "368",
+        "paragraph_integrity": 0.8571,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 0.6667,
+        "coverage": 0.9936,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "369",
+      "notebook_id": null,
+      "url": "https://html.duckduckgo.com/html/?q=%EC%B9%9C%EA%B5%AC%EC%82%AC%EA%B7%80%EB%8A%94%EB%B2%95",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "369",
+        "chunk_count": 10,
+        "total_chars": 2764,
+        "avg_chunk_chars": 276.4,
+        "min_chunk_chars": 143,
+        "max_chunk_chars": 391,
+        "std_chunk_chars": 102.44695104188204,
+        "median_chunk_chars": 276.0,
+        "elapsed_seconds": 0.0003360999980941415,
+        "chars_per_second": 8223742.980283518
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "369",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.8817,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "370",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@dadaworld/53",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "370",
+        "chunk_count": 11,
+        "total_chars": 8604,
+        "avg_chunk_chars": 782.1818181818181,
+        "min_chunk_chars": 602,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 106.92223172176887,
+        "median_chunk_chars": 779,
+        "elapsed_seconds": 0.0014733000425621867,
+        "chars_per_second": 5839950.961405631
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "370",
+        "paragraph_integrity": 0.9355,
+        "sentence_integrity": 0.5455,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0299,
+        "boundary_quality": 0.9091,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "371",
+      "notebook_id": null,
+      "url": "https://pann.nate.com/talk/117934352",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "371",
+        "chunk_count": 6,
+        "total_chars": 5174,
+        "avg_chunk_chars": 862.3333333333334,
+        "min_chunk_chars": 800,
+        "max_chunk_chars": 996,
+        "std_chunk_chars": 72.5883369878844,
+        "median_chunk_chars": 847.5,
+        "elapsed_seconds": 0.0004510999424383044,
+        "chars_per_second": 11469742.097578814
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "371",
+        "paragraph_integrity": 0.5,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9992,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "374",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/saw/comments/18lmdyv/community_hangout_megathread_shitposts_memes_and/?tl=ko",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "374",
+        "chunk_count": 3,
+        "total_chars": 1227,
+        "avg_chunk_chars": 409,
+        "min_chunk_chars": 35,
+        "max_chunk_chars": 772,
+        "std_chunk_chars": 368.62311376255286,
+        "median_chunk_chars": 420,
+        "elapsed_seconds": 0.0001604000572115183,
+        "chars_per_second": 7649623.206692282
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "374",
+        "paragraph_integrity": 0.7778,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9871,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "375",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/kanovatio/223546676104",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "375",
+        "chunk_count": 8,
+        "total_chars": 6764,
+        "avg_chunk_chars": 845.5,
+        "min_chunk_chars": 357,
+        "max_chunk_chars": 995,
+        "std_chunk_chars": 206.37967784782356,
+        "median_chunk_chars": 900.5,
+        "elapsed_seconds": 0.000761799979954958,
+        "chars_per_second": 8878971.092123061
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "375",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0133,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "376",
+      "notebook_id": null,
+      "url": "https://n.news.naver.com/mnews/article/001/0015905696?rc=N&ntype=RANKING",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "376",
+        "chunk_count": 5,
+        "total_chars": 4141,
+        "avg_chunk_chars": 828.2,
+        "min_chunk_chars": 264,
+        "max_chunk_chars": 989,
+        "std_chunk_chars": 315.69399740888326,
+        "median_chunk_chars": 957,
+        "elapsed_seconds": 0.0006042999448254704,
+        "chars_per_second": 6852557.302807588
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "376",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.6,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0629,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "377",
+      "notebook_id": null,
+      "url": "https://n.news.naver.com/mnews/article/001/0015905591?rc=N&ntype=RANKING",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "377",
+        "chunk_count": 2,
+        "total_chars": 1699,
+        "avg_chunk_chars": 849.5,
+        "min_chunk_chars": 716,
+        "max_chunk_chars": 983,
+        "std_chunk_chars": 188.79751057680818,
+        "median_chunk_chars": 849.5,
+        "elapsed_seconds": 0.0002728999825194478,
+        "chars_per_second": 6225724.107105516
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "377",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0119,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "378",
+      "notebook_id": null,
+      "url": "https://www.hankyung.com/article/202602123331i",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "378",
+        "chunk_count": 3,
+        "total_chars": 2380,
+        "avg_chunk_chars": 793.3333333333334,
+        "min_chunk_chars": 397,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 343.27879825782037,
+        "median_chunk_chars": 986,
+        "elapsed_seconds": 0.00037129991687834263,
+        "chars_per_second": 6409912.558046204
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "378",
+        "paragraph_integrity": 0.9643,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9888,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "379",
+      "notebook_id": null,
+      "url": "https://www.hankyung.com/article/2026021228461",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "379",
+        "chunk_count": 4,
+        "total_chars": 2733,
+        "avg_chunk_chars": 683.25,
+        "min_chunk_chars": 330,
+        "max_chunk_chars": 884,
+        "std_chunk_chars": 255.93928316432135,
+        "median_chunk_chars": 759.5,
+        "elapsed_seconds": 0.0005218000151216984,
+        "chars_per_second": 5237638.7903373055
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "379",
+        "paragraph_integrity": 0.875,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9768,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1.5
+      }
+    },
+    {
+      "source_id": "380",
+      "notebook_id": null,
+      "url": "https://docs.langchain.com/oss/python/deepagents/overview",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "380",
+        "chunk_count": 10,
+        "total_chars": 2837,
+        "avg_chunk_chars": 283.7,
+        "min_chunk_chars": 23,
+        "max_chunk_chars": 827,
+        "std_chunk_chars": 330.170679766962,
+        "median_chunk_chars": 82.5,
+        "elapsed_seconds": 0.000507200020365417,
+        "chars_per_second": 5593454.034083155
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "380",
+        "paragraph_integrity": 0.7273,
+        "sentence_integrity": 0.4,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9238,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0.9
+      }
+    },
+    {
+      "source_id": "381",
+      "notebook_id": null,
+      "url": "https://developers.llamaindex.ai/python/llamaagents/overview/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "381",
+        "chunk_count": 3,
+        "total_chars": 2034,
+        "avg_chunk_chars": 678,
+        "min_chunk_chars": 529,
+        "max_chunk_chars": 794,
+        "std_chunk_chars": 135.5470398053753,
+        "median_chunk_chars": 711,
+        "elapsed_seconds": 0.00024690001737326384,
+        "chars_per_second": 8238152.518737962
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "381",
+        "paragraph_integrity": 0.7778,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9686,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 2.67
+      }
+    },
+    {
+      "source_id": "382",
+      "notebook_id": null,
+      "url": "https://sunnykim91.tistory.com/121",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "382",
+        "chunk_count": 18,
+        "total_chars": 16377,
+        "avg_chunk_chars": 909.8333333333334,
+        "min_chunk_chars": 777,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 71.50668417954326,
+        "median_chunk_chars": 916.0,
+        "elapsed_seconds": 0.0028515999438241124,
+        "chars_per_second": 5743091.7108371705
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "382",
+        "paragraph_integrity": 0.9934,
+        "sentence_integrity": 0.4444,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0449,
+        "boundary_quality": 0.9444,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "383",
+      "notebook_id": null,
+      "url": "https://pyrasis.com/jHLsAlwaysUpToDateDocker",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "383",
+        "chunk_count": 2,
+        "total_chars": 897,
+        "avg_chunk_chars": 448.5,
+        "min_chunk_chars": 368,
+        "max_chunk_chars": 529,
+        "std_chunk_chars": 113.84419177103415,
+        "median_chunk_chars": 448.5,
+        "elapsed_seconds": 0.00028309994377195835,
+        "chars_per_second": 3168492.32835789
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "383",
+        "paragraph_integrity": 0.8889,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.5,
+        "coverage": 0.9967,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0.5
+      }
+    },
+    {
+      "source_id": "384",
+      "notebook_id": null,
+      "url": "https://drop.com/talk/93641/how-to-configure-stack-overflow-the-key-macropad",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "384",
+        "chunk_count": 1,
+        "total_chars": 170,
+        "avg_chunk_chars": 170,
+        "min_chunk_chars": 170,
+        "max_chunk_chars": 170,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 170,
+        "elapsed_seconds": 5.149992648512125e-05,
+        "chars_per_second": 3300975.585841164
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "384",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "385",
+      "notebook_id": null,
+      "url": "https://sunnykim91.tistory.com/148",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "385",
+        "chunk_count": 12,
+        "total_chars": 11308,
+        "avg_chunk_chars": 942.3333333333334,
+        "min_chunk_chars": 563,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 120.88411681014878,
+        "median_chunk_chars": 975.5,
+        "elapsed_seconds": 0.0021306000417098403,
+        "chars_per_second": 5307425.034557472
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "385",
+        "paragraph_integrity": 0.8382,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0504,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "386",
+      "notebook_id": null,
+      "url": "https://huggingface.co/papers",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "386",
+        "chunk_count": 1,
+        "total_chars": 242,
+        "avg_chunk_chars": 242,
+        "min_chunk_chars": 242,
+        "max_chunk_chars": 242,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 242,
+        "elapsed_seconds": 7.960002403706312e-05,
+        "chars_per_second": 3040200.0869663144
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "386",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0254,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "387",
+      "notebook_id": null,
+      "url": "https://arxiv.org/abs/2602.09877",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "387",
+        "chunk_count": 7,
+        "total_chars": 2905,
+        "avg_chunk_chars": 415,
+        "min_chunk_chars": 33,
+        "max_chunk_chars": 998,
+        "std_chunk_chars": 352.66225580102366,
+        "median_chunk_chars": 523,
+        "elapsed_seconds": 0.0005942999850958586,
+        "chars_per_second": 4888103.773940754
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "387",
+        "paragraph_integrity": 0.7667,
+        "sentence_integrity": 0.4286,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9459,
+        "boundary_quality": 0.4286,
+        "avg_metadata_count": 1.43
+      }
+    },
+    {
+      "source_id": "388",
+      "notebook_id": null,
+      "url": "https://namu.news/article/3174854",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "388",
+        "chunk_count": 2,
+        "total_chars": 793,
+        "avg_chunk_chars": 396.5,
+        "min_chunk_chars": 8,
+        "max_chunk_chars": 785,
+        "std_chunk_chars": 549.4219689819474,
+        "median_chunk_chars": 396.5,
+        "elapsed_seconds": 0.00020949996542185545,
+        "chars_per_second": 3785203.488712713
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "388",
+        "paragraph_integrity": 0.9286,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9429,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0.5
+      }
+    },
+    {
+      "source_id": "389",
+      "notebook_id": null,
+      "url": "https://www.leagueoflegends.com/ko-kr/news/game-updates/patch-26-3-notes/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "389",
+        "chunk_count": 65,
+        "total_chars": 27293,
+        "avg_chunk_chars": 419.89230769230767,
+        "min_chunk_chars": 25,
+        "max_chunk_chars": 989,
+        "std_chunk_chars": 299.84699864456513,
+        "median_chunk_chars": 306,
+        "elapsed_seconds": 0.004424300044775009,
+        "chars_per_second": 6168885.410977578
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "389",
+        "paragraph_integrity": 0.8242,
+        "sentence_integrity": 0.3077,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.7727,
+        "heading_integrity": 0.5738,
+        "coverage": 1.0091,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 2.58
+      }
+    },
+    {
+      "source_id": "390",
+      "notebook_id": null,
+      "url": "https://namu.news/article/3173957",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "390",
+        "chunk_count": 3,
+        "total_chars": 2933,
+        "avg_chunk_chars": 977.6666666666666,
+        "min_chunk_chars": 960,
+        "max_chunk_chars": 996,
+        "std_chunk_chars": 18.0092568789868,
+        "median_chunk_chars": 977,
+        "elapsed_seconds": 0.0005247000372037292,
+        "chars_per_second": 5589860.4765320085
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "390",
+        "paragraph_integrity": 0.931,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0434,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "391",
+      "notebook_id": null,
+      "url": "https://mz-moonzoo.tistory.com/95",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "391",
+        "chunk_count": 16,
+        "total_chars": 14198,
+        "avg_chunk_chars": 887.375,
+        "min_chunk_chars": 410,
+        "max_chunk_chars": 991,
+        "std_chunk_chars": 144.29408627290772,
+        "median_chunk_chars": 936.0,
+        "elapsed_seconds": 0.0023584000300616026,
+        "chars_per_second": 6020183.098297002
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "391",
+        "paragraph_integrity": 0.9873,
+        "sentence_integrity": 0.5625,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.036,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "392",
+      "notebook_id": null,
+      "url": "https://usehooks-ts.com/introduction",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "392",
+        "chunk_count": 2,
+        "total_chars": 732,
+        "avg_chunk_chars": 366,
+        "min_chunk_chars": 105,
+        "max_chunk_chars": 627,
+        "std_chunk_chars": 369.10973977937783,
+        "median_chunk_chars": 366.0,
+        "elapsed_seconds": 0.0001490999711677432,
+        "chars_per_second": 4909457.689810495
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "392",
+        "paragraph_integrity": 0.625,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9397,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 2
+      }
+    },
+    {
+      "source_id": "393",
+      "notebook_id": null,
+      "url": "https://wikidocs.net/233772",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "393",
+        "chunk_count": 4,
+        "total_chars": 1169,
+        "avg_chunk_chars": 292.25,
+        "min_chunk_chars": 181,
+        "max_chunk_chars": 506,
+        "std_chunk_chars": 147.9084739515173,
+        "median_chunk_chars": 241.0,
+        "elapsed_seconds": 0.00027980003505945206,
+        "chars_per_second": 4177983.7509727627
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "393",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.75,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.6667,
+        "coverage": 0.9725,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0.75
+      }
+    },
+    {
+      "source_id": "394",
+      "notebook_id": null,
+      "url": "https://blog.ull.im/engineering/2019/03/10/logs-on-git.html",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "394",
+        "chunk_count": 16,
+        "total_chars": 12818,
+        "avg_chunk_chars": 801.125,
+        "min_chunk_chars": 11,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 283.1025432595052,
+        "median_chunk_chars": 893.0,
+        "elapsed_seconds": 0.0023126000305637717,
+        "chars_per_second": 5542679.162239392
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "394",
+        "paragraph_integrity": 0.9844,
+        "sentence_integrity": 0.3125,
+        "whitespace_structure": 0.9948,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.9552,
+        "coverage": 1.0445,
+        "boundary_quality": 0.9375,
+        "avg_metadata_count": 1.94
+      }
+    },
+    {
+      "source_id": "395",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/jisoo831/223328759196",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "395",
+        "chunk_count": 4,
+        "total_chars": 3639,
+        "avg_chunk_chars": 909.75,
+        "min_chunk_chars": 707,
+        "max_chunk_chars": 987,
+        "std_chunk_chars": 135.36955590776927,
+        "median_chunk_chars": 972.5,
+        "elapsed_seconds": 0.00183119997382164,
+        "chars_per_second": 1987221.5225110312
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "395",
+        "paragraph_integrity": 0.9787,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0769,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "396",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@fromairplane/213",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "396",
+        "chunk_count": 6,
+        "total_chars": 4831,
+        "avg_chunk_chars": 805.1666666666666,
+        "min_chunk_chars": 152,
+        "max_chunk_chars": 991,
+        "std_chunk_chars": 327.509032954309,
+        "median_chunk_chars": 955.5,
+        "elapsed_seconds": 0.001343000098131597,
+        "chars_per_second": 3597170.2509336844
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "396",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0493,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "397",
+      "notebook_id": null,
+      "url": "https://www.hani.co.kr/arti/society/society_general/1244950.html",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "397",
+        "chunk_count": 2,
+        "total_chars": 1086,
+        "avg_chunk_chars": 543,
+        "min_chunk_chars": 254,
+        "max_chunk_chars": 832,
+        "std_chunk_chars": 408.7077195258245,
+        "median_chunk_chars": 543.0,
+        "elapsed_seconds": 0.0002495000371709466,
+        "chars_per_second": 4352704.762348071
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "397",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0046,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "398",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/notebooklm/comments/1hxyg20/getting_notebooklm_to_read_a_website/?tl=ko",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "398",
+        "chunk_count": 2,
+        "total_chars": 275,
+        "avg_chunk_chars": 137.5,
+        "min_chunk_chars": 35,
+        "max_chunk_chars": 240,
+        "std_chunk_chars": 144.95689014324225,
+        "median_chunk_chars": 137.5,
+        "elapsed_seconds": 7.700000423938036e-05,
+        "chars_per_second": 3571428.3747968404
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "398",
+        "paragraph_integrity": 0.6,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9418,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "399",
+      "notebook_id": null,
+      "url": "https://yozm.wishket.com/magazine/detail/2760/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "399",
+        "chunk_count": 5,
+        "total_chars": 4623,
+        "avg_chunk_chars": 924.6,
+        "min_chunk_chars": 878,
+        "max_chunk_chars": 994,
+        "std_chunk_chars": 42.68254912724871,
+        "median_chunk_chars": 914,
+        "elapsed_seconds": 0.0006813000654801726,
+        "chars_per_second": 6785556.371173635
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "399",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9959,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "400",
+      "notebook_id": null,
+      "url": "https://news.hada.io/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "400",
+        "chunk_count": 20,
+        "total_chars": 394,
+        "avg_chunk_chars": 19.7,
+        "min_chunk_chars": 1,
+        "max_chunk_chars": 43,
+        "std_chunk_chars": 7.927965160048786,
+        "median_chunk_chars": 18.5,
+        "elapsed_seconds": 0.00037949997931718826,
+        "chars_per_second": 1038208.2252254684
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "400",
+        "paragraph_integrity": 0.5128,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.3496,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0.95
+      }
+    },
+    {
+      "source_id": "401",
+      "notebook_id": null,
+      "url": "https://goddaehee.tistory.com/516",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "401",
+        "chunk_count": 50,
+        "total_chars": 22649,
+        "avg_chunk_chars": 452.98,
+        "min_chunk_chars": 59,
+        "max_chunk_chars": 995,
+        "std_chunk_chars": 290.826513262334,
+        "median_chunk_chars": 371.5,
+        "elapsed_seconds": 0.004990300047211349,
+        "chars_per_second": 4538604.850555345
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "401",
+        "paragraph_integrity": 0.84,
+        "sentence_integrity": 0.48,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.8,
+        "heading_integrity": 0.3175,
+        "coverage": 0.9739,
+        "boundary_quality": 0.84,
+        "avg_metadata_count": 2.68
+      }
+    },
+    {
+      "source_id": "402",
+      "notebook_id": null,
+      "url": "https://elec.chungbuk.ac.kr/bbs/bbs.php?db=notice",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "402",
+        "chunk_count": 2,
+        "total_chars": 1549,
+        "avg_chunk_chars": 774.5,
+        "min_chunk_chars": 571,
+        "max_chunk_chars": 978,
+        "std_chunk_chars": 287.79245994292484,
+        "median_chunk_chars": 774.5,
+        "elapsed_seconds": 0.0010991999879479408,
+        "chars_per_second": 1409206.7112298424
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "402",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0545,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "403",
+      "notebook_id": null,
+      "url": "https://velog.io/@dailylifecoding/PowerShell-쓸만한-명령어-모음",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "403",
+        "chunk_count": 32,
+        "total_chars": 17816,
+        "avg_chunk_chars": 556.75,
+        "min_chunk_chars": 8,
+        "max_chunk_chars": 991,
+        "std_chunk_chars": 411.3525291350552,
+        "median_chunk_chars": 675.5,
+        "elapsed_seconds": 0.0032459000358358026,
+        "chars_per_second": 5488770.388276136
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "403",
+        "paragraph_integrity": 0.9442,
+        "sentence_integrity": 0.0625,
+        "whitespace_structure": 0.4179,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.6374,
+        "coverage": 0.9907,
+        "boundary_quality": 0.75,
+        "avg_metadata_count": 0.81
+      }
+    },
+    {
+      "source_id": "404",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/help/keyboard-shortcuts",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "404",
+        "chunk_count": 12,
+        "total_chars": 7847,
+        "avg_chunk_chars": 653.9166666666666,
+        "min_chunk_chars": 64,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 358.2653811538778,
+        "median_chunk_chars": 820.0,
+        "elapsed_seconds": 0.0030671999556943774,
+        "chars_per_second": 2558359.452709216
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "404",
+        "paragraph_integrity": 0.9554,
+        "sentence_integrity": 0.5833,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0646,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 2.75
+      }
+    },
+    {
+      "source_id": "405",
+      "notebook_id": null,
+      "url": "https://www.redhat.com/ko/topics/automation/what-is-yaml",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "405",
+        "chunk_count": 9,
+        "total_chars": 4573,
+        "avg_chunk_chars": 508.1111111111111,
+        "min_chunk_chars": 42,
+        "max_chunk_chars": 915,
+        "std_chunk_chars": 311.87635548580965,
+        "median_chunk_chars": 609,
+        "elapsed_seconds": 0.0007198000093922019,
+        "chars_per_second": 6353153.570894552
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "405",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.8889,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.2222,
+        "coverage": 0.8596,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1.56
+      }
+    },
+    {
+      "source_id": "406",
+      "notebook_id": null,
+      "url": "https://deepbaksuvision.github.io/Modu_ObjectDetection/posts/04_01_Review_of_YOLO_Paper.html",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "406",
+        "chunk_count": 18,
+        "total_chars": 10370,
+        "avg_chunk_chars": 576.1111111111111,
+        "min_chunk_chars": 34,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 344.0988040201601,
+        "median_chunk_chars": 576.5,
+        "elapsed_seconds": 0.002303300076164305,
+        "chars_per_second": 4502235.773494699
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "406",
+        "paragraph_integrity": 0.9028,
+        "sentence_integrity": 0.7222,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.5333,
+        "coverage": 1.0022,
+        "boundary_quality": 0.8889,
+        "avg_metadata_count": 2.61
+      }
+    },
+    {
+      "source_id": "407",
+      "notebook_id": null,
+      "url": "https://toss.im/tossfeed/article/house-contract-02",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "407",
+        "chunk_count": 7,
+        "total_chars": 2509,
+        "avg_chunk_chars": 358.42857142857144,
+        "min_chunk_chars": 46,
+        "max_chunk_chars": 663,
+        "std_chunk_chars": 243.10413210724957,
+        "median_chunk_chars": 327,
+        "elapsed_seconds": 0.0005409000441431999,
+        "chars_per_second": 4638564.975483267
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "407",
+        "paragraph_integrity": 0.75,
+        "sentence_integrity": 0.7143,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.915,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 2
+      }
+    },
+    {
+      "source_id": "408",
+      "notebook_id": null,
+      "url": "https://github.com/makenotion/notion-mcp-server#readme",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "408",
+        "chunk_count": 11,
+        "total_chars": 10518,
+        "avg_chunk_chars": 956.1818181818181,
+        "min_chunk_chars": 789,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 58.52831482593392,
+        "median_chunk_chars": 977,
+        "elapsed_seconds": 0.002363600069656968,
+        "chars_per_second": 4449991.407186956
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "408",
+        "paragraph_integrity": 0.9661,
+        "sentence_integrity": 0.2727,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.75,
+        "heading_integrity": 1.0,
+        "coverage": 1.0751,
+        "boundary_quality": 0.7273,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "410",
+      "notebook_id": null,
+      "url": "https://dropbox.github.io/dbx-career-framework/overview.html",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "410",
+        "chunk_count": 2,
+        "total_chars": 1496,
+        "avg_chunk_chars": 748,
+        "min_chunk_chars": 538,
+        "max_chunk_chars": 958,
+        "std_chunk_chars": 296.98484809834997,
+        "median_chunk_chars": 748.0,
+        "elapsed_seconds": 0.00033469998743385077,
+        "chars_per_second": 4469674.503037337
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "410",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0013,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "411",
+      "notebook_id": null,
+      "url": "https://networks-aicamp.io/introduction",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "411",
+        "chunk_count": 5,
+        "total_chars": 4316,
+        "avg_chunk_chars": 863.2,
+        "min_chunk_chars": 357,
+        "max_chunk_chars": 997,
+        "std_chunk_chars": 283.03392022865387,
+        "median_chunk_chars": 989,
+        "elapsed_seconds": 0.0015002000145614147,
+        "chars_per_second": 2876949.7121100803
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "411",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.4,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1403,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "412",
+      "notebook_id": null,
+      "url": "https://www.naverlabs.com/blogDetail?seq=34083",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "412",
+        "chunk_count": 1,
+        "total_chars": 187,
+        "avg_chunk_chars": 187,
+        "min_chunk_chars": 187,
+        "max_chunk_chars": 187,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 187,
+        "elapsed_seconds": 6.859994027763605e-05,
+        "chars_per_second": 2725949.895046235
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "412",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "413",
+      "notebook_id": null,
+      "url": "https://www.coursera.org/instructor/andrewng",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "413",
+        "chunk_count": 1,
+        "total_chars": 698,
+        "avg_chunk_chars": 698,
+        "min_chunk_chars": 698,
+        "max_chunk_chars": 698,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 698,
+        "elapsed_seconds": 7.720000576227903e-05,
+        "chars_per_second": 9041450.102339918
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "413",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "414",
+      "notebook_id": null,
+      "url": "https://gitbook.com/docs",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "414",
+        "chunk_count": 1,
+        "total_chars": 239,
+        "avg_chunk_chars": 239,
+        "min_chunk_chars": 239,
+        "max_chunk_chars": 239,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 239,
+        "elapsed_seconds": 7.369997911155224e-05,
+        "chars_per_second": 3242877.4455722678
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "414",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9157,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    },
+    {
+      "source_id": "415",
+      "notebook_id": null,
+      "url": "https://www.kmdb.or.kr/info/api/apiDetail/6",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "415",
+        "chunk_count": 1,
+        "total_chars": 587,
+        "avg_chunk_chars": 587,
+        "min_chunk_chars": 587,
+        "max_chunk_chars": 587,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 587,
+        "elapsed_seconds": 0.00011350004933774471,
+        "chars_per_second": 5171803.919249855
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "415",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0069,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "416",
+      "notebook_id": null,
+      "url": "https://medium.com/@iamanraghuvanshi/agentic-ai-1-what-are-ai-agents-87db291b9e0e",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "416",
+        "chunk_count": 32,
+        "total_chars": 15207,
+        "avg_chunk_chars": 475.21875,
+        "min_chunk_chars": 289,
+        "max_chunk_chars": 950,
+        "std_chunk_chars": 144.14816176532597,
+        "median_chunk_chars": 462.0,
+        "elapsed_seconds": 0.0017697999719530344,
+        "chars_per_second": 8592496.463438498
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "416",
+        "paragraph_integrity": 0.777,
+        "sentence_integrity": 0.9688,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.9362,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 2.5
+      }
+    },
+    {
+      "source_id": "417",
+      "notebook_id": null,
+      "url": "https://sktelecom.github.io/guide/contribute/background/good-project/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "417",
+        "chunk_count": 7,
+        "total_chars": 1495,
+        "avg_chunk_chars": 213.57142857142858,
+        "min_chunk_chars": 133,
+        "max_chunk_chars": 251,
+        "std_chunk_chars": 43.28917163624618,
+        "median_chunk_chars": 237,
+        "elapsed_seconds": 0.00027740001678466797,
+        "chars_per_second": 5389329.162011174
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "417",
+        "paragraph_integrity": 0.72,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.8952,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1.86
+      }
+    },
+    {
+      "source_id": "418",
+      "notebook_id": null,
+      "url": "https://zzsza.github.io/diary/2025/02/16/career-advice/#고민은-왜-생기는걸까",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "418",
+        "chunk_count": 26,
+        "total_chars": 16586,
+        "avg_chunk_chars": 637.9230769230769,
+        "min_chunk_chars": 53,
+        "max_chunk_chars": 987,
+        "std_chunk_chars": 305.69774916762776,
+        "median_chunk_chars": 678.5,
+        "elapsed_seconds": 0.0031508998945355415,
+        "chars_per_second": 5263893.0321983015
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "418",
+        "paragraph_integrity": 0.7625,
+        "sentence_integrity": 0.1538,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 0.2258,
+        "heading_integrity": 0.0,
+        "coverage": 1.014,
+        "boundary_quality": 0.6923,
+        "avg_metadata_count": 1.77
+      }
+    },
+    {
+      "source_id": "419",
+      "notebook_id": null,
+      "url": "https://www.ibm.com/kr-ko/think/insights/artificial-intelligence-trends",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "419",
+        "chunk_count": 15,
+        "total_chars": 12650,
+        "avg_chunk_chars": 843.3333333333334,
+        "min_chunk_chars": 224,
+        "max_chunk_chars": 994,
+        "std_chunk_chars": 193.98588559357563,
+        "median_chunk_chars": 922,
+        "elapsed_seconds": 0.002280800021253526,
+        "chars_per_second": 5546299.492336715
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "419",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.8667,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0245,
+        "boundary_quality": 0.9333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "420",
+      "notebook_id": null,
+      "url": "https://asana.com/ko/resources/hard-skills-vs-soft-skills",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "420",
+        "chunk_count": 9,
+        "total_chars": 7461,
+        "avg_chunk_chars": 829,
+        "min_chunk_chars": 166,
+        "max_chunk_chars": 995,
+        "std_chunk_chars": 257.9457307264456,
+        "median_chunk_chars": 929,
+        "elapsed_seconds": 0.0013770000077784061,
+        "chars_per_second": 5418300.622987841
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "420",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5556,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0406,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "421",
+      "notebook_id": null,
+      "url": "https://learn.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-containers#install-docker-desktop",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "421",
+        "chunk_count": 13,
+        "total_chars": 8053,
+        "avg_chunk_chars": 619.4615384615385,
+        "min_chunk_chars": 27,
+        "max_chunk_chars": 993,
+        "std_chunk_chars": 347.1314869480572,
+        "median_chunk_chars": 746,
+        "elapsed_seconds": 0.0010639999527484179,
+        "chars_per_second": 7568609.358673653
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "421",
+        "paragraph_integrity": 0.85,
+        "sentence_integrity": 0.5385,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0056,
+        "boundary_quality": 0.9231,
+        "avg_metadata_count": 1.08
+      }
+    },
+    {
+      "source_id": "422",
+      "notebook_id": null,
+      "url": "https://jutsu-ai.vercel.app/#features",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "422",
+        "chunk_count": 10,
+        "total_chars": 1780,
+        "avg_chunk_chars": 178,
+        "min_chunk_chars": 63,
+        "max_chunk_chars": 438,
+        "std_chunk_chars": 122.21565638929681,
+        "median_chunk_chars": 121.0,
+        "elapsed_seconds": 0.00036429997999221087,
+        "chars_per_second": 4886083.167059352
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "422",
+        "paragraph_integrity": 0.5455,
+        "sentence_integrity": 0.8,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 0.8829,
+        "boundary_quality": 0.9,
+        "avg_metadata_count": 2.4
+      }
+    },
+    {
+      "source_id": "423",
+      "notebook_id": null,
+      "url": "https://www.velopers.kr/",
+      "basic": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "423",
+        "chunk_count": 2,
+        "total_chars": 1108,
+        "avg_chunk_chars": 554,
+        "min_chunk_chars": 180,
+        "max_chunk_chars": 928,
+        "std_chunk_chars": 528.9158723275375,
+        "median_chunk_chars": 554.0,
+        "elapsed_seconds": 0.00018610002007335424,
+        "chars_per_second": 5953787.643672818
+      },
+      "structure": {
+        "strategy_name": "계층적_Hierarchical_1000c",
+        "source_id": "423",
+        "paragraph_integrity": 0.9167,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.0,
+        "coverage": 1.0054,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 1
+      }
+    }
+  ]
+}

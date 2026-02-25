@@ -1,0 +1,3636 @@
+{
+  "strategy_name": "재귀분할_Recursive_500c",
+  "source_count": 121,
+  "sources": [
+    {
+      "source_id": "303",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/templates",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "303",
+        "chunk_count": 8,
+        "total_chars": 2789,
+        "avg_chunk_chars": 348.625,
+        "min_chunk_chars": 141,
+        "max_chunk_chars": 495,
+        "std_chunk_chars": 113.77664523090844,
+        "median_chunk_chars": 329.0,
+        "elapsed_seconds": 0.0002117999829351902,
+        "chars_per_second": 13168084.158219319
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "303",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.125,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0702,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "304",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/product/ai",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "304",
+        "chunk_count": 5,
+        "total_chars": 2327,
+        "avg_chunk_chars": 465.4,
+        "min_chunk_chars": 436,
+        "max_chunk_chars": 485,
+        "std_chunk_chars": 23.88095475478315,
+        "median_chunk_chars": 479,
+        "elapsed_seconds": 8.030002936720848e-05,
+        "chars_per_second": 28978818.791693486
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "304",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.8,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0301,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "305",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/pricing",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "305",
+        "chunk_count": 11,
+        "total_chars": 4765,
+        "avg_chunk_chars": 433.1818181818182,
+        "min_chunk_chars": 101,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 114.748262018924,
+        "median_chunk_chars": 473,
+        "elapsed_seconds": 0.00019429996609687805,
+        "chars_per_second": 24523936.34296451
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "305",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.9756,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0374,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "306",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "306",
+        "chunk_count": 34,
+        "total_chars": 12139,
+        "avg_chunk_chars": 357.02941176470586,
+        "min_chunk_chars": 68,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 140.68630165147837,
+        "median_chunk_chars": 392.5,
+        "elapsed_seconds": 0.0006846999749541283,
+        "chars_per_second": 17728933.02765676
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "306",
+        "paragraph_integrity": 0.8049,
+        "sentence_integrity": 0.3824,
+        "whitespace_structure": 0.525,
+        "list_like_integrity": 0.3333,
+        "heading_integrity": 1.0,
+        "coverage": 1.023,
+        "boundary_quality": 0.5882,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "307",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat/tree/master/dev",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "307",
+        "chunk_count": 1,
+        "total_chars": 125,
+        "avg_chunk_chars": 125,
+        "min_chunk_chars": 125,
+        "max_chunk_chars": 125,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 125,
+        "elapsed_seconds": 1.6200006939470768e-05,
+        "chars_per_second": 7716046.077452087
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "307",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "308",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat/blob/master/dev/LOG.md",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "308",
+        "chunk_count": 125,
+        "total_chars": 47236,
+        "avg_chunk_chars": 377.888,
+        "min_chunk_chars": 1,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 120.87878599334876,
+        "median_chunk_chars": 424,
+        "elapsed_seconds": 0.001904199947603047,
+        "chars_per_second": 24806218.51684186
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "308",
+        "paragraph_integrity": 0.8321,
+        "sentence_integrity": 0.304,
+        "whitespace_structure": 0.6609,
+        "list_like_integrity": 0.7667,
+        "heading_integrity": 1.0,
+        "coverage": 0.9352,
+        "boundary_quality": 0.816,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "309",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/schhp?hl=ko",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "309",
+        "chunk_count": 2,
+        "total_chars": 900,
+        "avg_chunk_chars": 450,
+        "min_chunk_chars": 402,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 67.88225099390856,
+        "median_chunk_chars": 450.0,
+        "elapsed_seconds": 0.00011820008512586355,
+        "chars_per_second": 7614207.714331582
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "309",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0526,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "310",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/scholar_labs/search?hl=ko",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "310",
+        "chunk_count": 1,
+        "total_chars": 149,
+        "avg_chunk_chars": 149,
+        "min_chunk_chars": 149,
+        "max_chunk_chars": 149,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 149,
+        "elapsed_seconds": 3.520003519952297e-05,
+        "chars_per_second": 4232950.312561598
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "310",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "311",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/scholar_labs/search/example/single-molecule-footprinting-and-tf-binding?hl=ko",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "311",
+        "chunk_count": 1,
+        "total_chars": 149,
+        "avg_chunk_chars": 149,
+        "min_chunk_chars": 149,
+        "max_chunk_chars": 149,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 149,
+        "elapsed_seconds": 3.6100042052567005e-05,
+        "chars_per_second": 4127419.0147212003
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "311",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "312",
+      "notebook_id": null,
+      "url": "https://huggingface.co/zai-org/GLM-5",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "312",
+        "chunk_count": 22,
+        "total_chars": 7303,
+        "avg_chunk_chars": 331.95454545454544,
+        "min_chunk_chars": 12,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 174.86170788116215,
+        "median_chunk_chars": 401.0,
+        "elapsed_seconds": 0.0006706999847665429,
+        "chars_per_second": 10888624.073164437
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "312",
+        "paragraph_integrity": 0.8824,
+        "sentence_integrity": 0.1364,
+        "whitespace_structure": 0.82,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.033,
+        "boundary_quality": 0.4545,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "313",
+      "notebook_id": null,
+      "url": "https://huggingface.co/openbmb/MiniCPM-SALA",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "313",
+        "chunk_count": 22,
+        "total_chars": 7660,
+        "avg_chunk_chars": 348.1818181818182,
+        "min_chunk_chars": 74,
+        "max_chunk_chars": 493,
+        "std_chunk_chars": 137.28442368678606,
+        "median_chunk_chars": 376.0,
+        "elapsed_seconds": 0.00016820000018924475,
+        "chars_per_second": 45541022.5409132
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "313",
+        "paragraph_integrity": 0.971,
+        "sentence_integrity": 0.2727,
+        "whitespace_structure": 0.8529,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0224,
+        "boundary_quality": 0.9091,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "314",
+      "notebook_id": null,
+      "url": "https://section.cafe.naver.com/ca-fe/home",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "314",
+        "chunk_count": 3,
+        "total_chars": 1193,
+        "avg_chunk_chars": 397.6666666666667,
+        "min_chunk_chars": 305,
+        "max_chunk_chars": 446,
+        "std_chunk_chars": 80.2766051433002,
+        "median_chunk_chars": 442,
+        "elapsed_seconds": 4.3199979700148106e-05,
+        "chars_per_second": 27615753.717493296
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "314",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.92,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9967,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "315",
+      "notebook_id": null,
+      "url": "https://cafe.naver.com/casuallydressed?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D19943558%2526articleid%3D837718%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjgzNzcxOCwiaXNzdWVkQXQiOjE3NzA5NTIxODQ5NjksImNhZmVJZCI6MTk5NDM1NTh9.Xx0XNMuhQGTHa0tN37rP4Cj4p_gJ-NysMbb_o0s58CI",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "315",
+        "chunk_count": 2,
+        "total_chars": 560,
+        "avg_chunk_chars": 280,
+        "min_chunk_chars": 88,
+        "max_chunk_chars": 472,
+        "std_chunk_chars": 271.5290039756342,
+        "median_chunk_chars": 280.0,
+        "elapsed_seconds": 3.560003824532032e-05,
+        "chars_per_second": 15730320.179462528
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "315",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0428,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "372",
+      "notebook_id": null,
+      "url": "https://ko.wikipedia.org/wiki/Hello",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "372",
+        "chunk_count": 11,
+        "total_chars": 4288,
+        "avg_chunk_chars": 389.8181818181818,
+        "min_chunk_chars": 95,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 110.84206618591895,
+        "median_chunk_chars": 437,
+        "elapsed_seconds": 0.00016289995983242989,
+        "chars_per_second": 26322903.973769743
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "372",
+        "paragraph_integrity": 0.9474,
+        "sentence_integrity": 0.4545,
+        "whitespace_structure": 0.7778,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0045,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "373",
+      "notebook_id": null,
+      "url": "https://www.i-boss.co.kr/ab-6141-58333",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "373",
+        "chunk_count": 6,
+        "total_chars": 2749,
+        "avg_chunk_chars": 458.1666666666667,
+        "min_chunk_chars": 322,
+        "max_chunk_chars": 489,
+        "std_chunk_chars": 66.85332203164377,
+        "median_chunk_chars": 486.5,
+        "elapsed_seconds": 0.00016719999257475138,
+        "chars_per_second": 16441388.289960502
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "373",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.061,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "316",
+      "notebook_id": null,
+      "url": "https://cafe.naver.com/simpleliving?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D27713102%2526articleid%3D415585%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjQxNTU4NSwiaXNzdWVkQXQiOjE3NzA5NTIxODQ5NjksImNhZmVJZCI6Mjc3MTMxODJ9.PskXfdaJJntySq253DBUINp6XM3N0KXCPv9YsQL4dtU",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "316",
+        "chunk_count": 2,
+        "total_chars": 560,
+        "avg_chunk_chars": 280,
+        "min_chunk_chars": 88,
+        "max_chunk_chars": 472,
+        "std_chunk_chars": 271.5290039756342,
+        "median_chunk_chars": 280.0,
+        "elapsed_seconds": 4.3599982745945454e-05,
+        "chars_per_second": 12844041.780087098
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "316",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0428,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "317",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "317",
+        "chunk_count": 15,
+        "total_chars": 4191,
+        "avg_chunk_chars": 279.4,
+        "min_chunk_chars": 8,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 189.29825295397887,
+        "median_chunk_chars": 211,
+        "elapsed_seconds": 0.00020999996922910213,
+        "chars_per_second": 19957145.78142521
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "317",
+        "paragraph_integrity": 0.8824,
+        "sentence_integrity": 0.0667,
+        "whitespace_structure": 0.8485,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0567,
+        "boundary_quality": 0.2667,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "318",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/world/sise.naver?symbol=DJI@DJI&fdtc=0",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "318",
+        "chunk_count": 3,
+        "total_chars": 929,
+        "avg_chunk_chars": 309.6666666666667,
+        "min_chunk_chars": 154,
+        "max_chunk_chars": 488,
+        "std_chunk_chars": 168.1497348595392,
+        "median_chunk_chars": 287,
+        "elapsed_seconds": 6.0999998822808266e-05,
+        "chars_per_second": 15229508.490623794
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "318",
+        "paragraph_integrity": 0.4,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.25,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9968,
+        "boundary_quality": 0.3333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "319",
+      "notebook_id": null,
+      "url": "https://ad-kbcard.com/checkcard_comb_global/2601/pc/index.html?media=gfa&solicitorcode=7030072838&utm_source=gfa&utm_medium=cpc&utm_campaign=check_mo_da_native_traffic&utm_content=nori2_all_non&utm_term=nori2_5",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "319",
+        "chunk_count": 1,
+        "total_chars": 494,
+        "avg_chunk_chars": 494,
+        "min_chunk_chars": 494,
+        "max_chunk_chars": 494,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 494,
+        "elapsed_seconds": 3.0099996365606785e-05,
+        "chars_per_second": 16411962.114535673
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "319",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "320",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/research/industry_read.naver?nid=43423",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "320",
+        "chunk_count": 1,
+        "total_chars": 285,
+        "avg_chunk_chars": 285,
+        "min_chunk_chars": 285,
+        "max_chunk_chars": 285,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 285,
+        "elapsed_seconds": 1.9799917936325073e-05,
+        "chars_per_second": 14393999.051740358
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "320",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9965,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "321",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/item/main.naver?code=005930",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "321",
+        "chunk_count": 1,
+        "total_chars": 248,
+        "avg_chunk_chars": 248,
+        "min_chunk_chars": 248,
+        "max_chunk_chars": 248,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 248,
+        "elapsed_seconds": 1.9900035113096237e-05,
+        "chars_per_second": 12462289.56836317
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "321",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "322",
+      "notebook_id": null,
+      "url": "https://aws.amazon.com/ko/console/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "322",
+        "chunk_count": 1,
+        "total_chars": 339,
+        "avg_chunk_chars": 339,
+        "min_chunk_chars": 339,
+        "max_chunk_chars": 339,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 339,
+        "elapsed_seconds": 2.629996743053198e-05,
+        "chars_per_second": 12889749.802748822
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "322",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "323",
+      "notebook_id": null,
+      "url": "https://aws.amazon.com/ko/free/?nc2=h_pr_ft",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "323",
+        "chunk_count": 3,
+        "total_chars": 1144,
+        "avg_chunk_chars": 381.3333333333333,
+        "min_chunk_chars": 263,
+        "max_chunk_chars": 471,
+        "std_chunk_chars": 106.92209001573684,
+        "median_chunk_chars": 410,
+        "elapsed_seconds": 7.039995398372412e-05,
+        "chars_per_second": 16250010.621661533
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "323",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0279,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "324",
+      "notebook_id": null,
+      "url": "https://www.acmicpc.net/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "324",
+        "chunk_count": 3,
+        "total_chars": 1279,
+        "avg_chunk_chars": 426.3333333333333,
+        "min_chunk_chars": 312,
+        "max_chunk_chars": 500,
+        "std_chunk_chars": 100.38094108611124,
+        "median_chunk_chars": 467,
+        "elapsed_seconds": 0.00017659994773566723,
+        "chars_per_second": 7242357.74924686
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "324",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0685,
+        "boundary_quality": 0.6667,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "325",
+      "notebook_id": null,
+      "url": "https://www.acmicpc.net/problem/3190",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "325",
+        "chunk_count": 2,
+        "total_chars": 981,
+        "avg_chunk_chars": 490.5,
+        "min_chunk_chars": 482,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 12.020815280171307,
+        "median_chunk_chars": 490.5,
+        "elapsed_seconds": 2.9799994081258774e-05,
+        "chars_per_second": 32919469.625564497
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "325",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.9333,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.998,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "326",
+      "notebook_id": null,
+      "url": "https://solved.ac/ranking/tier?page=1",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "326",
+        "chunk_count": 5,
+        "total_chars": 2030,
+        "avg_chunk_chars": 406,
+        "min_chunk_chars": 145,
+        "max_chunk_chars": 479,
+        "std_chunk_chars": 145.9828757080775,
+        "median_chunk_chars": 469,
+        "elapsed_seconds": 9.240000508725643e-05,
+        "chars_per_second": 21969695.760113895
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "326",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0804,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "327",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/3916/교육-콘텐츠-기획-운영-매니저",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "327",
+        "chunk_count": 10,
+        "total_chars": 4465,
+        "avg_chunk_chars": 446.5,
+        "min_chunk_chars": 248,
+        "max_chunk_chars": 493,
+        "std_chunk_chars": 73.13799742040158,
+        "median_chunk_chars": 474.5,
+        "elapsed_seconds": 0.00023170001804828644,
+        "chars_per_second": 19270607.04444784
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "327",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.4,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0474,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "328",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/4100/토스-devops-engineer",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "328",
+        "chunk_count": 9,
+        "total_chars": 3894,
+        "avg_chunk_chars": 432.6666666666667,
+        "min_chunk_chars": 137,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 113.7870818678465,
+        "median_chunk_chars": 465,
+        "elapsed_seconds": 0.00021650001872330904,
+        "chars_per_second": 17986141.631593127
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "328",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.2222,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.061,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "329",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/4093/해외-콘텐츠-md-인턴",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "329",
+        "chunk_count": 8,
+        "total_chars": 3591,
+        "avg_chunk_chars": 448.875,
+        "min_chunk_chars": 282,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 75.87289653474045,
+        "median_chunk_chars": 482.5,
+        "elapsed_seconds": 0.0002498999238014221,
+        "chars_per_second": 14369752.280731045
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "329",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.375,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0515,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "330",
+      "notebook_id": null,
+      "url": "https://www.wanted.co.kr/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "330",
+        "chunk_count": 2,
+        "total_chars": 637,
+        "avg_chunk_chars": 318.5,
+        "min_chunk_chars": 288,
+        "max_chunk_chars": 349,
+        "std_chunk_chars": 43.1335136523794,
+        "median_chunk_chars": 318.5,
+        "elapsed_seconds": 1.9400031305849552e-05,
+        "chars_per_second": 32834998.560436856
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "330",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9969,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "331",
+      "notebook_id": null,
+      "url": "https://www.wanted.co.kr/wd/335641",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "331",
+        "chunk_count": 3,
+        "total_chars": 1127,
+        "avg_chunk_chars": 375.6666666666667,
+        "min_chunk_chars": 142,
+        "max_chunk_chars": 496,
+        "std_chunk_chars": 202.39153473733364,
+        "median_chunk_chars": 489,
+        "elapsed_seconds": 4.719989374279976e-05,
+        "chars_per_second": 23877172.396641705
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "331",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.033,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "332",
+      "notebook_id": null,
+      "url": "https://event.wanted.co.kr/swmaestro17_busan",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "332",
+        "chunk_count": 1,
+        "total_chars": 286,
+        "avg_chunk_chars": 286,
+        "min_chunk_chars": 286,
+        "max_chunk_chars": 286,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 286,
+        "elapsed_seconds": 3.5400036722421646e-05,
+        "chars_per_second": 8079087.664303285
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "332",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "409",
+      "notebook_id": null,
+      "url": "https://sugarslayer.tistory.com/category/내집마련🏡/HUG 버팀목 전세 대출(청년) 후기",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "409",
+        "chunk_count": 12,
+        "total_chars": 4068,
+        "avg_chunk_chars": 339,
+        "min_chunk_chars": 101,
+        "max_chunk_chars": 492,
+        "std_chunk_chars": 152.46698599428606,
+        "median_chunk_chars": 399.5,
+        "elapsed_seconds": 0.00010459998156875372,
+        "chars_per_second": 38891020.237189025
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "409",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 0.6667,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0005,
+        "boundary_quality": 0.8333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "333",
+      "notebook_id": null,
+      "url": "https://op.gg/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "333",
+        "chunk_count": 3,
+        "total_chars": 1185,
+        "avg_chunk_chars": 395,
+        "min_chunk_chars": 197,
+        "max_chunk_chars": 495,
+        "std_chunk_chars": 171.4759458349771,
+        "median_chunk_chars": 493,
+        "elapsed_seconds": 0.00016220007091760635,
+        "chars_per_second": 7305792.120164676
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "333",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0862,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "334",
+      "notebook_id": null,
+      "url": "https://games.op.gg/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "334",
+        "chunk_count": 4,
+        "total_chars": 1934,
+        "avg_chunk_chars": 483.5,
+        "min_chunk_chars": 461,
+        "max_chunk_chars": 492,
+        "std_chunk_chars": 15.066519173319364,
+        "median_chunk_chars": 490.5,
+        "elapsed_seconds": 0.00013339996803551912,
+        "chars_per_second": 14497754.598299848
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "334",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0626,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "335",
+      "notebook_id": null,
+      "url": "https://esports.op.gg/leagues/LCK/2026/Cup?hl=en_US",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "335",
+        "chunk_count": 3,
+        "total_chars": 1046,
+        "avg_chunk_chars": 348.6666666666667,
+        "min_chunk_chars": 51,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 257.7912592260128,
+        "median_chunk_chars": 496,
+        "elapsed_seconds": 0.00011100003030151129,
+        "chars_per_second": 9423420.850955917
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "335",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0839,
+        "boundary_quality": 0.3333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "336",
+      "notebook_id": null,
+      "url": "https://www.inflearn.com/course/에이전트빌드-azureai-copilotstudio?cid=337583",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "336",
+        "chunk_count": 3,
+        "total_chars": 1187,
+        "avg_chunk_chars": 395.6666666666667,
+        "min_chunk_chars": 242,
+        "max_chunk_chars": 480,
+        "std_chunk_chars": 133.29040975754157,
+        "median_chunk_chars": 465,
+        "elapsed_seconds": 9.53000271692872e-05,
+        "chars_per_second": 12455400.436470602
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "336",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 0.9412,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.995,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "337",
+      "notebook_id": null,
+      "url": "https://mentoring.inflearn.com/mentors",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "337",
+        "chunk_count": 5,
+        "total_chars": 2287,
+        "avg_chunk_chars": 457.4,
+        "min_chunk_chars": 357,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 59.43736198722147,
+        "median_chunk_chars": 489,
+        "elapsed_seconds": 0.00026570004411041737,
+        "chars_per_second": 8607450.584575696
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "337",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0712,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "338",
+      "notebook_id": null,
+      "url": "https://bbq.co.kr/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "338",
+        "chunk_count": 1,
+        "total_chars": 361,
+        "avg_chunk_chars": 361,
+        "min_chunk_chars": 361,
+        "max_chunk_chars": 361,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 361,
+        "elapsed_seconds": 4.539999645203352e-05,
+        "chars_per_second": 7951542.471625687
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "338",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9837,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "339",
+      "notebook_id": null,
+      "url": "https://bbq.co.kr/products/3105",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "339",
+        "chunk_count": 1,
+        "total_chars": 361,
+        "avg_chunk_chars": 361,
+        "min_chunk_chars": 361,
+        "max_chunk_chars": 361,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 361,
+        "elapsed_seconds": 3.0800001695752144e-05,
+        "chars_per_second": 11720778.57546963
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "339",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9837,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "340",
+      "notebook_id": null,
+      "url": "https://www.lotteeatz.com/brand/ria",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "340",
+        "chunk_count": 2,
+        "total_chars": 597,
+        "avg_chunk_chars": 298.5,
+        "min_chunk_chars": 101,
+        "max_chunk_chars": 496,
+        "std_chunk_chars": 279.30717856868625,
+        "median_chunk_chars": 298.5,
+        "elapsed_seconds": 0.00013800000306218863,
+        "chars_per_second": 4326086.860526855
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "340",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0894,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "341",
+      "notebook_id": null,
+      "url": "https://www.lotteeatz.com/event/main",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "341",
+        "chunk_count": 4,
+        "total_chars": 1591,
+        "avg_chunk_chars": 397.75,
+        "min_chunk_chars": 98,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 199.83722542776326,
+        "median_chunk_chars": 497.0,
+        "elapsed_seconds": 0.0002706000814214349,
+        "chars_per_second": 5879525.207984557
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "341",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0593,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "342",
+      "notebook_id": null,
+      "url": "https://en.wikipedia.org/wiki/Tensor",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "342",
+        "chunk_count": 152,
+        "total_chars": 52025,
+        "avg_chunk_chars": 342.26973684210526,
+        "min_chunk_chars": 8,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 157.24903143111248,
+        "median_chunk_chars": 396.0,
+        "elapsed_seconds": 0.005726399947889149,
+        "chars_per_second": 9085114.639814379
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "342",
+        "paragraph_integrity": 0.7637,
+        "sentence_integrity": 0.2961,
+        "whitespace_structure": 0.5635,
+        "list_like_integrity": 0.3333,
+        "heading_integrity": 1.0,
+        "coverage": 1.0429,
+        "boundary_quality": 0.5461,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "343",
+      "notebook_id": null,
+      "url": "https://ridibooks.com/webtoon/recommendation",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "343",
+        "chunk_count": 12,
+        "total_chars": 3615,
+        "avg_chunk_chars": 301.25,
+        "min_chunk_chars": 29,
+        "max_chunk_chars": 484,
+        "std_chunk_chars": 173.67374062251952,
+        "median_chunk_chars": 318.5,
+        "elapsed_seconds": 0.0001086000120267272,
+        "chars_per_second": 33287289.131333835
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "343",
+        "paragraph_integrity": 0.8846,
+        "sentence_integrity": 0.0833,
+        "whitespace_structure": 0.76,
+        "list_like_integrity": 0.1667,
+        "heading_integrity": 1.0,
+        "coverage": 1.0282,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "344",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/home",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "344",
+        "chunk_count": 1,
+        "total_chars": 192,
+        "avg_chunk_chars": 192,
+        "min_chunk_chars": 192,
+        "max_chunk_chars": 192,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 192,
+        "elapsed_seconds": 2.8399983420968056e-05,
+        "chars_per_second": 6760567.326889495
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "344",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "345",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/o/172802",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "345",
+        "chunk_count": 3,
+        "total_chars": 1467,
+        "avg_chunk_chars": 489,
+        "min_chunk_chars": 487,
+        "max_chunk_chars": 492,
+        "std_chunk_chars": 2.6457513110645907,
+        "median_chunk_chars": 488,
+        "elapsed_seconds": 8.28000484034419e-05,
+        "chars_per_second": 17717380.947074644
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "345",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0159,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "346",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/o/172799",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "346",
+        "chunk_count": 4,
+        "total_chars": 1538,
+        "avg_chunk_chars": 384.5,
+        "min_chunk_chars": 276,
+        "max_chunk_chars": 493,
+        "std_chunk_chars": 125.28500841414879,
+        "median_chunk_chars": 384.5,
+        "elapsed_seconds": 6.160000339150429e-05,
+        "chars_per_second": 24967531.09289791
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "346",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.8966,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9923,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "347",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/index",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "347",
+        "chunk_count": 5,
+        "total_chars": 2060,
+        "avg_chunk_chars": 412,
+        "min_chunk_chars": 100,
+        "max_chunk_chars": 494,
+        "std_chunk_chars": 174.47779228314417,
+        "median_chunk_chars": 491,
+        "elapsed_seconds": 0.00036720000207424164,
+        "chars_per_second": 5610021.754802449
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "347",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.2,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0993,
+        "boundary_quality": 0.6,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "348",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/board/all/list",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "348",
+        "chunk_count": 1,
+        "total_chars": 324,
+        "avg_chunk_chars": 324,
+        "min_chunk_chars": 324,
+        "max_chunk_chars": 324,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 324,
+        "elapsed_seconds": 2.4700071662664413e-05,
+        "chars_per_second": 13117370.849160116
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "348",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "349",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/board/free/view?articleId=698e9c2d76941606cf936f8a",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "349",
+        "chunk_count": 1,
+        "total_chars": 337,
+        "avg_chunk_chars": 337,
+        "min_chunk_chars": 337,
+        "max_chunk_chars": 337,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 337,
+        "elapsed_seconds": 2.6899971999228e-05,
+        "chars_per_second": 12527894.081438877
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "349",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "350",
+      "notebook_id": null,
+      "url": "https://pokemonkorea.co.kr/pokedex?word=&characters=&area=성도지방&snumber=1&snumber2=1025&typetextc[]=풀&sortselval=number+asc%2Cnumber_count+asc&typetextcs=_풀________________",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "350",
+        "chunk_count": 3,
+        "total_chars": 1097,
+        "avg_chunk_chars": 365.6666666666667,
+        "min_chunk_chars": 99,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 230.9401076758503,
+        "median_chunk_chars": 499,
+        "elapsed_seconds": 0.00027459999546408653,
+        "chars_per_second": 3994901.74115269
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "350",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0981,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "351",
+      "notebook_id": null,
+      "url": "https://www.yonhapnewstv.co.kr/news/AKR202602131021397DQ",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "351",
+        "chunk_count": 3,
+        "total_chars": 1127,
+        "avg_chunk_chars": 375.6666666666667,
+        "min_chunk_chars": 175,
+        "max_chunk_chars": 488,
+        "std_chunk_chars": 174.1962494812484,
+        "median_chunk_chars": 464,
+        "elapsed_seconds": 4.949991125613451e-05,
+        "chars_per_second": 22767717.58576297
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "351",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 0.9524,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0171,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "352",
+      "notebook_id": null,
+      "url": "https://lolesports.com/ko-KR/leagues/first_stand,lck,msi,worlds",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "352",
+        "chunk_count": 4,
+        "total_chars": 1576,
+        "avg_chunk_chars": 394,
+        "min_chunk_chars": 85,
+        "max_chunk_chars": 500,
+        "std_chunk_chars": 206.0113265494562,
+        "median_chunk_chars": 495.5,
+        "elapsed_seconds": 0.00041529990267008543,
+        "chars_per_second": 3794847.9878454865
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "352",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0967,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "353",
+      "notebook_id": null,
+      "url": "https://news.blizzard.com/ko-kr/article/24244446/2026-2-11",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "353",
+        "chunk_count": 16,
+        "total_chars": 7191,
+        "avg_chunk_chars": 449.4375,
+        "min_chunk_chars": 177,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 79.87988378392481,
+        "median_chunk_chars": 478.5,
+        "elapsed_seconds": 0.00024500000290572643,
+        "chars_per_second": 29351020.060057
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "353",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.625,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0374,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "354",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/joo5hk/220933701107",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "354",
+        "chunk_count": 31,
+        "total_chars": 14991,
+        "avg_chunk_chars": 483.5806451612903,
+        "min_chunk_chars": 413,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 16.192126056715317,
+        "median_chunk_chars": 487,
+        "elapsed_seconds": 0.00056900002527982,
+        "chars_per_second": 26346220.270601574
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "354",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0323,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0739,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "355",
+      "notebook_id": null,
+      "url": "http://metizen.co.kr/점심-베스트-10/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "355",
+        "chunk_count": 6,
+        "total_chars": 2218,
+        "avg_chunk_chars": 369.6666666666667,
+        "min_chunk_chars": 153,
+        "max_chunk_chars": 478,
+        "std_chunk_chars": 117.1864611065061,
+        "median_chunk_chars": 385.5,
+        "elapsed_seconds": 7.660000119358301e-05,
+        "chars_per_second": 28955613.12583645
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "355",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0674,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "356",
+      "notebook_id": null,
+      "url": "https://www.otoki.com/product/product_cat",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "356",
+        "chunk_count": 1,
+        "total_chars": 216,
+        "avg_chunk_chars": 216,
+        "min_chunk_chars": 216,
+        "max_chunk_chars": 216,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 216,
+        "elapsed_seconds": 2.389994915574789e-05,
+        "chars_per_second": 9037676.13028802
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "356",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "357",
+      "notebook_id": null,
+      "url": "https://mojing.tistory.com/entry/ProgrammersC-PCCP-기출문제-1번-동영상-재생기",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "357",
+        "chunk_count": 5,
+        "total_chars": 2031,
+        "avg_chunk_chars": 406.2,
+        "min_chunk_chars": 189,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 128.0300745918708,
+        "median_chunk_chars": 471,
+        "elapsed_seconds": 0.00010459998156875372,
+        "chars_per_second": 19416829.425204255
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "357",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.4,
+        "whitespace_structure": 0.5556,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.75,
+        "coverage": 0.853,
+        "boundary_quality": 0.6,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "358",
+      "notebook_id": null,
+      "url": "https://www.en-core.com/resource/playdata2",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "358",
+        "chunk_count": 4,
+        "total_chars": 1175,
+        "avg_chunk_chars": 293.75,
+        "min_chunk_chars": 199,
+        "max_chunk_chars": 489,
+        "std_chunk_chars": 134.0282930329762,
+        "median_chunk_chars": 243.5,
+        "elapsed_seconds": 8.789997082203627e-05,
+        "chars_per_second": 13367467.463429816
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "358",
+        "paragraph_integrity": 0.9375,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 0.8667,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0271,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "359",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@sungdairi/27",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "359",
+        "chunk_count": 9,
+        "total_chars": 3660,
+        "avg_chunk_chars": 406.6666666666667,
+        "min_chunk_chars": 55,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 136.50274722510167,
+        "median_chunk_chars": 459,
+        "elapsed_seconds": 0.00016080006025731564,
+        "chars_per_second": 22761185.50044814
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "359",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.2222,
+        "whitespace_structure": 0.9821,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0511,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "360",
+      "notebook_id": null,
+      "url": "https://platform.claude.com/docs/ko/overview",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "360",
+        "chunk_count": 7,
+        "total_chars": 2093,
+        "avg_chunk_chars": 299,
+        "min_chunk_chars": 88,
+        "max_chunk_chars": 493,
+        "std_chunk_chars": 171.06528968009067,
+        "median_chunk_chars": 331,
+        "elapsed_seconds": 0.00012360000982880592,
+        "chars_per_second": 16933655.61134616
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "360",
+        "paragraph_integrity": 0.9333,
+        "sentence_integrity": 0.4286,
+        "whitespace_structure": 0.6429,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 0.9943,
+        "boundary_quality": 0.7143,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "361",
+      "notebook_id": null,
+      "url": "https://tech.hyperithm.com/claude_code_guides",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "361",
+        "chunk_count": 24,
+        "total_chars": 10852,
+        "avg_chunk_chars": 452.1666666666667,
+        "min_chunk_chars": 185,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 64.95394131808803,
+        "median_chunk_chars": 471.0,
+        "elapsed_seconds": 0.0003978000022470951,
+        "chars_per_second": 27280040.06711703
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "361",
+        "paragraph_integrity": 0.9956,
+        "sentence_integrity": 0.0833,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0376,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "362",
+      "notebook_id": null,
+      "url": "https://github.com/skn21-final-1team",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "362",
+        "chunk_count": 4,
+        "total_chars": 1775,
+        "avg_chunk_chars": 443.75,
+        "min_chunk_chars": 381,
+        "max_chunk_chars": 478,
+        "std_chunk_chars": 42.88259165053655,
+        "median_chunk_chars": 458.0,
+        "elapsed_seconds": 0.0001292999368160963,
+        "chars_per_second": 13727771.596088154
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "362",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 0.9677,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0154,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "363",
+      "notebook_id": null,
+      "url": "https://content.rview.com/ko/blog/claudecode/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "363",
+        "chunk_count": 7,
+        "total_chars": 3358,
+        "avg_chunk_chars": 479.7142857142857,
+        "min_chunk_chars": 461,
+        "max_chunk_chars": 496,
+        "std_chunk_chars": 13.338094388058659,
+        "median_chunk_chars": 475,
+        "elapsed_seconds": 0.0008211999665945768,
+        "chars_per_second": 4089138.0133942836
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "363",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0481,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "364",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/picture-in-novel/222349596538",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "364",
+        "chunk_count": 23,
+        "total_chars": 10681,
+        "avg_chunk_chars": 464.39130434782606,
+        "min_chunk_chars": 380,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 32.74104892310233,
+        "median_chunk_chars": 470,
+        "elapsed_seconds": 0.0009096000576391816,
+        "chars_per_second": 11742523.442359893
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "364",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5217,
+        "whitespace_structure": 0.9842,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.0292,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "365",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/VGC/comments/owczh9/tips_on_competitive_pokemon/?tl=ko",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "365",
+        "chunk_count": 1,
+        "total_chars": 323,
+        "avg_chunk_chars": 323,
+        "min_chunk_chars": 323,
+        "max_chunk_chars": 323,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 323,
+        "elapsed_seconds": 2.1600048057734966e-05,
+        "chars_per_second": 14953670.43335507
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "365",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "366",
+      "notebook_id": null,
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=pokemontcgpocket&no=568804",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "366",
+        "chunk_count": 8,
+        "total_chars": 3447,
+        "avg_chunk_chars": 430.875,
+        "min_chunk_chars": 121,
+        "max_chunk_chars": 493,
+        "std_chunk_chars": 125.7360472236525,
+        "median_chunk_chars": 473.0,
+        "elapsed_seconds": 0.00014389993157237768,
+        "chars_per_second": 23954146.206568934
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "366",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.9872,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0041,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "367",
+      "notebook_id": null,
+      "url": "https://debateforall.org/blog/?bmode=view&idx=6582418",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "367",
+        "chunk_count": 4,
+        "total_chars": 1786,
+        "avg_chunk_chars": 446.5,
+        "min_chunk_chars": 411,
+        "max_chunk_chars": 473,
+        "std_chunk_chars": 25.890796305508513,
+        "median_chunk_chars": 451.0,
+        "elapsed_seconds": 6.19000056758523e-05,
+        "chars_per_second": 28852986.04579504
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "367",
+        "paragraph_integrity": 0.9667,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.931,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 0.9895,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "368",
+      "notebook_id": null,
+      "url": "https://kin.naver.com/qna/detail.naver?d1id=4&dirId=40102&docId=491942462&enc=utf8&kinsrch_src=pc_tab_kin&qb=7ZmY7Jyo",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "368",
+        "chunk_count": 2,
+        "total_chars": 782,
+        "avg_chunk_chars": 391,
+        "min_chunk_chars": 384,
+        "max_chunk_chars": 398,
+        "std_chunk_chars": 9.899494936611665,
+        "median_chunk_chars": 391.0,
+        "elapsed_seconds": 6.959994789212942e-05,
+        "chars_per_second": 11235640.59576589
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "368",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.8333,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9974,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "369",
+      "notebook_id": null,
+      "url": "https://html.duckduckgo.com/html/?q=%EC%B9%9C%EA%B5%AC%EC%82%AC%EA%B7%80%EB%8A%94%EB%B2%95",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "369",
+        "chunk_count": 8,
+        "total_chars": 3121,
+        "avg_chunk_chars": 390.125,
+        "min_chunk_chars": 223,
+        "max_chunk_chars": 445,
+        "std_chunk_chars": 71.90159445877599,
+        "median_chunk_chars": 411.5,
+        "elapsed_seconds": 6.170000415295362e-05,
+        "chars_per_second": 50583464.99074904
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "369",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.2222,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9955,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "370",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@dadaworld/53",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "370",
+        "chunk_count": 25,
+        "total_chars": 8587,
+        "avg_chunk_chars": 343.48,
+        "min_chunk_chars": 18,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 150.85675324625012,
+        "median_chunk_chars": 370,
+        "elapsed_seconds": 0.000812100013718009,
+        "chars_per_second": 10573820.77939691
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "370",
+        "paragraph_integrity": 0.871,
+        "sentence_integrity": 0.64,
+        "whitespace_structure": 0.4,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0279,
+        "boundary_quality": 0.76,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "371",
+      "notebook_id": null,
+      "url": "https://pann.nate.com/talk/117934352",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "371",
+        "chunk_count": 17,
+        "total_chars": 5161,
+        "avg_chunk_chars": 303.5882352941176,
+        "min_chunk_chars": 24,
+        "max_chunk_chars": 449,
+        "std_chunk_chars": 98.32856834583313,
+        "median_chunk_chars": 295,
+        "elapsed_seconds": 8.510006591677666e-05,
+        "chars_per_second": 60646251.496998645
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "371",
+        "paragraph_integrity": 0.5,
+        "sentence_integrity": 0.9412,
+        "whitespace_structure": 0.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9967,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "374",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/saw/comments/18lmdyv/community_hangout_megathread_shitposts_memes_and/?tl=ko",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "374",
+        "chunk_count": 3,
+        "total_chars": 1239,
+        "avg_chunk_chars": 413,
+        "min_chunk_chars": 381,
+        "max_chunk_chars": 439,
+        "std_chunk_chars": 29.46183972531247,
+        "median_chunk_chars": 419,
+        "elapsed_seconds": 2.8099981136620045e-05,
+        "chars_per_second": 44092556.28948905
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "374",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.75,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9968,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "375",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/kanovatio/223546676104",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "375",
+        "chunk_count": 18,
+        "total_chars": 6719,
+        "avg_chunk_chars": 373.27777777777777,
+        "min_chunk_chars": 76,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 106.63947263646331,
+        "median_chunk_chars": 388.5,
+        "elapsed_seconds": 0.0002074000658467412,
+        "chars_per_second": 32396325.29801134
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "375",
+        "paragraph_integrity": 0.9722,
+        "sentence_integrity": 0.9444,
+        "whitespace_structure": 0.5714,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0066,
+        "boundary_quality": 0.9444,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "376",
+      "notebook_id": null,
+      "url": "https://n.news.naver.com/mnews/article/001/0015905696?rc=N&ntype=RANKING",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "376",
+        "chunk_count": 9,
+        "total_chars": 3921,
+        "avg_chunk_chars": 435.6666666666667,
+        "min_chunk_chars": 260,
+        "max_chunk_chars": 485,
+        "std_chunk_chars": 70.29758175072597,
+        "median_chunk_chars": 459,
+        "elapsed_seconds": 0.00011250004172325134,
+        "chars_per_second": 34853320.4071658
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "376",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 0.8727,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0064,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "377",
+      "notebook_id": null,
+      "url": "https://n.news.naver.com/mnews/article/001/0015905591?rc=N&ntype=RANKING",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "377",
+        "chunk_count": 4,
+        "total_chars": 1705,
+        "avg_chunk_chars": 426.25,
+        "min_chunk_chars": 374,
+        "max_chunk_chars": 466,
+        "std_chunk_chars": 42.42935304715357,
+        "median_chunk_chars": 432.5,
+        "elapsed_seconds": 4.529999569058418e-05,
+        "chars_per_second": 37637972.67544536
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "377",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.75,
+        "whitespace_structure": 0.913,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0155,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "378",
+      "notebook_id": null,
+      "url": "https://www.hankyung.com/article/202602123331i",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "378",
+        "chunk_count": 6,
+        "total_chars": 2388,
+        "avg_chunk_chars": 398,
+        "min_chunk_chars": 250,
+        "max_chunk_chars": 475,
+        "std_chunk_chars": 80.85542653403049,
+        "median_chunk_chars": 407.0,
+        "elapsed_seconds": 5.6900084018707275e-05,
+        "chars_per_second": 41968303.58308236
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "378",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.8333,
+        "whitespace_structure": 0.8148,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9921,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "379",
+      "notebook_id": null,
+      "url": "https://www.hankyung.com/article/2026021228461",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "379",
+        "chunk_count": 9,
+        "total_chars": 2862,
+        "avg_chunk_chars": 318,
+        "min_chunk_chars": 59,
+        "max_chunk_chars": 499,
+        "std_chunk_chars": 162.62610491553932,
+        "median_chunk_chars": 350,
+        "elapsed_seconds": 0.00034879997838288546,
+        "chars_per_second": 8205275.73788528
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "379",
+        "paragraph_integrity": 0.9167,
+        "sentence_integrity": 0.4444,
+        "whitespace_structure": 0.7391,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0229,
+        "boundary_quality": 0.7778,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "380",
+      "notebook_id": null,
+      "url": "https://docs.langchain.com/oss/python/deepagents/overview",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "380",
+        "chunk_count": 8,
+        "total_chars": 3209,
+        "avg_chunk_chars": 401.125,
+        "min_chunk_chars": 301,
+        "max_chunk_chars": 477,
+        "std_chunk_chars": 61.97104738735432,
+        "median_chunk_chars": 384.0,
+        "elapsed_seconds": 9.769992902874947e-05,
+        "chars_per_second": 32845469.100143462
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "380",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.125,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0449,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "381",
+      "notebook_id": null,
+      "url": "https://developers.llamaindex.ai/python/llamaagents/overview/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "381",
+        "chunk_count": 6,
+        "total_chars": 2119,
+        "avg_chunk_chars": 353.1666666666667,
+        "min_chunk_chars": 245,
+        "max_chunk_chars": 389,
+        "std_chunk_chars": 54.308071837128104,
+        "median_chunk_chars": 370.5,
+        "elapsed_seconds": 6.969994865357876e-05,
+        "chars_per_second": 30401744.060556054
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "381",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 0.8235,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.009,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "382",
+      "notebook_id": null,
+      "url": "https://sunnykim91.tistory.com/121",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "382",
+        "chunk_count": 39,
+        "total_chars": 15899,
+        "avg_chunk_chars": 407.6666666666667,
+        "min_chunk_chars": 96,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 96.5271528020493,
+        "median_chunk_chars": 440,
+        "elapsed_seconds": 0.0006834000814706087,
+        "chars_per_second": 23264556.78171261
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "382",
+        "paragraph_integrity": 0.9801,
+        "sentence_integrity": 0.4359,
+        "whitespace_structure": 0.8333,
+        "list_like_integrity": 0.8,
+        "heading_integrity": 1.0,
+        "coverage": 1.0144,
+        "boundary_quality": 0.8974,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "383",
+      "notebook_id": null,
+      "url": "https://pyrasis.com/jHLsAlwaysUpToDateDocker",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "383",
+        "chunk_count": 3,
+        "total_chars": 916,
+        "avg_chunk_chars": 305.3333333333333,
+        "min_chunk_chars": 155,
+        "max_chunk_chars": 390,
+        "std_chunk_chars": 130.53862774417897,
+        "median_chunk_chars": 371,
+        "elapsed_seconds": 4.2800093069672585e-05,
+        "chars_per_second": 21401822.62007888
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "383",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0178,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "384",
+      "notebook_id": null,
+      "url": "https://drop.com/talk/93641/how-to-configure-stack-overflow-the-key-macropad",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "384",
+        "chunk_count": 1,
+        "total_chars": 170,
+        "avg_chunk_chars": 170,
+        "min_chunk_chars": 170,
+        "max_chunk_chars": 170,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 170,
+        "elapsed_seconds": 4.6900007873773575e-05,
+        "chars_per_second": 3624732.8669440113
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "384",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "385",
+      "notebook_id": null,
+      "url": "https://sunnykim91.tistory.com/148",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "385",
+        "chunk_count": 33,
+        "total_chars": 10761,
+        "avg_chunk_chars": 326.09090909090907,
+        "min_chunk_chars": 10,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 182.19638505544705,
+        "median_chunk_chars": 418,
+        "elapsed_seconds": 0.0006678999634459615,
+        "chars_per_second": 16111694.249060476
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "385",
+        "paragraph_integrity": 0.8529,
+        "sentence_integrity": 0.1818,
+        "whitespace_structure": 0.7761,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9996,
+        "boundary_quality": 0.8485,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "386",
+      "notebook_id": null,
+      "url": "https://huggingface.co/papers",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "386",
+        "chunk_count": 1,
+        "total_chars": 236,
+        "avg_chunk_chars": 236,
+        "min_chunk_chars": 236,
+        "max_chunk_chars": 236,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 236,
+        "elapsed_seconds": 3.330002073198557e-05,
+        "chars_per_second": 7087082.674795924
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "386",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "387",
+      "notebook_id": null,
+      "url": "https://arxiv.org/abs/2602.09877",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "387",
+        "chunk_count": 8,
+        "total_chars": 3199,
+        "avg_chunk_chars": 399.875,
+        "min_chunk_chars": 70,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 161.52437896491043,
+        "median_chunk_chars": 478.0,
+        "elapsed_seconds": 0.00037180003710091114,
+        "chars_per_second": 8604087.36089435
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "387",
+        "paragraph_integrity": 0.9667,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 0.8966,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0417,
+        "boundary_quality": 0.625,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "388",
+      "notebook_id": null,
+      "url": "https://namu.news/article/3174854",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "388",
+        "chunk_count": 2,
+        "total_chars": 839,
+        "avg_chunk_chars": 419.5,
+        "min_chunk_chars": 388,
+        "max_chunk_chars": 451,
+        "std_chunk_chars": 44.54772721475249,
+        "median_chunk_chars": 419.5,
+        "elapsed_seconds": 3.829994238913059e-05,
+        "chars_per_second": 21906038.173000116
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "388",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.9231,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9976,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "389",
+      "notebook_id": null,
+      "url": "https://www.leagueoflegends.com/ko-kr/news/game-updates/patch-26-3-notes/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "389",
+        "chunk_count": 67,
+        "total_chars": 27931,
+        "avg_chunk_chars": 416.8805970149254,
+        "min_chunk_chars": 102,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 84.07581758548932,
+        "median_chunk_chars": 444,
+        "elapsed_seconds": 0.0007640999974682927,
+        "chars_per_second": 36554116.0745247
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "389",
+        "paragraph_integrity": 0.9909,
+        "sentence_integrity": 0.2687,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.8636,
+        "heading_integrity": 1.0,
+        "coverage": 1.0327,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "390",
+      "notebook_id": null,
+      "url": "https://namu.news/article/3173957",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "390",
+        "chunk_count": 6,
+        "total_chars": 2809,
+        "avg_chunk_chars": 468.1666666666667,
+        "min_chunk_chars": 425,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 31.751640377572095,
+        "median_chunk_chars": 483.0,
+        "elapsed_seconds": 5.879998207092285e-05,
+        "chars_per_second": 47772123.410035476
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "390",
+        "paragraph_integrity": 0.9655,
+        "sentence_integrity": 0.8333,
+        "whitespace_structure": 0.8214,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9993,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "391",
+      "notebook_id": null,
+      "url": "https://mz-moonzoo.tistory.com/95",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "391",
+        "chunk_count": 38,
+        "total_chars": 13872,
+        "avg_chunk_chars": 365.05263157894734,
+        "min_chunk_chars": 121,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 116.15086819338379,
+        "median_chunk_chars": 393.5,
+        "elapsed_seconds": 0.0009221000364050269,
+        "chars_per_second": 15043920.889627649
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "391",
+        "paragraph_integrity": 0.9367,
+        "sentence_integrity": 0.4737,
+        "whitespace_structure": 0.641,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0122,
+        "boundary_quality": 0.8421,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "392",
+      "notebook_id": null,
+      "url": "https://usehooks-ts.com/introduction",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "392",
+        "chunk_count": 2,
+        "total_chars": 777,
+        "avg_chunk_chars": 388.5,
+        "min_chunk_chars": 330,
+        "max_chunk_chars": 447,
+        "std_chunk_chars": 82.73149339882606,
+        "median_chunk_chars": 388.5,
+        "elapsed_seconds": 4.499999340623617e-05,
+        "chars_per_second": 17266669.19671864
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "392",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.8571,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9974,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "393",
+      "notebook_id": null,
+      "url": "https://wikidocs.net/233772",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "393",
+        "chunk_count": 3,
+        "total_chars": 1241,
+        "avg_chunk_chars": 413.6666666666667,
+        "min_chunk_chars": 378,
+        "max_chunk_chars": 484,
+        "std_chunk_chars": 60.91250555783544,
+        "median_chunk_chars": 379,
+        "elapsed_seconds": 6.740004755556583e-05,
+        "chars_per_second": 18412449.916699197
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "393",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0324,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "394",
+      "notebook_id": null,
+      "url": "https://blog.ull.im/engineering/2019/03/10/logs-on-git.html",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "394",
+        "chunk_count": 30,
+        "total_chars": 12809,
+        "avg_chunk_chars": 426.96666666666664,
+        "min_chunk_chars": 262,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 66.57248232039159,
+        "median_chunk_chars": 444.0,
+        "elapsed_seconds": 0.00040689995512366295,
+        "chars_per_second": 31479482.45928696
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "394",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0438,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "395",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/jisoo831/223328759196",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "395",
+        "chunk_count": 8,
+        "total_chars": 3478,
+        "avg_chunk_chars": 434.75,
+        "min_chunk_chars": 79,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 143.9213574937964,
+        "median_chunk_chars": 484.5,
+        "elapsed_seconds": 0.00016900000628083944,
+        "chars_per_second": 20579880.891959008
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "395",
+        "paragraph_integrity": 0.9787,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0293,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "396",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@fromairplane/213",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "396",
+        "chunk_count": 11,
+        "total_chars": 4874,
+        "avg_chunk_chars": 443.09090909090907,
+        "min_chunk_chars": 74,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 122.98654767530842,
+        "median_chunk_chars": 479,
+        "elapsed_seconds": 0.00031230004969984293,
+        "chars_per_second": 15606785.860855568
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "396",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3636,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0586,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "397",
+      "notebook_id": null,
+      "url": "https://www.hani.co.kr/arti/society/society_general/1244950.html",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "397",
+        "chunk_count": 3,
+        "total_chars": 1077,
+        "avg_chunk_chars": 359,
+        "min_chunk_chars": 253,
+        "max_chunk_chars": 458,
+        "std_chunk_chars": 102.67911179982032,
+        "median_chunk_chars": 366,
+        "elapsed_seconds": 4.339998122304678e-05,
+        "chars_per_second": 24815678.939236004
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "397",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.6667,
+        "whitespace_structure": 0.75,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9963,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "398",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/notebooklm/comments/1hxyg20/getting_notebooklm_to_read_a_website/?tl=ko",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "398",
+        "chunk_count": 1,
+        "total_chars": 292,
+        "avg_chunk_chars": 292,
+        "min_chunk_chars": 292,
+        "max_chunk_chars": 292,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 292,
+        "elapsed_seconds": 3.0099996365606785e-05,
+        "chars_per_second": 9700997.849077767
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "398",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "399",
+      "notebook_id": null,
+      "url": "https://yozm.wishket.com/magazine/detail/2760/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "399",
+        "chunk_count": 11,
+        "total_chars": 4585,
+        "avg_chunk_chars": 416.8181818181818,
+        "min_chunk_chars": 305,
+        "max_chunk_chars": 493,
+        "std_chunk_chars": 58.56418390418872,
+        "median_chunk_chars": 426,
+        "elapsed_seconds": 0.0001094000181183219,
+        "chars_per_second": 41910413.53431112
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "399",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.6667,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9877,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "400",
+      "notebook_id": null,
+      "url": "https://news.hada.io/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "400",
+        "chunk_count": 3,
+        "total_chars": 1211,
+        "avg_chunk_chars": 403.6666666666667,
+        "min_chunk_chars": 237,
+        "max_chunk_chars": 492,
+        "std_chunk_chars": 144.42414387259956,
+        "median_chunk_chars": 482,
+        "elapsed_seconds": 7.589999586343765e-05,
+        "chars_per_second": 15955205.085635055
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "400",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0745,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "401",
+      "notebook_id": null,
+      "url": "https://goddaehee.tistory.com/516",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "401",
+        "chunk_count": 62,
+        "total_chars": 24170,
+        "avg_chunk_chars": 389.83870967741933,
+        "min_chunk_chars": 16,
+        "max_chunk_chars": 496,
+        "std_chunk_chars": 122.82577205242794,
+        "median_chunk_chars": 432.5,
+        "elapsed_seconds": 0.0006531999679282308,
+        "chars_per_second": 37002451.2962861
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "401",
+        "paragraph_integrity": 0.9833,
+        "sentence_integrity": 0.3065,
+        "whitespace_structure": 0.9365,
+        "list_like_integrity": 0.8,
+        "heading_integrity": 1.0,
+        "coverage": 1.0393,
+        "boundary_quality": 0.871,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "402",
+      "notebook_id": null,
+      "url": "https://elec.chungbuk.ac.kr/bbs/bbs.php?db=notice",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "402",
+        "chunk_count": 4,
+        "total_chars": 1555,
+        "avg_chunk_chars": 388.75,
+        "min_chunk_chars": 109,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 186.93024545714016,
+        "median_chunk_chars": 474.0,
+        "elapsed_seconds": 0.000309299910441041,
+        "chars_per_second": 5027482.8653609175
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "402",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0585,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "403",
+      "notebook_id": null,
+      "url": "https://velog.io/@dailylifecoding/PowerShell-쓸만한-명령어-모음",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "403",
+        "chunk_count": 49,
+        "total_chars": 18399,
+        "avg_chunk_chars": 375.48979591836735,
+        "min_chunk_chars": 66,
+        "max_chunk_chars": 500,
+        "std_chunk_chars": 130.19634570668313,
+        "median_chunk_chars": 448,
+        "elapsed_seconds": 0.0013228999450802803,
+        "chars_per_second": 13908081.30911477
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "403",
+        "paragraph_integrity": 0.9665,
+        "sentence_integrity": 0.2857,
+        "whitespace_structure": 0.9515,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.989,
+        "coverage": 1.0231,
+        "boundary_quality": 0.9184,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "404",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/help/keyboard-shortcuts",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "404",
+        "chunk_count": 17,
+        "total_chars": 7879,
+        "avg_chunk_chars": 463.47058823529414,
+        "min_chunk_chars": 228,
+        "max_chunk_chars": 500,
+        "std_chunk_chars": 64.79980482904523,
+        "median_chunk_chars": 487,
+        "elapsed_seconds": 0.0004243000876158476,
+        "chars_per_second": 18569404.60293631
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "404",
+        "paragraph_integrity": 0.9777,
+        "sentence_integrity": 0.1176,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0689,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "405",
+      "notebook_id": null,
+      "url": "https://www.redhat.com/ko/topics/automation/what-is-yaml",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "405",
+        "chunk_count": 14,
+        "total_chars": 5444,
+        "avg_chunk_chars": 388.85714285714283,
+        "min_chunk_chars": 74,
+        "max_chunk_chars": 473,
+        "std_chunk_chars": 101.4797116084386,
+        "median_chunk_chars": 419.5,
+        "elapsed_seconds": 0.00013729999773204327,
+        "chars_per_second": 39650401.237621225
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "405",
+        "paragraph_integrity": 0.9556,
+        "sentence_integrity": 0.7143,
+        "whitespace_structure": 0.8182,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0233,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "406",
+      "notebook_id": null,
+      "url": "https://deepbaksuvision.github.io/Modu_ObjectDetection/posts/04_01_Review_of_YOLO_Paper.html",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "406",
+        "chunk_count": 25,
+        "total_chars": 10645,
+        "avg_chunk_chars": 425.8,
+        "min_chunk_chars": 209,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 88.44112919526374,
+        "median_chunk_chars": 471,
+        "elapsed_seconds": 0.00022090005222707987,
+        "chars_per_second": 48189214.500760734
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "406",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.52,
+        "whitespace_structure": 0.9301,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0288,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "407",
+      "notebook_id": null,
+      "url": "https://toss.im/tossfeed/article/house-contract-02",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "407",
+        "chunk_count": 8,
+        "total_chars": 2799,
+        "avg_chunk_chars": 349.875,
+        "min_chunk_chars": 104,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 146.05325594257928,
+        "median_chunk_chars": 386.0,
+        "elapsed_seconds": 0.0001230000052601099,
+        "chars_per_second": 22756096.58780838
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "407",
+        "paragraph_integrity": 0.9444,
+        "sentence_integrity": 0.625,
+        "whitespace_structure": 0.9143,
+        "list_like_integrity": 0.75,
+        "heading_integrity": 1.0,
+        "coverage": 1.0208,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "408",
+      "notebook_id": null,
+      "url": "https://github.com/makenotion/notion-mcp-server#readme",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "408",
+        "chunk_count": 24,
+        "total_chars": 9951,
+        "avg_chunk_chars": 414.625,
+        "min_chunk_chars": 196,
+        "max_chunk_chars": 496,
+        "std_chunk_chars": 79.71951509484062,
+        "median_chunk_chars": 430.5,
+        "elapsed_seconds": 0.0002590999938547611,
+        "chars_per_second": 38406021.75227394
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "408",
+        "paragraph_integrity": 0.9915,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 0.8803,
+        "list_like_integrity": 0.75,
+        "heading_integrity": 1.0,
+        "coverage": 1.0172,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "410",
+      "notebook_id": null,
+      "url": "https://dropbox.github.io/dbx-career-framework/overview.html",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "410",
+        "chunk_count": 4,
+        "total_chars": 1486,
+        "avg_chunk_chars": 371.5,
+        "min_chunk_chars": 343,
+        "max_chunk_chars": 402,
+        "std_chunk_chars": 27.233557730613654,
+        "median_chunk_chars": 370.5,
+        "elapsed_seconds": 6.420002318918705e-05,
+        "chars_per_second": 23146409.08494689
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "410",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 0.5714,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9946,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "411",
+      "notebook_id": null,
+      "url": "https://networks-aicamp.io/introduction",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "411",
+        "chunk_count": 9,
+        "total_chars": 4027,
+        "avg_chunk_chars": 447.44444444444446,
+        "min_chunk_chars": 140,
+        "max_chunk_chars": 500,
+        "std_chunk_chars": 115.8491595902956,
+        "median_chunk_chars": 483,
+        "elapsed_seconds": 0.0003389000194147229,
+        "chars_per_second": 11882560.54677893
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "411",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0639,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "412",
+      "notebook_id": null,
+      "url": "https://www.naverlabs.com/blogDetail?seq=34083",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "412",
+        "chunk_count": 1,
+        "total_chars": 187,
+        "avg_chunk_chars": 187,
+        "min_chunk_chars": 187,
+        "max_chunk_chars": 187,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 187,
+        "elapsed_seconds": 4.2899977415800095e-05,
+        "chars_per_second": 4358976.653706296
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "412",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "413",
+      "notebook_id": null,
+      "url": "https://www.coursera.org/instructor/andrewng",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "413",
+        "chunk_count": 2,
+        "total_chars": 742,
+        "avg_chunk_chars": 371,
+        "min_chunk_chars": 245,
+        "max_chunk_chars": 497,
+        "std_chunk_chars": 178.19090885900997,
+        "median_chunk_chars": 371.0,
+        "elapsed_seconds": 0.00015189999248832464,
+        "chars_per_second": 4884792.868288204
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "413",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.063,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "414",
+      "notebook_id": null,
+      "url": "https://gitbook.com/docs",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "414",
+        "chunk_count": 1,
+        "total_chars": 261,
+        "avg_chunk_chars": 261,
+        "min_chunk_chars": 261,
+        "max_chunk_chars": 261,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 261,
+        "elapsed_seconds": 3.1100003980100155e-05,
+        "chars_per_second": 8392281.884176128
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "414",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "415",
+      "notebook_id": null,
+      "url": "https://www.kmdb.or.kr/info/api/apiDetail/6",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "415",
+        "chunk_count": 2,
+        "total_chars": 595,
+        "avg_chunk_chars": 297.5,
+        "min_chunk_chars": 150,
+        "max_chunk_chars": 445,
+        "std_chunk_chars": 208.59650045003153,
+        "median_chunk_chars": 297.5,
+        "elapsed_seconds": 4.8200017772614956e-05,
+        "chars_per_second": 12344393.788544446
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "415",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0206,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "416",
+      "notebook_id": null,
+      "url": "https://medium.com/@iamanraghuvanshi/agentic-ai-1-what-are-ai-agents-87db291b9e0e",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "416",
+        "chunk_count": 40,
+        "total_chars": 16673,
+        "avg_chunk_chars": 416.825,
+        "min_chunk_chars": 257,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 62.08591545137993,
+        "median_chunk_chars": 420.5,
+        "elapsed_seconds": 0.0003330999752506614,
+        "chars_per_second": 50054041.545495115
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "416",
+        "paragraph_integrity": 0.9928,
+        "sentence_integrity": 0.35,
+        "whitespace_structure": 0.8406,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0264,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "417",
+      "notebook_id": null,
+      "url": "https://sktelecom.github.io/guide/contribute/background/good-project/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "417",
+        "chunk_count": 4,
+        "total_chars": 1685,
+        "avg_chunk_chars": 421.25,
+        "min_chunk_chars": 358,
+        "max_chunk_chars": 473,
+        "std_chunk_chars": 51.62283086645546,
+        "median_chunk_chars": 427.0,
+        "elapsed_seconds": 5.8999983593821526e-05,
+        "chars_per_second": 28559329.975414656
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "417",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.75,
+        "whitespace_structure": 0.9167,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.009,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "418",
+      "notebook_id": null,
+      "url": "https://zzsza.github.io/diary/2025/02/16/career-advice/#고민은-왜-생기는걸까",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "418",
+        "chunk_count": 48,
+        "total_chars": 16427,
+        "avg_chunk_chars": 342.2291666666667,
+        "min_chunk_chars": 81,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 125.36011778554483,
+        "median_chunk_chars": 371.0,
+        "elapsed_seconds": 0.0004680999554693699,
+        "chars_per_second": 35092932.199765824
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "418",
+        "paragraph_integrity": 0.8875,
+        "sentence_integrity": 0.2083,
+        "whitespace_structure": 0.5949,
+        "list_like_integrity": 0.3548,
+        "heading_integrity": 1.0,
+        "coverage": 1.0043,
+        "boundary_quality": 0.7083,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "419",
+      "notebook_id": null,
+      "url": "https://www.ibm.com/kr-ko/think/insights/artificial-intelligence-trends",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "419",
+        "chunk_count": 33,
+        "total_chars": 12301,
+        "avg_chunk_chars": 372.75757575757575,
+        "min_chunk_chars": 176,
+        "max_chunk_chars": 488,
+        "std_chunk_chars": 84.04055208016779,
+        "median_chunk_chars": 372,
+        "elapsed_seconds": 0.00020589993800967932,
+        "chars_per_second": 59742611.47869667
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "419",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.9394,
+        "whitespace_structure": 0.5079,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9962,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "420",
+      "notebook_id": null,
+      "url": "https://asana.com/ko/resources/hard-skills-vs-soft-skills",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "420",
+        "chunk_count": 18,
+        "total_chars": 7243,
+        "avg_chunk_chars": 402.3888888888889,
+        "min_chunk_chars": 166,
+        "max_chunk_chars": 498,
+        "std_chunk_chars": 94.01135030903505,
+        "median_chunk_chars": 436.5,
+        "elapsed_seconds": 0.0002367000561207533,
+        "chars_per_second": 30599908.249725807
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "420",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.6111,
+        "whitespace_structure": 0.932,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0102,
+        "boundary_quality": 0.8889,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "421",
+      "notebook_id": null,
+      "url": "https://learn.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-containers#install-docker-desktop",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "421",
+        "chunk_count": 19,
+        "total_chars": 8170,
+        "avg_chunk_chars": 430,
+        "min_chunk_chars": 332,
+        "max_chunk_chars": 495,
+        "std_chunk_chars": 42.2216374228507,
+        "median_chunk_chars": 434,
+        "elapsed_seconds": 0.0001981999957934022,
+        "chars_per_second": 41220989.774975404
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "421",
+        "paragraph_integrity": 0.93,
+        "sentence_integrity": 0.3684,
+        "whitespace_structure": 0.9293,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0202,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "422",
+      "notebook_id": null,
+      "url": "https://jutsu-ai.vercel.app/#features",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "422",
+        "chunk_count": 5,
+        "total_chars": 2065,
+        "avg_chunk_chars": 413,
+        "min_chunk_chars": 285,
+        "max_chunk_chars": 494,
+        "std_chunk_chars": 78.3007024234138,
+        "median_chunk_chars": 434,
+        "elapsed_seconds": 4.0599959902465343e-05,
+        "chars_per_second": 50862119.198167175
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "422",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.2,
+        "whitespace_structure": 0.9524,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0243,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "423",
+      "notebook_id": null,
+      "url": "https://www.velopers.kr/",
+      "basic": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "423",
+        "chunk_count": 3,
+        "total_chars": 1098,
+        "avg_chunk_chars": 366,
+        "min_chunk_chars": 179,
+        "max_chunk_chars": 479,
+        "std_chunk_chars": 163.1165227682346,
+        "median_chunk_chars": 440,
+        "elapsed_seconds": 5.8299978263676167e-05,
+        "chars_per_second": 18833626.232826736
+      },
+      "structure": {
+        "strategy_name": "재귀분할_Recursive_500c",
+        "source_id": "423",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 0.8182,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 0.9964,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    }
+  ]
+}

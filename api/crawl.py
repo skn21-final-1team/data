@@ -25,7 +25,6 @@ async def crawl(
                 summary=scraped.content,
                 notebook_id=request.notebook_id,
                 directory_id=request.directory_id,
-                user_id=request.user_id,
             )
         )
 

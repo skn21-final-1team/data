@@ -1,0 +1,3636 @@
+{
+  "strategy_name": "토큰기반_Token_256tok",
+  "source_count": 121,
+  "sources": [
+    {
+      "source_id": "303",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/templates",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "303",
+        "chunk_count": 5,
+        "total_chars": 2993,
+        "avg_chunk_chars": 598.6,
+        "min_chunk_chars": 202,
+        "max_chunk_chars": 885,
+        "std_chunk_chars": 259.5328495585867,
+        "median_chunk_chars": 575,
+        "elapsed_seconds": 0.0012452000519260764,
+        "chars_per_second": 2403629.838731877
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "303",
+        "paragraph_integrity": 0.9773,
+        "sentence_integrity": 0.2,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1485,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "304",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/product/ai",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "304",
+        "chunk_count": 8,
+        "total_chars": 2544,
+        "avg_chunk_chars": 318,
+        "min_chunk_chars": 185,
+        "max_chunk_chars": 381,
+        "std_chunk_chars": 57.63679380395825,
+        "median_chunk_chars": 334.0,
+        "elapsed_seconds": 0.001145399990491569,
+        "chars_per_second": 2221058.1640638886
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "304",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1262,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "305",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/pricing",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "305",
+        "chunk_count": 17,
+        "total_chars": 5168,
+        "avg_chunk_chars": 304,
+        "min_chunk_chars": 263,
+        "max_chunk_chars": 380,
+        "std_chunk_chars": 26.483485420163262,
+        "median_chunk_chars": 295,
+        "elapsed_seconds": 0.003042600001208484,
+        "chars_per_second": 1698547.2944019367
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "305",
+        "paragraph_integrity": 0.9398,
+        "sentence_integrity": 0.0588,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1252,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "306",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "306",
+        "chunk_count": 14,
+        "total_chars": 13421,
+        "avg_chunk_chars": 958.6428571428571,
+        "min_chunk_chars": 573,
+        "max_chunk_chars": 1214,
+        "std_chunk_chars": 168.2189997239666,
+        "median_chunk_chars": 988.0,
+        "elapsed_seconds": 0.002530100056901574,
+        "chars_per_second": 5304533.298353308
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "306",
+        "paragraph_integrity": 0.8293,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.131,
+        "boundary_quality": 0.9286,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "307",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat/tree/master/dev",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "307",
+        "chunk_count": 1,
+        "total_chars": 125,
+        "avg_chunk_chars": 125,
+        "min_chunk_chars": 125,
+        "max_chunk_chars": 125,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 125,
+        "elapsed_seconds": 0.00011190003715455532,
+        "chars_per_second": 1117068.440534574
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "307",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "308",
+      "notebook_id": null,
+      "url": "https://github.com/karpathy/nanochat/blob/master/dev/LOG.md",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "308",
+        "chunk_count": 54,
+        "total_chars": 52203,
+        "avg_chunk_chars": 966.7222222222222,
+        "min_chunk_chars": 563,
+        "max_chunk_chars": 1213,
+        "std_chunk_chars": 155.81949119567162,
+        "median_chunk_chars": 1004.0,
+        "elapsed_seconds": 0.012001199997030199,
+        "chars_per_second": 4349815.01957455
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "308",
+        "paragraph_integrity": 0.8025,
+        "sentence_integrity": 0.0741,
+        "whitespace_structure": 0.9678,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.0336,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "309",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/schhp?hl=ko",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "309",
+        "chunk_count": 4,
+        "total_chars": 938,
+        "avg_chunk_chars": 234.5,
+        "min_chunk_chars": 41,
+        "max_chunk_chars": 359,
+        "std_chunk_chars": 135.80746174885482,
+        "median_chunk_chars": 269.0,
+        "elapsed_seconds": 0.0007300999714061618,
+        "chars_per_second": 1284755.5632599543
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "309",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0971,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "310",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/scholar_labs/search?hl=ko",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "310",
+        "chunk_count": 1,
+        "total_chars": 149,
+        "avg_chunk_chars": 149,
+        "min_chunk_chars": 149,
+        "max_chunk_chars": 149,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 149,
+        "elapsed_seconds": 0.0002530999481678009,
+        "chars_per_second": 588700.2390897985
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "310",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "311",
+      "notebook_id": null,
+      "url": "https://scholar.google.co.kr/scholar_labs/search/example/single-molecule-footprinting-and-tf-binding?hl=ko",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "311",
+        "chunk_count": 1,
+        "total_chars": 149,
+        "avg_chunk_chars": 149,
+        "min_chunk_chars": 149,
+        "max_chunk_chars": 149,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 149,
+        "elapsed_seconds": 0.00024009996559470892,
+        "chars_per_second": 620574.8494421422
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "311",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "312",
+      "notebook_id": null,
+      "url": "https://huggingface.co/zai-org/GLM-5",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "312",
+        "chunk_count": 11,
+        "total_chars": 8029,
+        "avg_chunk_chars": 729.9090909090909,
+        "min_chunk_chars": 259,
+        "max_chunk_chars": 1119,
+        "std_chunk_chars": 286.97054014147676,
+        "median_chunk_chars": 863,
+        "elapsed_seconds": 0.002692700014449656,
+        "chars_per_second": 2981765.498167087
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "312",
+        "paragraph_integrity": 0.902,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1356,
+        "boundary_quality": 0.7273,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "313",
+      "notebook_id": null,
+      "url": "https://huggingface.co/openbmb/MiniCPM-SALA",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "313",
+        "chunk_count": 8,
+        "total_chars": 8288,
+        "avg_chunk_chars": 1036,
+        "min_chunk_chars": 873,
+        "max_chunk_chars": 1221,
+        "std_chunk_chars": 119.88327656516567,
+        "median_chunk_chars": 1037.0,
+        "elapsed_seconds": 0.0016983000095933676,
+        "chars_per_second": 4880174.264371839
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "313",
+        "paragraph_integrity": 0.971,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1062,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "314",
+      "notebook_id": null,
+      "url": "https://section.cafe.naver.com/ca-fe/home",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "314",
+        "chunk_count": 7,
+        "total_chars": 1358,
+        "avg_chunk_chars": 194,
+        "min_chunk_chars": 70,
+        "max_chunk_chars": 222,
+        "std_chunk_chars": 55.19359866264686,
+        "median_chunk_chars": 215,
+        "elapsed_seconds": 0.0008712999988347292,
+        "chars_per_second": 1558590.6138140482
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "314",
+        "paragraph_integrity": 0.9231,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1345,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "315",
+      "notebook_id": null,
+      "url": "https://cafe.naver.com/casuallydressed?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D19943558%2526articleid%3D837718%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjgzNzcxOCwiaXNzdWVkQXQiOjE3NzA5NTIxODQ5NjksImNhZmVJZCI6MTk5NDM1NTh9.Xx0XNMuhQGTHa0tN37rP4Cj4p_gJ-NysMbb_o0s58CI",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "315",
+        "chunk_count": 2,
+        "total_chars": 571,
+        "avg_chunk_chars": 285.5,
+        "min_chunk_chars": 271,
+        "max_chunk_chars": 300,
+        "std_chunk_chars": 20.506096654409877,
+        "median_chunk_chars": 285.5,
+        "elapsed_seconds": 0.00042699999175965786,
+        "chars_per_second": 1337236.5597641377
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "315",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0633,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "372",
+      "notebook_id": null,
+      "url": "https://ko.wikipedia.org/wiki/Hello",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "372",
+        "chunk_count": 13,
+        "total_chars": 4813,
+        "avg_chunk_chars": 370.2307692307692,
+        "min_chunk_chars": 82,
+        "max_chunk_chars": 582,
+        "std_chunk_chars": 134.47685912834834,
+        "median_chunk_chars": 337,
+        "elapsed_seconds": 0.002763599972240627,
+        "chars_per_second": 1741568.9855061744
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "372",
+        "paragraph_integrity": 0.6842,
+        "sentence_integrity": 0.1538,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1274,
+        "boundary_quality": 0.9231,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "373",
+      "notebook_id": null,
+      "url": "https://www.i-boss.co.kr/ab-6141-58333",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "373",
+        "chunk_count": 9,
+        "total_chars": 2859,
+        "avg_chunk_chars": 317.6666666666667,
+        "min_chunk_chars": 291,
+        "max_chunk_chars": 338,
+        "std_chunk_chars": 14.722431864335457,
+        "median_chunk_chars": 319,
+        "elapsed_seconds": 0.0017909000162035227,
+        "chars_per_second": 1596404.0282163331
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "373",
+        "paragraph_integrity": 0.9889,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1034,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "316",
+      "notebook_id": null,
+      "url": "https://cafe.naver.com/simpleliving?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D27713102%2526articleid%3D415585%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjQxNTU4NSwiaXNzdWVkQXQiOjE3NzA5NTIxODQ5NjksImNhZmVJZCI6Mjc3MTMxODJ9.PskXfdaJJntySq253DBUINp6XM3N0KXCPv9YsQL4dtU",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "316",
+        "chunk_count": 2,
+        "total_chars": 571,
+        "avg_chunk_chars": 285.5,
+        "min_chunk_chars": 271,
+        "max_chunk_chars": 300,
+        "std_chunk_chars": 20.506096654409877,
+        "median_chunk_chars": 285.5,
+        "elapsed_seconds": 0.00051099993288517,
+        "chars_per_second": 1117416.9765073394
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "316",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0633,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "317",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "317",
+        "chunk_count": 13,
+        "total_chars": 4458,
+        "avg_chunk_chars": 342.9230769230769,
+        "min_chunk_chars": 257,
+        "max_chunk_chars": 367,
+        "std_chunk_chars": 30.206129450994815,
+        "median_chunk_chars": 357,
+        "elapsed_seconds": 0.0016482999781146646,
+        "chars_per_second": 2704604.78019243
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "317",
+        "paragraph_integrity": 0.7941,
+        "sentence_integrity": 0.0769,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1241,
+        "boundary_quality": 0.8462,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "318",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/world/sise.naver?symbol=DJI@DJI&fdtc=0",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "318",
+        "chunk_count": 3,
+        "total_chars": 1032,
+        "avg_chunk_chars": 344,
+        "min_chunk_chars": 189,
+        "max_chunk_chars": 433,
+        "std_chunk_chars": 134.72564715005083,
+        "median_chunk_chars": 410,
+        "elapsed_seconds": 0.0007510000141337514,
+        "chars_per_second": 1374167.7504365575
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "318",
+        "paragraph_integrity": 0.4,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 0.5,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1073,
+        "boundary_quality": 0.6667,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "319",
+      "notebook_id": null,
+      "url": "https://ad-kbcard.com/checkcard_comb_global/2601/pc/index.html?media=gfa&solicitorcode=7030072838&utm_source=gfa&utm_medium=cpc&utm_campaign=check_mo_da_native_traffic&utm_content=nori2_all_non&utm_term=nori2_5",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "319",
+        "chunk_count": 2,
+        "total_chars": 530,
+        "avg_chunk_chars": 265,
+        "min_chunk_chars": 258,
+        "max_chunk_chars": 272,
+        "std_chunk_chars": 9.899494936611665,
+        "median_chunk_chars": 265.0,
+        "elapsed_seconds": 0.00042699999175965786,
+        "chars_per_second": 1241217.8225481487
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "319",
+        "paragraph_integrity": 0.9091,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0729,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "320",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/research/industry_read.naver?nid=43423",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "320",
+        "chunk_count": 2,
+        "total_chars": 313,
+        "avg_chunk_chars": 156.5,
+        "min_chunk_chars": 36,
+        "max_chunk_chars": 277,
+        "std_chunk_chars": 170.41273426595797,
+        "median_chunk_chars": 156.5,
+        "elapsed_seconds": 0.00034689996391534805,
+        "chars_per_second": 902277.4072019781
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "320",
+        "paragraph_integrity": 0.6667,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0944,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "321",
+      "notebook_id": null,
+      "url": "https://finance.naver.com/item/main.naver?code=005930",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "321",
+        "chunk_count": 1,
+        "total_chars": 248,
+        "avg_chunk_chars": 248,
+        "min_chunk_chars": 248,
+        "max_chunk_chars": 248,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 248,
+        "elapsed_seconds": 0.0002410999732092023,
+        "chars_per_second": 1028618.9446599837
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "321",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "322",
+      "notebook_id": null,
+      "url": "https://aws.amazon.com/ko/console/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "322",
+        "chunk_count": 2,
+        "total_chars": 374,
+        "avg_chunk_chars": 187,
+        "min_chunk_chars": 45,
+        "max_chunk_chars": 329,
+        "std_chunk_chars": 200.8183258569795,
+        "median_chunk_chars": 187.0,
+        "elapsed_seconds": 0.00035310001112520695,
+        "chars_per_second": 1059189.997780493
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "322",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1032,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "323",
+      "notebook_id": null,
+      "url": "https://aws.amazon.com/ko/free/?nc2=h_pr_ft",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "323",
+        "chunk_count": 4,
+        "total_chars": 1212,
+        "avg_chunk_chars": 303,
+        "min_chunk_chars": 278,
+        "max_chunk_chars": 325,
+        "std_chunk_chars": 19.612920911140865,
+        "median_chunk_chars": 304.5,
+        "elapsed_seconds": 0.0008846999844536185,
+        "chars_per_second": 1369955.9413336245
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "323",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0889,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "324",
+      "notebook_id": null,
+      "url": "https://www.acmicpc.net/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "324",
+        "chunk_count": 4,
+        "total_chars": 1399,
+        "avg_chunk_chars": 349.75,
+        "min_chunk_chars": 281,
+        "max_chunk_chars": 437,
+        "std_chunk_chars": 66.31930337390465,
+        "median_chunk_chars": 340.5,
+        "elapsed_seconds": 0.0008720000041648746,
+        "chars_per_second": 1604357.7905023522
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "324",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1688,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "325",
+      "notebook_id": null,
+      "url": "https://www.acmicpc.net/problem/3190",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "325",
+        "chunk_count": 4,
+        "total_chars": 1085,
+        "avg_chunk_chars": 271.25,
+        "min_chunk_chars": 173,
+        "max_chunk_chars": 311,
+        "std_chunk_chars": 65.69817349059257,
+        "median_chunk_chars": 300.5,
+        "elapsed_seconds": 0.0005960999988019466,
+        "chars_per_second": 1820164.405604184
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "325",
+        "paragraph_integrity": 0.875,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1038,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "326",
+      "notebook_id": null,
+      "url": "https://solved.ac/ranking/tier?page=1",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "326",
+        "chunk_count": 5,
+        "total_chars": 2134,
+        "avg_chunk_chars": 426.8,
+        "min_chunk_chars": 151,
+        "max_chunk_chars": 508,
+        "std_chunk_chars": 154.41081568335815,
+        "median_chunk_chars": 490,
+        "elapsed_seconds": 0.001017299946397543,
+        "chars_per_second": 2097709.7340434445
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "326",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1357,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "327",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/3916/교육-콘텐츠-기획-운영-매니저",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "327",
+        "chunk_count": 18,
+        "total_chars": 4775,
+        "avg_chunk_chars": 265.27777777777777,
+        "min_chunk_chars": 38,
+        "max_chunk_chars": 375,
+        "std_chunk_chars": 68.80732310167502,
+        "median_chunk_chars": 266.0,
+        "elapsed_seconds": 0.0021950999507680535,
+        "chars_per_second": 2175299.5795609457
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "327",
+        "paragraph_integrity": 0.9563,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1201,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "328",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/4100/토스-devops-engineer",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "328",
+        "chunk_count": 12,
+        "total_chars": 4135,
+        "avg_chunk_chars": 344.5833333333333,
+        "min_chunk_chars": 226,
+        "max_chunk_chars": 611,
+        "std_chunk_chars": 122.91272464146208,
+        "median_chunk_chars": 296.0,
+        "elapsed_seconds": 0.00166529999114573,
+        "chars_per_second": 2483036.1027955757
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "328",
+        "paragraph_integrity": 0.9899,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1267,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "329",
+      "notebook_id": null,
+      "url": "https://www.rallit.com/positions/4093/해외-콘텐츠-md-인턴",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "329",
+        "chunk_count": 14,
+        "total_chars": 3840,
+        "avg_chunk_chars": 274.2857142857143,
+        "min_chunk_chars": 244,
+        "max_chunk_chars": 319,
+        "std_chunk_chars": 26.350970122058627,
+        "median_chunk_chars": 273.0,
+        "elapsed_seconds": 0.0022335000103339553,
+        "chars_per_second": 1719274.6730392175
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "329",
+        "paragraph_integrity": 0.9891,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1245,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "330",
+      "notebook_id": null,
+      "url": "https://www.wanted.co.kr/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "330",
+        "chunk_count": 4,
+        "total_chars": 723,
+        "avg_chunk_chars": 180.75,
+        "min_chunk_chars": 33,
+        "max_chunk_chars": 232,
+        "std_chunk_chars": 98.54060076942905,
+        "median_chunk_chars": 229.0,
+        "elapsed_seconds": 0.0005805999971926212,
+        "chars_per_second": 1245263.526517269
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "330",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1315,
+        "boundary_quality": 0.25,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "331",
+      "notebook_id": null,
+      "url": "https://www.wanted.co.kr/wd/335641",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "331",
+        "chunk_count": 5,
+        "total_chars": 1269,
+        "avg_chunk_chars": 253.8,
+        "min_chunk_chars": 95,
+        "max_chunk_chars": 312,
+        "std_chunk_chars": 89.65322080103982,
+        "median_chunk_chars": 290,
+        "elapsed_seconds": 0.0005992000224068761,
+        "chars_per_second": 2117823.685824745
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "331",
+        "paragraph_integrity": 0.9286,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1632,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "332",
+      "notebook_id": null,
+      "url": "https://event.wanted.co.kr/swmaestro17_busan",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "332",
+        "chunk_count": 1,
+        "total_chars": 286,
+        "avg_chunk_chars": 286,
+        "min_chunk_chars": 286,
+        "max_chunk_chars": 286,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 286,
+        "elapsed_seconds": 0.00035239988937973976,
+        "chars_per_second": 811578.0073126288
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "332",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "409",
+      "notebook_id": null,
+      "url": "https://sugarslayer.tistory.com/category/내집마련🏡/HUG 버팀목 전세 대출(청년) 후기",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "409",
+        "chunk_count": 16,
+        "total_chars": 4561,
+        "avg_chunk_chars": 285.0625,
+        "min_chunk_chars": 227,
+        "max_chunk_chars": 368,
+        "std_chunk_chars": 28.41705767081924,
+        "median_chunk_chars": 281.0,
+        "elapsed_seconds": 0.0025882000336423516,
+        "chars_per_second": 1762228.5529381374
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "409",
+        "paragraph_integrity": 0.7143,
+        "sentence_integrity": 0.125,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.5,
+        "heading_integrity": 1.0,
+        "coverage": 1.1217,
+        "boundary_quality": 0.875,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "333",
+      "notebook_id": null,
+      "url": "https://op.gg/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "333",
+        "chunk_count": 2,
+        "total_chars": 1190,
+        "avg_chunk_chars": 595,
+        "min_chunk_chars": 355,
+        "max_chunk_chars": 835,
+        "std_chunk_chars": 339.4112549695428,
+        "median_chunk_chars": 595.0,
+        "elapsed_seconds": 0.0005444000707939267,
+        "chars_per_second": 2185892.4416827527
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "333",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0907,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "334",
+      "notebook_id": null,
+      "url": "https://games.op.gg/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "334",
+        "chunk_count": 3,
+        "total_chars": 2009,
+        "avg_chunk_chars": 669.6666666666666,
+        "min_chunk_chars": 229,
+        "max_chunk_chars": 926,
+        "std_chunk_chars": 383.32275347718837,
+        "median_chunk_chars": 854,
+        "elapsed_seconds": 0.0006651999428868294,
+        "chars_per_second": 3020144.5768040176
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "334",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1038,
+        "boundary_quality": 0.6667,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "335",
+      "notebook_id": null,
+      "url": "https://esports.op.gg/leagues/LCK/2026/Cup?hl=en_US",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "335",
+        "chunk_count": 2,
+        "total_chars": 1068,
+        "avg_chunk_chars": 534,
+        "min_chunk_chars": 241,
+        "max_chunk_chars": 827,
+        "std_chunk_chars": 414.36457377531684,
+        "median_chunk_chars": 534.0,
+        "elapsed_seconds": 0.0004120999947190285,
+        "chars_per_second": 2591604.0128274374
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "335",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1067,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "336",
+      "notebook_id": null,
+      "url": "https://www.inflearn.com/course/에이전트빌드-azureai-copilotstudio?cid=337583",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "336",
+        "chunk_count": 4,
+        "total_chars": 1349,
+        "avg_chunk_chars": 337.25,
+        "min_chunk_chars": 235,
+        "max_chunk_chars": 413,
+        "std_chunk_chars": 74.26248492116774,
+        "median_chunk_chars": 350.5,
+        "elapsed_seconds": 0.0010328999487683177,
+        "chars_per_second": 1306031.6264015853
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "336",
+        "paragraph_integrity": 0.9714,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1308,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "337",
+      "notebook_id": null,
+      "url": "https://mentoring.inflearn.com/mentors",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "337",
+        "chunk_count": 9,
+        "total_chars": 2407,
+        "avg_chunk_chars": 267.44444444444446,
+        "min_chunk_chars": 194,
+        "max_chunk_chars": 314,
+        "std_chunk_chars": 34.918158281584354,
+        "median_chunk_chars": 271,
+        "elapsed_seconds": 0.002020800020545721,
+        "chars_per_second": 1191112.418610321
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "337",
+        "paragraph_integrity": 0.979,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1274,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "338",
+      "notebook_id": null,
+      "url": "https://bbq.co.kr/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "338",
+        "chunk_count": 2,
+        "total_chars": 393,
+        "avg_chunk_chars": 196.5,
+        "min_chunk_chars": 87,
+        "max_chunk_chars": 306,
+        "std_chunk_chars": 154.8563850798539,
+        "median_chunk_chars": 196.5,
+        "elapsed_seconds": 0.0005041999975219369,
+        "chars_per_second": 779452.6020062133
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "338",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0708,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "339",
+      "notebook_id": null,
+      "url": "https://bbq.co.kr/products/3105",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "339",
+        "chunk_count": 2,
+        "total_chars": 393,
+        "avg_chunk_chars": 196.5,
+        "min_chunk_chars": 87,
+        "max_chunk_chars": 306,
+        "std_chunk_chars": 154.8563850798539,
+        "median_chunk_chars": 196.5,
+        "elapsed_seconds": 0.00037810008507221937,
+        "chars_per_second": 1039407.330270594
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "339",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0708,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "340",
+      "notebook_id": null,
+      "url": "https://www.lotteeatz.com/brand/ria",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "340",
+        "chunk_count": 3,
+        "total_chars": 602,
+        "avg_chunk_chars": 200.66666666666666,
+        "min_chunk_chars": 117,
+        "max_chunk_chars": 254,
+        "std_chunk_chars": 73.36438736426096,
+        "median_chunk_chars": 231,
+        "elapsed_seconds": 0.0006337999366223812,
+        "chars_per_second": 949826.5386521684
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "340",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0985,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "341",
+      "notebook_id": null,
+      "url": "https://www.lotteeatz.com/event/main",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "341",
+        "chunk_count": 7,
+        "total_chars": 1689,
+        "avg_chunk_chars": 241.28571428571428,
+        "min_chunk_chars": 138,
+        "max_chunk_chars": 287,
+        "std_chunk_chars": 52.78798564608645,
+        "median_chunk_chars": 254,
+        "elapsed_seconds": 0.0015584999928250909,
+        "chars_per_second": 1083734.364950719
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "341",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.1429,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1245,
+        "boundary_quality": 0.8571,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "342",
+      "notebook_id": null,
+      "url": "https://en.wikipedia.org/wiki/Tensor",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "342",
+        "chunk_count": 53,
+        "total_chars": 56273,
+        "avg_chunk_chars": 1061.754716981132,
+        "min_chunk_chars": 665,
+        "max_chunk_chars": 1394,
+        "std_chunk_chars": 220.6544379497897,
+        "median_chunk_chars": 1130,
+        "elapsed_seconds": 0.012303399969823658,
+        "chars_per_second": 4573776.365721657
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "342",
+        "paragraph_integrity": 0.8297,
+        "sentence_integrity": 0.0755,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.128,
+        "boundary_quality": 0.9245,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "343",
+      "notebook_id": null,
+      "url": "https://ridibooks.com/webtoon/recommendation",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "343",
+        "chunk_count": 17,
+        "total_chars": 3934,
+        "avg_chunk_chars": 231.41176470588235,
+        "min_chunk_chars": 85,
+        "max_chunk_chars": 278,
+        "std_chunk_chars": 42.1871704780159,
+        "median_chunk_chars": 236,
+        "elapsed_seconds": 0.0018680000212043524,
+        "chars_per_second": 2105995.693438825
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "343",
+        "paragraph_integrity": 0.7308,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1189,
+        "boundary_quality": 0.7059,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "344",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/home",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "344",
+        "chunk_count": 1,
+        "total_chars": 192,
+        "avg_chunk_chars": 192,
+        "min_chunk_chars": 192,
+        "max_chunk_chars": 192,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 192,
+        "elapsed_seconds": 0.0002835000632330775,
+        "chars_per_second": 677248.5261922097
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "344",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "345",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/o/172802",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "345",
+        "chunk_count": 6,
+        "total_chars": 1610,
+        "avg_chunk_chars": 268.3333333333333,
+        "min_chunk_chars": 172,
+        "max_chunk_chars": 318,
+        "std_chunk_chars": 54.18732939227275,
+        "median_chunk_chars": 273.5,
+        "elapsed_seconds": 0.0015556999715045094,
+        "chars_per_second": 1034903.9207367069
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "345",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.115,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "346",
+      "notebook_id": null,
+      "url": "https://ridi.career.greetinghr.com/ko/o/172799",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "346",
+        "chunk_count": 6,
+        "total_chars": 1741,
+        "avg_chunk_chars": 290.1666666666667,
+        "min_chunk_chars": 253,
+        "max_chunk_chars": 312,
+        "std_chunk_chars": 25.52972124146025,
+        "median_chunk_chars": 301.5,
+        "elapsed_seconds": 0.0011127999750897288,
+        "chars_per_second": 1564521.9616936254
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "346",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1232,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "347",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/index",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "347",
+        "chunk_count": 7,
+        "total_chars": 2062,
+        "avg_chunk_chars": 294.57142857142856,
+        "min_chunk_chars": 116,
+        "max_chunk_chars": 591,
+        "std_chunk_chars": 149.45886518019725,
+        "median_chunk_chars": 262,
+        "elapsed_seconds": 0.0016305999597534537,
+        "chars_per_second": 1264565.2219393982
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "347",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.1429,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1003,
+        "boundary_quality": 0.5714,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "348",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/board/all/list",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "348",
+        "chunk_count": 2,
+        "total_chars": 355,
+        "avg_chunk_chars": 177.5,
+        "min_chunk_chars": 34,
+        "max_chunk_chars": 321,
+        "std_chunk_chars": 202.93964620053913,
+        "median_chunk_chars": 177.5,
+        "elapsed_seconds": 0.0003081000177189708,
+        "chars_per_second": 1152223.2378571571
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "348",
+        "paragraph_integrity": 0.8571,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0957,
+        "boundary_quality": 0.5,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "349",
+      "notebook_id": null,
+      "url": "https://lineageclassic.plaync.com/ko-kr/board/free/view?articleId=698e9c2d76941606cf936f8a",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "349",
+        "chunk_count": 2,
+        "total_chars": 379,
+        "avg_chunk_chars": 189.5,
+        "min_chunk_chars": 73,
+        "max_chunk_chars": 306,
+        "std_chunk_chars": 164.75588001646557,
+        "median_chunk_chars": 189.5,
+        "elapsed_seconds": 0.00024259998463094234,
+        "chars_per_second": 1562242.4732489474
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "349",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1246,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "350",
+      "notebook_id": null,
+      "url": "https://pokemonkorea.co.kr/pokedex?word=&characters=&area=성도지방&snumber=1&snumber2=1025&typetextc[]=풀&sortselval=number+asc%2Cnumber_count+asc&typetextcs=_풀________________",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "350",
+        "chunk_count": 1,
+        "total_chars": 999,
+        "avg_chunk_chars": 999,
+        "min_chunk_chars": 999,
+        "max_chunk_chars": 999,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 999,
+        "elapsed_seconds": 0.00020490004681050777,
+        "chars_per_second": 4875547.934471086
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "350",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "351",
+      "notebook_id": null,
+      "url": "https://www.yonhapnewstv.co.kr/news/AKR202602131021397DQ",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "351",
+        "chunk_count": 5,
+        "total_chars": 1230,
+        "avg_chunk_chars": 246,
+        "min_chunk_chars": 224,
+        "max_chunk_chars": 270,
+        "std_chunk_chars": 16.62828914831589,
+        "median_chunk_chars": 247,
+        "elapsed_seconds": 0.0008688999805599451,
+        "chars_per_second": 1415582.9526056051
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "351",
+        "paragraph_integrity": 0.8636,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1101,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "352",
+      "notebook_id": null,
+      "url": "https://lolesports.com/ko-KR/leagues/first_stand,lck,msi,worlds",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "352",
+        "chunk_count": 5,
+        "total_chars": 1584,
+        "avg_chunk_chars": 316.8,
+        "min_chunk_chars": 192,
+        "max_chunk_chars": 388,
+        "std_chunk_chars": 89.59185230812007,
+        "median_chunk_chars": 375,
+        "elapsed_seconds": 0.0010516999755054712,
+        "chars_per_second": 1506132.962719423
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "352",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.2,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1023,
+        "boundary_quality": 0.6,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "353",
+      "notebook_id": null,
+      "url": "https://news.blizzard.com/ko-kr/article/24244446/2026-2-11",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "353",
+        "chunk_count": 28,
+        "total_chars": 7781,
+        "avg_chunk_chars": 277.89285714285717,
+        "min_chunk_chars": 60,
+        "max_chunk_chars": 320,
+        "std_chunk_chars": 44.47499446065319,
+        "median_chunk_chars": 283.0,
+        "elapsed_seconds": 0.005450000055134296,
+        "chars_per_second": 1427706.4075751214
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "353",
+        "paragraph_integrity": 0.8803,
+        "sentence_integrity": 0.0357,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.8571,
+        "heading_integrity": 1.0,
+        "coverage": 1.1225,
+        "boundary_quality": 0.9643,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "354",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/joo5hk/220933701107",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "354",
+        "chunk_count": 61,
+        "total_chars": 15771,
+        "avg_chunk_chars": 258.5409836065574,
+        "min_chunk_chars": 211,
+        "max_chunk_chars": 404,
+        "std_chunk_chars": 27.412633201069784,
+        "median_chunk_chars": 256,
+        "elapsed_seconds": 0.0058883000165224075,
+        "chars_per_second": 2678362.168324815
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "354",
+        "paragraph_integrity": 0.9953,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1297,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "355",
+      "notebook_id": null,
+      "url": "http://metizen.co.kr/점심-베스트-10/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "355",
+        "chunk_count": 10,
+        "total_chars": 2326,
+        "avg_chunk_chars": 232.6,
+        "min_chunk_chars": 206,
+        "max_chunk_chars": 254,
+        "std_chunk_chars": 13.599019572503503,
+        "median_chunk_chars": 232.0,
+        "elapsed_seconds": 0.0017173000378534198,
+        "chars_per_second": 1354451.7258075876
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "355",
+        "paragraph_integrity": 0.6364,
+        "sentence_integrity": 0.1,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1193,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "356",
+      "notebook_id": null,
+      "url": "https://www.otoki.com/product/product_cat",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "356",
+        "chunk_count": 1,
+        "total_chars": 216,
+        "avg_chunk_chars": 216,
+        "min_chunk_chars": 216,
+        "max_chunk_chars": 216,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 216,
+        "elapsed_seconds": 0.0003239000216126442,
+        "chars_per_second": 666872.4470118033
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "356",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "357",
+      "notebook_id": null,
+      "url": "https://mojing.tistory.com/entry/ProgrammersC-PCCP-기출문제-1번-동영상-재생기",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "357",
+        "chunk_count": 6,
+        "total_chars": 2247,
+        "avg_chunk_chars": 374.5,
+        "min_chunk_chars": 68,
+        "max_chunk_chars": 609,
+        "std_chunk_chars": 191.09238603356232,
+        "median_chunk_chars": 345.0,
+        "elapsed_seconds": 0.001264900085516274,
+        "chars_per_second": 1776424.8937360756
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "357",
+        "paragraph_integrity": 0.4,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 0.8889,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 0.75,
+        "coverage": 0.9437,
+        "boundary_quality": 0.8333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "358",
+      "notebook_id": null,
+      "url": "https://www.en-core.com/resource/playdata2",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "358",
+        "chunk_count": 5,
+        "total_chars": 1292,
+        "avg_chunk_chars": 258.4,
+        "min_chunk_chars": 48,
+        "max_chunk_chars": 373,
+        "std_chunk_chars": 124.24693155164839,
+        "median_chunk_chars": 298,
+        "elapsed_seconds": 0.0008275000145658851,
+        "chars_per_second": 1561329.2776529996
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "358",
+        "paragraph_integrity": 0.9375,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1294,
+        "boundary_quality": 0.8,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "359",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@sungdairi/27",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "359",
+        "chunk_count": 12,
+        "total_chars": 3935,
+        "avg_chunk_chars": 327.9166666666667,
+        "min_chunk_chars": 155,
+        "max_chunk_chars": 461,
+        "std_chunk_chars": 73.39737217655849,
+        "median_chunk_chars": 326.5,
+        "elapsed_seconds": 0.0027413000352680683,
+        "chars_per_second": 1435450.315315522
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "359",
+        "paragraph_integrity": 0.9123,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1301,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "360",
+      "notebook_id": null,
+      "url": "https://platform.claude.com/docs/ko/overview",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "360",
+        "chunk_count": 8,
+        "total_chars": 2398,
+        "avg_chunk_chars": 299.75,
+        "min_chunk_chars": 171,
+        "max_chunk_chars": 365,
+        "std_chunk_chars": 57.80941594090509,
+        "median_chunk_chars": 306.0,
+        "elapsed_seconds": 0.0018372000195086002,
+        "chars_per_second": 1305247.101315293
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "360",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.1392,
+        "boundary_quality": 0.75,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "361",
+      "notebook_id": null,
+      "url": "https://tech.hyperithm.com/claude_code_guides",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "361",
+        "chunk_count": 26,
+        "total_chars": 11664,
+        "avg_chunk_chars": 448.61538461538464,
+        "min_chunk_chars": 295,
+        "max_chunk_chars": 767,
+        "std_chunk_chars": 103.2775200798613,
+        "median_chunk_chars": 444.0,
+        "elapsed_seconds": 0.004972699913196266,
+        "chars_per_second": 2345607.0552431177
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "361",
+        "paragraph_integrity": 0.9556,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.875,
+        "heading_integrity": 1.0,
+        "coverage": 1.1152,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "362",
+      "notebook_id": null,
+      "url": "https://github.com/skn21-final-1team",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "362",
+        "chunk_count": 6,
+        "total_chars": 1993,
+        "avg_chunk_chars": 332.1666666666667,
+        "min_chunk_chars": 101,
+        "max_chunk_chars": 471,
+        "std_chunk_chars": 128.46075924836606,
+        "median_chunk_chars": 358.0,
+        "elapsed_seconds": 0.0064724000403657556,
+        "chars_per_second": 307922.87058439845
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "362",
+        "paragraph_integrity": 0.9688,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1402,
+        "boundary_quality": 0.8333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "363",
+      "notebook_id": null,
+      "url": "https://content.rview.com/ko/blog/claudecode/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "363",
+        "chunk_count": 14,
+        "total_chars": 3598,
+        "avg_chunk_chars": 257,
+        "min_chunk_chars": 132,
+        "max_chunk_chars": 301,
+        "std_chunk_chars": 39.08176832468837,
+        "median_chunk_chars": 262.0,
+        "elapsed_seconds": 0.013545199995860457,
+        "chars_per_second": 265629.15284378105
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "363",
+        "paragraph_integrity": 0.9925,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.123,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "364",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/picture-in-novel/222349596538",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "364",
+        "chunk_count": 44,
+        "total_chars": 11617,
+        "avg_chunk_chars": 264.02272727272725,
+        "min_chunk_chars": 108,
+        "max_chunk_chars": 533,
+        "std_chunk_chars": 49.26647458434997,
+        "median_chunk_chars": 262.0,
+        "elapsed_seconds": 0.012288999976590276,
+        "chars_per_second": 945316.9519187574
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "364",
+        "paragraph_integrity": 0.9409,
+        "sentence_integrity": 0.0682,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.1194,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "365",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/VGC/comments/owczh9/tips_on_competitive_pokemon/?tl=ko",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "365",
+        "chunk_count": 2,
+        "total_chars": 346,
+        "avg_chunk_chars": 173,
+        "min_chunk_chars": 108,
+        "max_chunk_chars": 238,
+        "std_chunk_chars": 91.92388155425118,
+        "median_chunk_chars": 173.0,
+        "elapsed_seconds": 0.0003540999023243785,
+        "chars_per_second": 977125.3754344207
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "365",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0712,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "366",
+      "notebook_id": null,
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=pokemontcgpocket&no=568804",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "366",
+        "chunk_count": 15,
+        "total_chars": 3703,
+        "avg_chunk_chars": 246.86666666666667,
+        "min_chunk_chars": 143,
+        "max_chunk_chars": 270,
+        "std_chunk_chars": 30.120867628052594,
+        "median_chunk_chars": 253,
+        "elapsed_seconds": 0.002228099969215691,
+        "chars_per_second": 1661954.154284866
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "366",
+        "paragraph_integrity": 0.9494,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0786,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "367",
+      "notebook_id": null,
+      "url": "https://debateforall.org/blog/?bmode=view&idx=6582418",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "367",
+        "chunk_count": 8,
+        "total_chars": 2014,
+        "avg_chunk_chars": 251.75,
+        "min_chunk_chars": 109,
+        "max_chunk_chars": 296,
+        "std_chunk_chars": 59.1722666699286,
+        "median_chunk_chars": 268.0,
+        "elapsed_seconds": 0.0010451999260112643,
+        "chars_per_second": 1926904.078233062
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "367",
+        "paragraph_integrity": 0.7667,
+        "sentence_integrity": 0.125,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.6667,
+        "heading_integrity": 1.0,
+        "coverage": 1.1158,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "368",
+      "notebook_id": null,
+      "url": "https://kin.naver.com/qna/detail.naver?d1id=4&dirId=40102&docId=491942462&enc=utf8&kinsrch_src=pc_tab_kin&qb=7ZmY7Jyo",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "368",
+        "chunk_count": 4,
+        "total_chars": 869,
+        "avg_chunk_chars": 217.25,
+        "min_chunk_chars": 100,
+        "max_chunk_chars": 280,
+        "std_chunk_chars": 80.02239269937718,
+        "median_chunk_chars": 244.5,
+        "elapsed_seconds": 0.001396800042130053,
+        "chars_per_second": 622136.2928045281
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "368",
+        "paragraph_integrity": 0.7143,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1084,
+        "boundary_quality": 0.75,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "369",
+      "notebook_id": null,
+      "url": "https://html.duckduckgo.com/html/?q=%EC%B9%9C%EA%B5%AC%EC%82%AC%EA%B7%80%EB%8A%94%EB%B2%95",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "369",
+        "chunk_count": 13,
+        "total_chars": 3534,
+        "avg_chunk_chars": 271.84615384615387,
+        "min_chunk_chars": 146,
+        "max_chunk_chars": 309,
+        "std_chunk_chars": 40.695712619894316,
+        "median_chunk_chars": 279,
+        "elapsed_seconds": 0.001892399974167347,
+        "chars_per_second": 1867469.9050104113
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "369",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.1538,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1273,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "370",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@dadaworld/53",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "370",
+        "chunk_count": 37,
+        "total_chars": 9469,
+        "avg_chunk_chars": 255.9189189189189,
+        "min_chunk_chars": 99,
+        "max_chunk_chars": 287,
+        "std_chunk_chars": 28.33860576275016,
+        "median_chunk_chars": 260,
+        "elapsed_seconds": 0.0038997000083327293,
+        "chars_per_second": 2428135.492414033
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "370",
+        "paragraph_integrity": 0.3871,
+        "sentence_integrity": 0.0811,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1335,
+        "boundary_quality": 0.6216,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "371",
+      "notebook_id": null,
+      "url": "https://pann.nate.com/talk/117934352",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "371",
+        "chunk_count": 23,
+        "total_chars": 5858,
+        "avg_chunk_chars": 254.69565217391303,
+        "min_chunk_chars": 123,
+        "max_chunk_chars": 288,
+        "std_chunk_chars": 30.689700348975084,
+        "median_chunk_chars": 262,
+        "elapsed_seconds": 0.0030984000768512487,
+        "chars_per_second": 1890653.1934872647
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "371",
+        "paragraph_integrity": 0.5,
+        "sentence_integrity": 0.0435,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1313,
+        "boundary_quality": 0.913,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "374",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/saw/comments/18lmdyv/community_hangout_megathread_shitposts_memes_and/?tl=ko",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "374",
+        "chunk_count": 6,
+        "total_chars": 1399,
+        "avg_chunk_chars": 233.16666666666666,
+        "min_chunk_chars": 109,
+        "max_chunk_chars": 272,
+        "std_chunk_chars": 62.22030751022263,
+        "median_chunk_chars": 254.0,
+        "elapsed_seconds": 0.0008243999909609556,
+        "chars_per_second": 1696991.7701833865
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "374",
+        "paragraph_integrity": 0.7778,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1255,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "375",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/kanovatio/223546676104",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "375",
+        "chunk_count": 19,
+        "total_chars": 7490,
+        "avg_chunk_chars": 394.2105263157895,
+        "min_chunk_chars": 279,
+        "max_chunk_chars": 531,
+        "std_chunk_chars": 77.1150503737892,
+        "median_chunk_chars": 390,
+        "elapsed_seconds": 0.0025095000164583325,
+        "chars_per_second": 2984658.278891214
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "375",
+        "paragraph_integrity": 0.5833,
+        "sentence_integrity": 0.0526,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1221,
+        "boundary_quality": 0.9474,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "376",
+      "notebook_id": null,
+      "url": "https://n.news.naver.com/mnews/article/001/0015905696?rc=N&ntype=RANKING",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "376",
+        "chunk_count": 18,
+        "total_chars": 4392,
+        "avg_chunk_chars": 244,
+        "min_chunk_chars": 55,
+        "max_chunk_chars": 277,
+        "std_chunk_chars": 48.693519317558184,
+        "median_chunk_chars": 253.0,
+        "elapsed_seconds": 0.0024548000656068325,
+        "chars_per_second": 1789147.7442641696
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "376",
+        "paragraph_integrity": 0.8393,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1273,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "377",
+      "notebook_id": null,
+      "url": "https://n.news.naver.com/mnews/article/001/0015905591?rc=N&ntype=RANKING",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "377",
+        "chunk_count": 8,
+        "total_chars": 1890,
+        "avg_chunk_chars": 236.25,
+        "min_chunk_chars": 49,
+        "max_chunk_chars": 284,
+        "std_chunk_chars": 77.2172260574025,
+        "median_chunk_chars": 261.0,
+        "elapsed_seconds": 0.0011246999492868781,
+        "chars_per_second": 1680448.195270538
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "377",
+        "paragraph_integrity": 0.7917,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1257,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "378",
+      "notebook_id": null,
+      "url": "https://www.hankyung.com/article/202602123331i",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "378",
+        "chunk_count": 10,
+        "total_chars": 2683,
+        "avg_chunk_chars": 268.3,
+        "min_chunk_chars": 231,
+        "max_chunk_chars": 304,
+        "std_chunk_chars": 19.11398557194298,
+        "median_chunk_chars": 269.5,
+        "elapsed_seconds": 0.0013270999770611525,
+        "chars_per_second": 2021701.4892438417
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "378",
+        "paragraph_integrity": 0.8571,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1147,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "379",
+      "notebook_id": null,
+      "url": "https://www.hankyung.com/article/2026021228461",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "379",
+        "chunk_count": 13,
+        "total_chars": 3149,
+        "avg_chunk_chars": 242.23076923076923,
+        "min_chunk_chars": 204,
+        "max_chunk_chars": 281,
+        "std_chunk_chars": 18.152841128199217,
+        "median_chunk_chars": 241,
+        "elapsed_seconds": 0.0016468000831082463,
+        "chars_per_second": 1912193.2481667309
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "379",
+        "paragraph_integrity": 0.875,
+        "sentence_integrity": 0.1538,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1254,
+        "boundary_quality": 0.7692,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "380",
+      "notebook_id": null,
+      "url": "https://docs.langchain.com/oss/python/deepagents/overview",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "380",
+        "chunk_count": 3,
+        "total_chars": 3354,
+        "avg_chunk_chars": 1118,
+        "min_chunk_chars": 905,
+        "max_chunk_chars": 1234,
+        "std_chunk_chars": 184.70787747142785,
+        "median_chunk_chars": 1215,
+        "elapsed_seconds": 0.0008339999476447701,
+        "chars_per_second": 4021582.9862720645
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "380",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0922,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "381",
+      "notebook_id": null,
+      "url": "https://developers.llamaindex.ai/python/llamaagents/overview/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "381",
+        "chunk_count": 2,
+        "total_chars": 2243,
+        "avg_chunk_chars": 1121.5,
+        "min_chunk_chars": 997,
+        "max_chunk_chars": 1246,
+        "std_chunk_chars": 176.06958851545033,
+        "median_chunk_chars": 1121.5,
+        "elapsed_seconds": 0.0006507999496534467,
+        "chars_per_second": 3446527.6175795738
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "381",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0681,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "382",
+      "notebook_id": null,
+      "url": "https://sunnykim91.tistory.com/121",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "382",
+        "chunk_count": 52,
+        "total_chars": 17712,
+        "avg_chunk_chars": 340.61538461538464,
+        "min_chunk_chars": 164,
+        "max_chunk_chars": 490,
+        "std_chunk_chars": 52.56449030501143,
+        "median_chunk_chars": 332.0,
+        "elapsed_seconds": 0.007808699971064925,
+        "chars_per_second": 2268239.2799866395
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "382",
+        "paragraph_integrity": 0.8146,
+        "sentence_integrity": 0.0385,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.8,
+        "heading_integrity": 1.0,
+        "coverage": 1.13,
+        "boundary_quality": 0.9038,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "383",
+      "notebook_id": null,
+      "url": "https://pyrasis.com/jHLsAlwaysUpToDateDocker",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "383",
+        "chunk_count": 3,
+        "total_chars": 968,
+        "avg_chunk_chars": 322.6666666666667,
+        "min_chunk_chars": 177,
+        "max_chunk_chars": 437,
+        "std_chunk_chars": 132.80185741672943,
+        "median_chunk_chars": 354,
+        "elapsed_seconds": 0.0007539000362157822,
+        "chars_per_second": 1283989.8574072197
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "383",
+        "paragraph_integrity": 0.8889,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0756,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "384",
+      "notebook_id": null,
+      "url": "https://drop.com/talk/93641/how-to-configure-stack-overflow-the-key-macropad",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "384",
+        "chunk_count": 1,
+        "total_chars": 170,
+        "avg_chunk_chars": 170,
+        "min_chunk_chars": 170,
+        "max_chunk_chars": 170,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 170,
+        "elapsed_seconds": 0.00017829996068030596,
+        "chars_per_second": 953449.4531090341
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "384",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "385",
+      "notebook_id": null,
+      "url": "https://sunnykim91.tistory.com/148",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "385",
+        "chunk_count": 20,
+        "total_chars": 11951,
+        "avg_chunk_chars": 597.55,
+        "min_chunk_chars": 228,
+        "max_chunk_chars": 808,
+        "std_chunk_chars": 154.8491541026808,
+        "median_chunk_chars": 645.5,
+        "elapsed_seconds": 0.005935200024396181,
+        "chars_per_second": 2013579.989027554
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "385",
+        "paragraph_integrity": 0.7794,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.75,
+        "heading_integrity": 1.0,
+        "coverage": 1.1102,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "386",
+      "notebook_id": null,
+      "url": "https://huggingface.co/papers",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "386",
+        "chunk_count": 1,
+        "total_chars": 236,
+        "avg_chunk_chars": 236,
+        "min_chunk_chars": 236,
+        "max_chunk_chars": 236,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 236,
+        "elapsed_seconds": 0.0001569000305607915,
+        "chars_per_second": 1504142.4731180083
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "386",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "387",
+      "notebook_id": null,
+      "url": "https://arxiv.org/abs/2602.09877",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "387",
+        "chunk_count": 3,
+        "total_chars": 3357,
+        "avg_chunk_chars": 1119,
+        "min_chunk_chars": 921,
+        "max_chunk_chars": 1365,
+        "std_chunk_chars": 225.85836269662454,
+        "median_chunk_chars": 1071,
+        "elapsed_seconds": 0.00105339998845011,
+        "chars_per_second": 3186823.653699889
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "387",
+        "paragraph_integrity": 0.9667,
+        "sentence_integrity": 0.3333,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0931,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "388",
+      "notebook_id": null,
+      "url": "https://namu.news/article/3174854",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "388",
+        "chunk_count": 4,
+        "total_chars": 927,
+        "avg_chunk_chars": 231.75,
+        "min_chunk_chars": 167,
+        "max_chunk_chars": 256,
+        "std_chunk_chars": 43.27720724199595,
+        "median_chunk_chars": 252.0,
+        "elapsed_seconds": 0.0006768000312149525,
+        "chars_per_second": 1369680.7878922566
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "388",
+        "paragraph_integrity": 0.9286,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1023,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "389",
+      "notebook_id": null,
+      "url": "https://www.leagueoflegends.com/ko-kr/news/game-updates/patch-26-3-notes/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "389",
+        "chunk_count": 109,
+        "total_chars": 30531,
+        "avg_chunk_chars": 280.10091743119267,
+        "min_chunk_chars": 225,
+        "max_chunk_chars": 371,
+        "std_chunk_chars": 23.74944247069908,
+        "median_chunk_chars": 278,
+        "elapsed_seconds": 0.01496300008147955,
+        "chars_per_second": 2040433.0571240014
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "389",
+        "paragraph_integrity": 0.8182,
+        "sentence_integrity": 0.0459,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.6818,
+        "heading_integrity": 1.0,
+        "coverage": 1.1288,
+        "boundary_quality": 0.9817,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "390",
+      "notebook_id": null,
+      "url": "https://namu.news/article/3173957",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "390",
+        "chunk_count": 13,
+        "total_chars": 3122,
+        "avg_chunk_chars": 240.15384615384616,
+        "min_chunk_chars": 98,
+        "max_chunk_chars": 265,
+        "std_chunk_chars": 43.2509078013517,
+        "median_chunk_chars": 251,
+        "elapsed_seconds": 0.0017380000790581107,
+        "chars_per_second": 1796317.5247333315
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "390",
+        "paragraph_integrity": 0.6552,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1106,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "391",
+      "notebook_id": null,
+      "url": "https://mz-moonzoo.tistory.com/95",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "391",
+        "chunk_count": 48,
+        "total_chars": 15542,
+        "avg_chunk_chars": 323.7916666666667,
+        "min_chunk_chars": 261,
+        "max_chunk_chars": 454,
+        "std_chunk_chars": 38.05648564030552,
+        "median_chunk_chars": 320.0,
+        "elapsed_seconds": 0.00750429998151958,
+        "chars_per_second": 2071079.252998203
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "391",
+        "paragraph_integrity": 0.6582,
+        "sentence_integrity": 0.0208,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.134,
+        "boundary_quality": 0.8333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "392",
+      "notebook_id": null,
+      "url": "https://usehooks-ts.com/introduction",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "392",
+        "chunk_count": 1,
+        "total_chars": 779,
+        "avg_chunk_chars": 779,
+        "min_chunk_chars": 779,
+        "max_chunk_chars": 779,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 779,
+        "elapsed_seconds": 0.0003429000498726964,
+        "chars_per_second": 2271799.027994333
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "392",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "393",
+      "notebook_id": null,
+      "url": "https://wikidocs.net/233772",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "393",
+        "chunk_count": 4,
+        "total_chars": 1336,
+        "avg_chunk_chars": 334,
+        "min_chunk_chars": 289,
+        "max_chunk_chars": 421,
+        "std_chunk_chars": 59.295868321494375,
+        "median_chunk_chars": 313.0,
+        "elapsed_seconds": 0.0010042000794783235,
+        "chars_per_second": 1330412.1631757338
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "393",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1115,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "394",
+      "notebook_id": null,
+      "url": "https://blog.ull.im/engineering/2019/03/10/logs-on-git.html",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "394",
+        "chunk_count": 23,
+        "total_chars": 13867,
+        "avg_chunk_chars": 602.9130434782609,
+        "min_chunk_chars": 141,
+        "max_chunk_chars": 915,
+        "std_chunk_chars": 236.57170987470897,
+        "median_chunk_chars": 666,
+        "elapsed_seconds": 0.004724200000055134,
+        "chars_per_second": 2935311.798788824
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "394",
+        "paragraph_integrity": 0.9479,
+        "sentence_integrity": 0.0435,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.13,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "395",
+      "notebook_id": null,
+      "url": "https://m.blog.naver.com/jisoo831/223328759196",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "395",
+        "chunk_count": 15,
+        "total_chars": 3665,
+        "avg_chunk_chars": 244.33333333333334,
+        "min_chunk_chars": 59,
+        "max_chunk_chars": 281,
+        "std_chunk_chars": 52.43998837673766,
+        "median_chunk_chars": 254,
+        "elapsed_seconds": 0.0019076999742537737,
+        "chars_per_second": 1921161.6341472256
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "395",
+        "paragraph_integrity": 0.9787,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0846,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "396",
+      "notebook_id": null,
+      "url": "https://brunch.co.kr/@fromairplane/213",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "396",
+        "chunk_count": 20,
+        "total_chars": 5268,
+        "avg_chunk_chars": 263.4,
+        "min_chunk_chars": 220,
+        "max_chunk_chars": 410,
+        "std_chunk_chars": 41.51397989010196,
+        "median_chunk_chars": 253.5,
+        "elapsed_seconds": 0.004237100016325712,
+        "chars_per_second": 1243303.1978717023
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "396",
+        "paragraph_integrity": 0.9385,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1442,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "397",
+      "notebook_id": null,
+      "url": "https://www.hani.co.kr/arti/society/society_general/1244950.html",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "397",
+        "chunk_count": 5,
+        "total_chars": 1196,
+        "avg_chunk_chars": 239.2,
+        "min_chunk_chars": 210,
+        "max_chunk_chars": 251,
+        "std_chunk_chars": 16.543881044059763,
+        "median_chunk_chars": 245,
+        "elapsed_seconds": 0.0009318999946117401,
+        "chars_per_second": 1283399.5138054406
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "397",
+        "paragraph_integrity": 0.6667,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1064,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "398",
+      "notebook_id": null,
+      "url": "https://www.reddit.com/r/notebooklm/comments/1hxyg20/getting_notebooklm_to_read_a_website/?tl=ko",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "398",
+        "chunk_count": 2,
+        "total_chars": 331,
+        "avg_chunk_chars": 165.5,
+        "min_chunk_chars": 41,
+        "max_chunk_chars": 290,
+        "std_chunk_chars": 176.06958851545033,
+        "median_chunk_chars": 165.5,
+        "elapsed_seconds": 0.0004043999360874295,
+        "chars_per_second": 818496.6674387387
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "398",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1336,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "399",
+      "notebook_id": null,
+      "url": "https://yozm.wishket.com/magazine/detail/2760/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "399",
+        "chunk_count": 19,
+        "total_chars": 5214,
+        "avg_chunk_chars": 274.42105263157896,
+        "min_chunk_chars": 118,
+        "max_chunk_chars": 307,
+        "std_chunk_chars": 39.56754532789283,
+        "median_chunk_chars": 283,
+        "elapsed_seconds": 0.0028692000778391957,
+        "chars_per_second": 1817231.2346815078
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "399",
+        "paragraph_integrity": 0.5484,
+        "sentence_integrity": 0.0526,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1232,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "400",
+      "notebook_id": null,
+      "url": "https://news.hada.io/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "400",
+        "chunk_count": 3,
+        "total_chars": 1211,
+        "avg_chunk_chars": 403.6666666666667,
+        "min_chunk_chars": 388,
+        "max_chunk_chars": 429,
+        "std_chunk_chars": 22.143471573656498,
+        "median_chunk_chars": 394,
+        "elapsed_seconds": 0.0008622000459581614,
+        "chars_per_second": 1404546.4340635913
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "400",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0745,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "401",
+      "notebook_id": null,
+      "url": "https://goddaehee.tistory.com/516",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "401",
+        "chunk_count": 73,
+        "total_chars": 26283,
+        "avg_chunk_chars": 360.041095890411,
+        "min_chunk_chars": 95,
+        "max_chunk_chars": 533,
+        "std_chunk_chars": 63.34373562734352,
+        "median_chunk_chars": 357,
+        "elapsed_seconds": 0.011482600006274879,
+        "chars_per_second": 2288941.5276711867
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "401",
+        "paragraph_integrity": 0.86,
+        "sentence_integrity": 0.0137,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.8,
+        "heading_integrity": 1.0,
+        "coverage": 1.1301,
+        "boundary_quality": 0.9726,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "402",
+      "notebook_id": null,
+      "url": "https://elec.chungbuk.ac.kr/bbs/bbs.php?db=notice",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "402",
+        "chunk_count": 7,
+        "total_chars": 1633,
+        "avg_chunk_chars": 233.28571428571428,
+        "min_chunk_chars": 181,
+        "max_chunk_chars": 293,
+        "std_chunk_chars": 48.6028609779105,
+        "median_chunk_chars": 230,
+        "elapsed_seconds": 0.0014661001041531563,
+        "chars_per_second": 1113839.3588364471
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "402",
+        "paragraph_integrity": 0.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1116,
+        "boundary_quality": 0.5714,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "403",
+      "notebook_id": null,
+      "url": "https://velog.io/@dailylifecoding/PowerShell-쓸만한-명령어-모음",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "403",
+        "chunk_count": 38,
+        "total_chars": 20023,
+        "avg_chunk_chars": 526.921052631579,
+        "min_chunk_chars": 180,
+        "max_chunk_chars": 891,
+        "std_chunk_chars": 133.88263952592803,
+        "median_chunk_chars": 516.5,
+        "elapsed_seconds": 0.0104245999827981,
+        "chars_per_second": 1920745.163655245
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "403",
+        "paragraph_integrity": 0.9331,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 0.989,
+        "coverage": 1.1134,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "404",
+      "notebook_id": null,
+      "url": "https://www.notion.com/ko/help/keyboard-shortcuts",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "404",
+        "chunk_count": 24,
+        "total_chars": 8320,
+        "avg_chunk_chars": 346.6666666666667,
+        "min_chunk_chars": 83,
+        "max_chunk_chars": 495,
+        "std_chunk_chars": 70.01097222495956,
+        "median_chunk_chars": 351.5,
+        "elapsed_seconds": 0.003675400046631694,
+        "chars_per_second": 2263699.160483178
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "404",
+        "paragraph_integrity": 0.9618,
+        "sentence_integrity": 0.0417,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1287,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "405",
+      "notebook_id": null,
+      "url": "https://www.redhat.com/ko/topics/automation/what-is-yaml",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "405",
+        "chunk_count": 16,
+        "total_chars": 6059,
+        "avg_chunk_chars": 378.6875,
+        "min_chunk_chars": 88,
+        "max_chunk_chars": 858,
+        "std_chunk_chars": 154.37949723543818,
+        "median_chunk_chars": 349.5,
+        "elapsed_seconds": 0.0033294999739155173,
+        "chars_per_second": 1819792.7759328287
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "405",
+        "paragraph_integrity": 0.8,
+        "sentence_integrity": 0.0625,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1389,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "406",
+      "notebook_id": null,
+      "url": "https://deepbaksuvision.github.io/Modu_ObjectDetection/posts/04_01_Review_of_YOLO_Paper.html",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "406",
+        "chunk_count": 27,
+        "total_chars": 11725,
+        "avg_chunk_chars": 434.25925925925924,
+        "min_chunk_chars": 101,
+        "max_chunk_chars": 640,
+        "std_chunk_chars": 93.0510995233647,
+        "median_chunk_chars": 434,
+        "elapsed_seconds": 0.0036500999704003334,
+        "chars_per_second": 3212240.7865760545
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "406",
+        "paragraph_integrity": 0.9306,
+        "sentence_integrity": 0.037,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.8571,
+        "heading_integrity": 1.0,
+        "coverage": 1.1332,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "407",
+      "notebook_id": null,
+      "url": "https://toss.im/tossfeed/article/house-contract-02",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "407",
+        "chunk_count": 12,
+        "total_chars": 3109,
+        "avg_chunk_chars": 259.0833333333333,
+        "min_chunk_chars": 168,
+        "max_chunk_chars": 288,
+        "std_chunk_chars": 30.55385211046029,
+        "median_chunk_chars": 265.0,
+        "elapsed_seconds": 0.0022553999442607164,
+        "chars_per_second": 1378469.4851622335
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "407",
+        "paragraph_integrity": 0.8611,
+        "sentence_integrity": 0.0833,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.5,
+        "heading_integrity": 1.0,
+        "coverage": 1.1338,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "408",
+      "notebook_id": null,
+      "url": "https://github.com/makenotion/notion-mcp-server#readme",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "408",
+        "chunk_count": 12,
+        "total_chars": 10924,
+        "avg_chunk_chars": 910.3333333333334,
+        "min_chunk_chars": 173,
+        "max_chunk_chars": 1151,
+        "std_chunk_chars": 258.701067690573,
+        "median_chunk_chars": 957.0,
+        "elapsed_seconds": 0.0028960000490769744,
+        "chars_per_second": 3772099.383590047
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "408",
+        "paragraph_integrity": 0.9661,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1166,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "410",
+      "notebook_id": null,
+      "url": "https://dropbox.github.io/dbx-career-framework/overview.html",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "410",
+        "chunk_count": 2,
+        "total_chars": 1676,
+        "avg_chunk_chars": 838,
+        "min_chunk_chars": 310,
+        "max_chunk_chars": 1366,
+        "std_chunk_chars": 746.7047609329942,
+        "median_chunk_chars": 838.0,
+        "elapsed_seconds": 0.0005255000432953238,
+        "chars_per_second": 3189343.2196314987
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "410",
+        "paragraph_integrity": 0.875,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1218,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "411",
+      "notebook_id": null,
+      "url": "https://networks-aicamp.io/introduction",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "411",
+        "chunk_count": 16,
+        "total_chars": 4255,
+        "avg_chunk_chars": 265.9375,
+        "min_chunk_chars": 208,
+        "max_chunk_chars": 290,
+        "std_chunk_chars": 21.616255457409824,
+        "median_chunk_chars": 269.5,
+        "elapsed_seconds": 0.0030017999233677983,
+        "chars_per_second": 1417482.879813723
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "411",
+        "paragraph_integrity": 0.9781,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1242,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "412",
+      "notebook_id": null,
+      "url": "https://www.naverlabs.com/blogDetail?seq=34083",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "412",
+        "chunk_count": 1,
+        "total_chars": 187,
+        "avg_chunk_chars": 187,
+        "min_chunk_chars": 187,
+        "max_chunk_chars": 187,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 187,
+        "elapsed_seconds": 0.0002493000356480479,
+        "chars_per_second": 750100.1735274491
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "412",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 0.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "413",
+      "notebook_id": null,
+      "url": "https://www.coursera.org/instructor/andrewng",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "413",
+        "chunk_count": 1,
+        "total_chars": 698,
+        "avg_chunk_chars": 698,
+        "min_chunk_chars": 698,
+        "max_chunk_chars": 698,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 698,
+        "elapsed_seconds": 0.00028929999098181725,
+        "chars_per_second": 2412720.434698769
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "413",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "414",
+      "notebook_id": null,
+      "url": "https://gitbook.com/docs",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "414",
+        "chunk_count": 1,
+        "total_chars": 261,
+        "avg_chunk_chars": 261,
+        "min_chunk_chars": 261,
+        "max_chunk_chars": 261,
+        "std_chunk_chars": 0.0,
+        "median_chunk_chars": 261,
+        "elapsed_seconds": 0.00017589994240552187,
+        "chars_per_second": 1483798.098115845
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "414",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 1.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "415",
+      "notebook_id": null,
+      "url": "https://www.kmdb.or.kr/info/api/apiDetail/6",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "415",
+        "chunk_count": 2,
+        "total_chars": 629,
+        "avg_chunk_chars": 314.5,
+        "min_chunk_chars": 144,
+        "max_chunk_chars": 485,
+        "std_chunk_chars": 241.1234123846127,
+        "median_chunk_chars": 314.5,
+        "elapsed_seconds": 0.0006041999440640211,
+        "chars_per_second": 1041046.1076331233
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "415",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.5,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0789,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "416",
+      "notebook_id": null,
+      "url": "https://medium.com/@iamanraghuvanshi/agentic-ai-1-what-are-ai-agents-87db291b9e0e",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "416",
+        "chunk_count": 15,
+        "total_chars": 18242,
+        "avg_chunk_chars": 1216.1333333333334,
+        "min_chunk_chars": 977,
+        "max_chunk_chars": 1340,
+        "std_chunk_chars": 88.16775136608838,
+        "median_chunk_chars": 1228,
+        "elapsed_seconds": 0.003888700040988624,
+        "chars_per_second": 4691027.800478624
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "416",
+        "paragraph_integrity": 0.9856,
+        "sentence_integrity": 0.0667,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.123,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "417",
+      "notebook_id": null,
+      "url": "https://sktelecom.github.io/guide/contribute/background/good-project/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "417",
+        "chunk_count": 6,
+        "total_chars": 1934,
+        "avg_chunk_chars": 322.3333333333333,
+        "min_chunk_chars": 169,
+        "max_chunk_chars": 430,
+        "std_chunk_chars": 88.06739843248843,
+        "median_chunk_chars": 333.0,
+        "elapsed_seconds": 0.0010985999833792448,
+        "chars_per_second": 1760422.3823589564
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "417",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.1667,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1581,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "418",
+      "notebook_id": null,
+      "url": "https://zzsza.github.io/diary/2025/02/16/career-advice/#고민은-왜-생기는걸까",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "418",
+        "chunk_count": 66,
+        "total_chars": 18523,
+        "avg_chunk_chars": 280.6515151515151,
+        "min_chunk_chars": 30,
+        "max_chunk_chars": 337,
+        "std_chunk_chars": 34.4533095091101,
+        "median_chunk_chars": 285.5,
+        "elapsed_seconds": 0.008699500001966953,
+        "chars_per_second": 2129202.827267309
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "418",
+        "paragraph_integrity": 0.525,
+        "sentence_integrity": 0.0303,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 0.3548,
+        "heading_integrity": 1.0,
+        "coverage": 1.1324,
+        "boundary_quality": 0.8333,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "419",
+      "notebook_id": null,
+      "url": "https://www.ibm.com/kr-ko/think/insights/artificial-intelligence-trends",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "419",
+        "chunk_count": 47,
+        "total_chars": 14009,
+        "avg_chunk_chars": 298.06382978723406,
+        "min_chunk_chars": 233,
+        "max_chunk_chars": 620,
+        "std_chunk_chars": 52.85928993885524,
+        "median_chunk_chars": 291,
+        "elapsed_seconds": 0.00844230002257973,
+        "chars_per_second": 1659381.91754991
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "419",
+        "paragraph_integrity": 0.4688,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1345,
+        "boundary_quality": 0.9149,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "420",
+      "notebook_id": null,
+      "url": "https://asana.com/ko/resources/hard-skills-vs-soft-skills",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "420",
+        "chunk_count": 29,
+        "total_chars": 8098,
+        "avg_chunk_chars": 279.2413793103448,
+        "min_chunk_chars": 128,
+        "max_chunk_chars": 325,
+        "std_chunk_chars": 35.162536041740495,
+        "median_chunk_chars": 281,
+        "elapsed_seconds": 0.0053316999692469835,
+        "chars_per_second": 1518840.153554948
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "420",
+        "paragraph_integrity": 0.8269,
+        "sentence_integrity": 0.0345,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1294,
+        "boundary_quality": 0.931,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "421",
+      "notebook_id": null,
+      "url": "https://learn.microsoft.com/ko-kr/windows/wsl/tutorials/wsl-containers#install-docker-desktop",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "421",
+        "chunk_count": 23,
+        "total_chars": 8958,
+        "avg_chunk_chars": 389.4782608695652,
+        "min_chunk_chars": 302,
+        "max_chunk_chars": 487,
+        "std_chunk_chars": 51.568021772850834,
+        "median_chunk_chars": 387,
+        "elapsed_seconds": 0.00399750005453825,
+        "chars_per_second": 2240900.532278976
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "421",
+        "paragraph_integrity": 0.82,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.1186,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "422",
+      "notebook_id": null,
+      "url": "https://jutsu-ai.vercel.app/#features",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "422",
+        "chunk_count": 2,
+        "total_chars": 2152,
+        "avg_chunk_chars": 1076,
+        "min_chunk_chars": 1053,
+        "max_chunk_chars": 1099,
+        "std_chunk_chars": 32.526911934581186,
+        "median_chunk_chars": 1076.0,
+        "elapsed_seconds": 0.000528500066138804,
+        "chars_per_second": 4071901.0987499175
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "422",
+        "paragraph_integrity": 1.0,
+        "sentence_integrity": 0.0,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0675,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    },
+    {
+      "source_id": "423",
+      "notebook_id": null,
+      "url": "https://www.velopers.kr/",
+      "basic": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "423",
+        "chunk_count": 4,
+        "total_chars": 1205,
+        "avg_chunk_chars": 301.25,
+        "min_chunk_chars": 244,
+        "max_chunk_chars": 359,
+        "std_chunk_chars": 49.19603642571219,
+        "median_chunk_chars": 301.0,
+        "elapsed_seconds": 0.0010476000607013702,
+        "chars_per_second": 1150248.1196815225
+      },
+      "structure": {
+        "strategy_name": "토큰기반_Token_256tok",
+        "source_id": "423",
+        "paragraph_integrity": 0.75,
+        "sentence_integrity": 0.25,
+        "whitespace_structure": 1.0,
+        "list_like_integrity": 1.0,
+        "heading_integrity": 1.0,
+        "coverage": 1.0935,
+        "boundary_quality": 1.0,
+        "avg_metadata_count": 0
+      }
+    }
+  ]
+}
