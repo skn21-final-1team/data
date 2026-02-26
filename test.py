@@ -37,9 +37,11 @@ def run_mock_backend() -> None:
 def test_crawl_with_callback() -> None:
     payload = {
         "urls": [
-            "https://mojing.tistory.com/entry/ProgrammersC-PCCP-%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C-1%EB%B2%88-%EB%8F%99%EC%98%81%EC%83%81-%EC%9E%AC%EC%83%9D%EA%B8%B0"
+            "https://mojing.tistory.com/entry/ProgrammersC-PCCP-%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C-1%EB%B2%88-%EB%8F%99%EC%98%81%EC%83%81-%EC%9E%AC%EC%83%9D%EA%B8%B0",
+            "https://en.wikipedia.org/wiki/Elon_Musk",
+            "https://platform.claude.com/docs/ko/overview",
         ],
-        "notebook_id": 14,
+        "notebook_id": 18,
     }
 
     # [1] 크롤링 + source DB 적재

@@ -14,12 +14,12 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 DATA_SERVER = "http://localhost:8001"
 
-NOTEBOOK_ID = 14
+NOTEBOOK_ID = 18
 TEST_QUERIES = [
-    "Elon Musk는 어디에서 태어났는가"
+    # "Elon Musk는 어디에서 태어났는가"
     # "동영상 재생기 문제 풀이",
     # "동영상 재생기 문제 풀이 방법은?",
-    # "PCCP 기출문제",
+    "PCCP 기출문제",
 ]
 TOP_K = 5
 
