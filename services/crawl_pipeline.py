@@ -1,8 +1,6 @@
 import asyncio
 import logging
 
-import httpx
-
 from chunk.service import chunk_text
 from core.config import get_settings
 from crud.page_data import bulk_create_page_data
@@ -11,6 +9,7 @@ from embed.service import embed_texts
 from crawl.client import ScrapeResult
 from schemas.crawl import CrawlRequest
 from schemas.embed import EmbeddingCallbackPayload
+from services.callback import send_callback, send_error_callback
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +37,8 @@ async def process_and_callback(
     request: CrawlRequest,
     source_ids: dict[str, int],
 ) -> None:
+    callback_url = get_settings().BACKEND_CALLBACK_URL
+
     for scraped in scraped_list:
         try:
             source_id = source_ids[scraped.url]
@@ -57,14 +58,12 @@ async def process_and_callback(
                 embeddings=embeddings,
             )
 
-            callback_url = get_settings().BACKEND_CALLBACK_URL
-            async with httpx.AsyncClient(timeout=30.0) as client:
-                response = await client.post(
-                    callback_url,
-                    content=payload.model_dump_json(),
-                    headers={"Content-Type": "application/json"},
-                )
-                response.raise_for_status()
+            await send_callback(callback_url, payload.model_dump_json())
 
-        except Exception:
+        except Exception as exc:
             logger.exception("파이프라인 처리 실패: %s", scraped.url)
+            await send_error_callback(
+                callback_url, scraped.url,
+                request.notebook_id, request.directory_id,
+                str(exc),
+            )
