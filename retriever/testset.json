@@ -1,0 +1,22 @@
+[
+    {
+        "question": "동영상 재생기 문제에서 지원하는 3가지 기능은?",
+        "ground_truth": "10초 전으로 이동(prev), 10초 후로 이동(next), 오프닝 건너뛰기 3가지 기능을 지원한다.",
+        "notebook_id": 14
+    },
+    {
+        "question": "동영상 재생기에서 현재 위치가 10초 미만일 때 prev 명령을 입력하면?",
+        "ground_truth": "현재 위치가 10초 미만인 경우 영상의 처음 위치로 이동한다. 영상의 처음 위치는 0분 0초이다.",
+        "notebook_id": 14
+    },
+    {
+        "question": "Elon Musk는 어디에서 태어났는가?",
+        "ground_truth": "Elon Reeve Musk was born on June 28, 1971, in Pretoria, South Africa's administrative capital.",
+        "notebook_id": 14
+    },
+    {
+        "question": "SpaceX는 누가 언제 설립했는가?",
+        "ground_truth": "In 2002, Musk founded the space technology company SpaceX, becoming its CEO and chief engineer.",
+        "notebook_id": 14
+    }
+]

@@ -6,6 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     DATABASE_URL: str
     BACKEND_CALLBACK_URL: str
+    OPENAI_API_KEY: str = ""
 
     PROJECT_NAME: str = "data"
     DEBUG: bool = False

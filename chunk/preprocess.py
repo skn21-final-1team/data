@@ -22,6 +22,10 @@ class MarkdownPreprocessor:
         return re.sub(r"<[^>]+>", "", text)
 
     @staticmethod
+    def remove_reference_markers(text: str) -> str:
+        return re.sub(r"\[(\d+|edit)\]", "", text)
+
+    @staticmethod
     def normalize_list_markers(text: str) -> str:
         return re.sub(r"^(\s*)[*+]\s", r"\1- ", text, flags=re.MULTILINE)
 
@@ -44,6 +48,7 @@ class MarkdownPreprocessor:
     def run(cls, text: str) -> str:
         text = cls.strip_whitespace(text)
         text = cls.remove_html_tags(text)
+        text = cls.remove_reference_markers(text)
         text = cls.normalize_headings(text)
         text = cls.normalize_list_markers(text)
         text = cls.repair_code_fences(text)
