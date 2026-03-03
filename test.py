@@ -37,32 +37,81 @@ def run_mock_backend() -> None:
 def test_crawl_with_callback() -> None:
     payload = {
         "urls": [
-            "https://mojing.tistory.com/entry/ProgrammersC-PCCP-%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C-1%EB%B2%88-%EB%8F%99%EC%98%81%EC%83%81-%EC%9E%AC%EC%83%9D%EA%B8%B0",
+            "https://www.notion.com/ko/product/ai",
+            "https://www.notion.com/ko/pricing",
+            "https://github.com/karpathy/nanochat",
+            "https://huggingface.co/openbmb/MiniCPM-SALA",
+            "https://www.acmicpc.net/workbook/view/1152",
+            "https://www.acmicpc.net/problem/3190",
+            "https://solved.ac/ranking/tier?page=1",
+            "https://event.wanted.co.kr/swmaestro17_busan",
+            "https://en.wikipedia.org/wiki/Tensor",
             "https://en.wikipedia.org/wiki/Elon_Musk",
-            "https://platform.claude.com/docs/ko/overview",
+            "https://en.wikipedia.org/wiki/Tesla,_Inc",
+            "https://ridibooks.com/webtoon/recommendation",
+            "https://mojing.tistory.com/entry/ProgrammersC-PCCP-기출문제-1번-동영상-재생기",
+            "https://www.en-core.com/resource/playdata2",
+            "https://brunch.co.kr/@sungdairi/27",
+            "https://gall.dcinside.com/mgallery/board/view/?id=pokemontcgpocket&no=568804",
+            "https://debateforall.org/blog/?bmode=view&idx=6582418",
+            "https://pyrasis.com/jHLsAlwaysUpToDateDocker",
+            "https://mz-moonzoo.tistory.com/95",
+            "https://usehooks-ts.com/introduction",
+            "https://wikidocs.net/233772",
+            "https://technote.wiki/대문",
+            "https://blog.ull.im/engineering/2019/03/10/logs-on-git.html",
+            "https://m.blog.naver.com/jisoo831/223328759196",
+            "https://deepbaksuvision.github.io/Modu_ObjectDetection/posts/04_01_Review_of_YOLO_Paper.html",
+            "https://toss.im/tossfeed/article/house-contract-02",
+            "https://github.com/makenotion/notion-mcp-server#readme",
+            "https://sugarslayer.tistory.com/category/내집마련🏡/HUG 버팀목 전세 대출(청년) 후기",
+            "https://dropbox.github.io/dbx-career-framework/overview.html",
+            "https://networks-aicamp.io/introduction",
+            "https://www.velopers.kr/",
         ],
-        "notebook_id": 18,
+        "notebook_id": 27,
     }
 
-    # [1] 크롤링 + source DB 적재
-    print("[1] POST /crawl 요청 (크롤링 + source 적재)")
-    try:
-        response = httpx.post(f"{DATA_SERVER}/crawl", json=payload, timeout=300.0)
-        print(f"    status={response.status_code}")
-    except httpx.ReadTimeout:
-        print("    POST /crawl 타임아웃 (300초 초과)")
-        return
+    # [1] 크롤링 + source DB 적재 (10개씩 배치 요청)
+    urls = payload["urls"]
+    batch_size = 10
+    all_results = []
 
-    if response.status_code != 200:
-        print(f"    실패: {response.text[:200]}")
+    print(f"[1] POST /crawl 요청 (총 {len(urls)}개 URL, {batch_size}개씩 배치)")
+    for i in range(0, len(urls), batch_size):
+        batch = urls[i : i + batch_size]
+        batch_num = i // batch_size + 1
+        print(
+            f"    배치 {batch_num}: {len(batch)}개 URL 요청 중...", end="", flush=True
+        )
+        try:
+            response = httpx.post(
+                f"{DATA_SERVER}/crawl",
+                json={"urls": batch, "notebook_id": payload["notebook_id"]},
+                timeout=300.0,
+            )
+        except httpx.ReadTimeout:
+            print(" 타임아웃")
+            continue
+
+        if response.status_code != 200:
+            print(f" 실패 (status={response.status_code})")
+            continue
+
+        all_results.extend(response.json())
+        print(f" 성공 ({len(response.json())}건)")
+
+    if not all_results:
+        print("    전체 실패")
         return
 
     # [2] 크롤링 결과 확인
-    print("\n[2] 크롤링 + source 적재 성공")
-    for item in response.json():
+    print(f"\n[2] 크롤링 + source 적재 성공 (총 {len(all_results)}건)")
+    for item in all_results:
         print(f"    URL: {item['url']}")
         print(f"    제목: {item['title']}")
-        print(f"    본문: {item['summary'][:100]}...")
+        summary = item.get("summary") or ""
+        print(f"    본문: {summary[:100]}...")
         print(f"    notebook_id: {item['notebook_id']}")
 
     # [3] 백그라운드 대기 (청킹 → 임베딩 → page_data 적재 → 콜백)
