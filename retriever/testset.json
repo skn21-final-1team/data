@@ -1,27 +1,107 @@
 [
     {
-        "question": "동영상 재생기 문제에서 지원하는 3가지 기능은?",
-        "ground_truth": "10초 전으로 이동(prev), 10초 후로 이동(next), 오프닝 건너뛰기 3가지 기능을 지원한다.",
-        "notebook_id": 18
-    },
-    {
-        "question": "동영상 재생기에서 현재 위치가 10초 미만일 때 prev 명령을 입력하면?",
-        "ground_truth": "현재 위치가 10초 미만인 경우 영상의 처음 위치로 이동한다. 영상의 처음 위치는 0분 0초이다.",
-        "notebook_id": 18
-    },
-    {
         "question": "Elon Musk는 어디에서 태어났는가?",
         "ground_truth": "Elon Reeve Musk was born on June 28, 1971, in Pretoria, South Africa's administrative capital.",
-        "notebook_id": 18
+        "notebook_id": 27
     },
     {
-        "question": "SpaceX는 누가 언제 설립했는가?",
-        "ground_truth": "In 2002, Musk founded the space technology company SpaceX, becoming its CEO and chief engineer.",
-        "notebook_id": 18
+        "question": "Tesla는 언제 설립되었는가?",
+        "ground_truth": "Tesla, Inc. was incorporated in July 2003 by Martin Eberhard and Marc Tarpenning.",
+        "notebook_id": 27
     },
     {
-        "question": "Claude는 어떤 회사에서 개발했는가?",
-        "ground_truth": "Claude is a large language model developed by Anthropic.",
-        "notebook_id": 18
+        "question": "텐서(Tensor)란 무엇인가?",
+        "ground_truth": "In mathematics, a tensor is an algebraic object that describes a multilinear relationship between sets of algebraic objects related to a vector space.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Notion AI는 어떤 기능을 제공하는가?",
+        "ground_truth": "Notion AI는 문서 작성, 요약, 번역, 브레인스토밍 등의 기능을 제공하며 워크스페이스 내에서 AI 기반 작업을 지원한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "PCCP 기출문제 동영상 재생기에서 prev 명령은 어떻게 동작하는가?",
+        "ground_truth": "현재 위치에서 10초 전으로 이동한다. 현재 위치가 10초 미만인 경우 영상의 처음 위치인 0분 0초로 이동한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Docker란 무엇인가?",
+        "ground_truth": "Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼으로, 애플리케이션을 컨테이너로 패키징하여 어디서든 동일하게 실행할 수 있게 한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "YOLO 객체 탐지 모델의 특징은 무엇인가?",
+        "ground_truth": "YOLO(You Only Look Once)는 이미지를 한 번만 보고 객체를 탐지하는 실시간 객체 탐지 모델로, 이미지를 그리드로 나누어 각 그리드 셀에서 바운딩 박스와 클래스 확률을 동시에 예측한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Git 커밋 메시지 작성 시 좋은 관례는?",
+        "ground_truth": "커밋 메시지는 제목과 본문을 분리하고, 제목은 50자 이내로 작성하며, 본문에는 무엇을 왜 변경했는지 설명한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "YAML이란 무엇인가?",
+        "ground_truth": "YAML(YAML Ain't Markup Language)은 사람이 읽기 쉬운 데이터 직렬화 언어로, 설정 파일 작성에 주로 사용된다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "WSL에서 Docker를 설치하는 방법은?",
+        "ground_truth": "Docker Desktop을 설치하고 Settings에서 WSL 2 기반 엔진을 활성화한 후, WSL 배포판에서 Docker 명령을 사용할 수 있다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Notion MCP Server는 무엇인가?",
+        "ground_truth": "Notion MCP Server는 Notion API를 MCP(Model Context Protocol) 서버로 래핑하여 AI 에이전트가 Notion 워크스페이스와 상호작용할 수 있게 하는 도구이다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "uv 패키지 매니저의 장점은 무엇인가?",
+        "ground_truth": "uv는 Rust로 작성된 Python 패키지 매니저로, pip보다 10~100배 빠른 설치 속도를 제공하며 의존성 해결과 가상환경 관리를 통합적으로 지원한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "백준 온라인 저지의 뱀 문제(3190번)는 어떤 문제인가?",
+        "ground_truth": "뱀이 사과를 먹으며 몸 길이가 늘어나는 게임을 시뮬레이션하는 문제로, 보드 크기와 사과 위치, 방향 전환 정보가 주어졌을 때 게임이 끝나는 시간을 구한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Dropbox의 소프트웨어 엔지니어 커리어 프레임워크에서 레벨 체계는?",
+        "ground_truth": "Dropbox는 IC(Individual Contributor)와 Manager 두 트랙으로 나뉘며, IC는 SWE I부터 Principal Engineer까지의 레벨로 구성된다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "전세 대출 버팀목이란 무엇인가?",
+        "ground_truth": "버팀목 전세자금대출은 주택도시보증공사(HUG)에서 보증하는 정부 지원 전세자금 대출 상품으로, 청년 및 서민층에게 저금리로 전세 자금을 지원한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "일론 머스크는 언제 태어났고 테슬라는 언제 설립됐어?",
+        "ground_truth": "Elon Musk는 1971년 6월 28일 남아프리카공화국 프리토리아에서 태어났다. Tesla, Inc.는 2003년 7월에 Martin Eberhard와 Marc Tarpenning이 설립했다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Docker랑 YAML 둘 다 설명해줘",
+        "ground_truth": "Docker는 컨테이너 기반의 오픈소스 가상화 플랫폼이고, YAML은 사람이 읽기 쉬운 데이터 직렬화 언어로 설정 파일 작성에 주로 사용된다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "Notion AI 기능이랑 MCP Server가 뭔지 같이 알려줘",
+        "ground_truth": "Notion AI는 문서 작성, 요약, 번역, 브레인스토밍 등을 지원하는 AI 기능이다. Notion MCP Server는 Notion API를 MCP 서버로 래핑하여 AI 에이전트가 Notion과 상호작용할 수 있게 하는 도구이다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "YOLO 모델 특징이랑 텐서가 뭔지 알려줘",
+        "ground_truth": "YOLO는 이미지를 한 번만 보고 객체를 탐지하는 실시간 모델이다. 텐서는 벡터 공간에 관련된 대수적 객체들 사이의 다중선형 관계를 기술하는 수학적 객체이다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "백준 뱀 문제는 어떤 문제이고, Git 커밋 메시지는 어떻게 작성해야 해?",
+        "ground_truth": "뱀 문제(3190번)는 보드에서 사과를 먹으며 몸이 늘어나는 뱀 게임을 시뮬레이션하여 끝나는 시간을 구하는 문제이다. Git 커밋 메시지는 제목과 본문을 분리하고, 제목은 50자 이내로, 본문에는 무엇을 왜 변경했는지 작성한다.",
+        "notebook_id": 27
+    },
+    {
+        "question": "uv 패키지 매니저로 의존성 설치하고 WSL에서 Docker 쓰려면 어떻게 해?",
+        "ground_truth": "uv는 Rust로 작성된 Python 패키지 매니저로 pip보다 10~100배 빠르며 의존성 해결과 가상환경 관리를 통합 지원한다. WSL에서 Docker를 쓰려면 Docker Desktop을 설치하고 WSL 2 기반 엔진을 활성화하면 된다.",
+        "notebook_id": 27
     }
 ]
