@@ -13,6 +13,8 @@ import logging
 
 from sentence_transformers import CrossEncoder
 
+from core.device import get_device
+
 logger = logging.getLogger(__name__)
 
 MODEL_NAME = "BAAI/bge-reranker-v2-m3"
@@ -24,8 +26,9 @@ def _get_model() -> CrossEncoder:
     """모델을 싱글톤으로 로드한다."""
     global _model
     if _model is None:
-        logger.info("Reranker 모델 로드: %s", MODEL_NAME)
-        _model = CrossEncoder(MODEL_NAME)
+        device = get_device()
+        logger.info("Reranker 모델 로드: %s (%s)", MODEL_NAME, device)
+        _model = CrossEncoder(MODEL_NAME, device=device)
     return _model
 
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from sentence_transformers import SentenceTransformer
 
+from core.device import get_device
 from embed.base import BaseEmbedder
 from embed.config import EmbedderConfig
 
@@ -20,7 +21,7 @@ class BgeM3Embedder(BaseEmbedder):
             batch_size=batch_size,
         )
         super().__init__(config)
-        self._model = SentenceTransformer(config.model_name)
+        self._model = SentenceTransformer(config.model_name, device=get_device())
 
     def embed(
         self, texts: list[str], show_progress_bar: bool = True
@@ -50,7 +51,7 @@ class MultilingualE5Embedder(BaseEmbedder):
             batch_size=batch_size,
         )
         super().__init__(config)
-        self._model = SentenceTransformer(config.model_name)
+        self._model = SentenceTransformer(config.model_name, device=get_device())
 
     def embed(
         self, texts: list[str], show_progress_bar: bool = True
