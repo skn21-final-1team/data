@@ -336,47 +336,52 @@ source = { virtual = "." }
 dependencies = [
     { name = "alembic" },
     { name = "beautifulsoup4" },
-    { name = "datasets" },
     { name = "fastapi" },
     { name = "httpx" },
-    { name = "langchain-experimental" },
-    { name = "langchain-huggingface" },
     { name = "langchain-text-splitters" },
     { name = "pgvector" },
     { name = "playwright" },
     { name = "playwright-stealth" },
     { name = "psycopg", extra = ["binary"] },
     { name = "pydantic-settings" },
-    { name = "ragas" },
     { name = "sentence-transformers" },
     { name = "sqlalchemy" },
-    { name = "tiktoken" },
     { name = "trafilatura" },
     { name = "uvicorn" },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "datasets" },
+    { name = "langchain-experimental" },
+    { name = "langchain-huggingface" },
+    { name = "ragas" },
+    { name = "tiktoken" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "alembic", specifier = ">=1.18.4" },
     { name = "beautifulsoup4", specifier = ">=4.14.3" },
-    { name = "datasets", specifier = ">=3.0.0" },
+    { name = "datasets", marker = "extra == 'dev'", specifier = ">=3.0.0" },
     { name = "fastapi", specifier = ">=0.131.0" },
     { name = "httpx", specifier = ">=0.28.1" },
-    { name = "langchain-experimental", specifier = ">=0.4.1" },
-    { name = "langchain-huggingface", specifier = ">=1.2.0" },
+    { name = "langchain-experimental", marker = "extra == 'dev'", specifier = ">=0.4.1" },
+    { name = "langchain-huggingface", marker = "extra == 'dev'", specifier = ">=1.2.0" },
     { name = "langchain-text-splitters", specifier = ">=1.1.1" },
     { name = "pgvector", specifier = ">=0.4.2" },
     { name = "playwright", specifier = ">=1.58.0" },
     { name = "playwright-stealth", specifier = ">=2.0.2" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.3" },
     { name = "pydantic-settings", specifier = ">=2.13.1" },
-    { name = "ragas", specifier = ">=0.2.0" },
+    { name = "ragas", marker = "extra == 'dev'", specifier = ">=0.2.0" },
     { name = "sentence-transformers", specifier = ">=5.2.3" },
     { name = "sqlalchemy", specifier = ">=2.0.46" },
-    { name = "tiktoken", specifier = ">=0.12.0" },
+    { name = "tiktoken", marker = "extra == 'dev'", specifier = ">=0.12.0" },
     { name = "trafilatura", specifier = ">=2.0.0" },
     { name = "uvicorn", specifier = ">=0.41.0" },
 ]
+provides-extras = ["dev"]
 
 [[package]]
 name = "dataclasses-json"
