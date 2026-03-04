@@ -209,3 +209,5 @@ __marimo__/
 chunk/output/
 embed/output/
 retriever/output/
+mlruns/
+mlflow.db
