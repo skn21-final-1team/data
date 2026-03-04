@@ -17,12 +17,22 @@ FastAPI · Uvicorn · SQLAlchemy · pgvector · Trafilatura · Playwright · BAA
 ## 초기 세팅 (pull 이후)
 
 ```bash
-# 의존성 설치
+# 서비스 의존성만 설치 (배포/RunPod 등 운영 환경)
 uv sync
+
+# 실험·평가 의존성 포함 설치 (로컬 개발 환경)
+uv sync --extra dev
 
 # Playwright 브라우저 설치 (최초 1회만)
 uv run playwright install chromium
 ```
+
+### 의존성 구분
+
+| 구분 | 설치 명령 | 포함 패키지 |
+|---|---|---|
+| **core** | `uv sync` | FastAPI, sentence-transformers, Playwright, Trafilatura, SQLAlchemy, pgvector 등 |
+| **dev** | `uv sync --extra dev` | langchain-experimental, langchain-huggingface, ragas, datasets, tiktoken |
 
 ## 서버 실행
 
