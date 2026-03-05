@@ -1,6 +1,6 @@
 import re
 
-from core.exceptions.crawl import CrawlFailedException
+from core.exceptions import CrawlFailedException
 from crawl.config import get_crawl_settings
 
 _GARBAGE_PATTERNS: list[re.Pattern[str]] = [

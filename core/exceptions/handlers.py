@@ -5,7 +5,7 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
-from core.exceptions.crawl import CrawlFailedException
+from core.exceptions import CrawlFailedException
 
 logger = logging.getLogger(__name__)
 

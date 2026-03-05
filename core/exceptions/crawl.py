@@ -1,2 +1,0 @@
-class CrawlFailedException(Exception):
-    pass

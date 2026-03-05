@@ -4,7 +4,7 @@ from playwright_stealth import Stealth
 
 from dataclasses import dataclass
 
-from core.exceptions.crawl import CrawlFailedException
+from core.exceptions import CrawlFailedException
 from crawl.config import get_crawl_settings
 from crawl.normalizer import normalize
 from crawl.parser import parse_duckduckgo_html, parse_html
