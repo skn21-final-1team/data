@@ -1,48 +1,32 @@
 from fastapi import APIRouter, BackgroundTasks
 
 from crud.source import create_source
-from crawl.client import ScrapeResult, hybrid_client
 from db.database import DbSession
-from schemas.crawl import CrawlRequest, CrawlResult
-from services.crawl_pipeline import process_and_callback
+from schemas.crawl import CrawlAccepted, CrawlRequest, CrawlResponse
+from services.crawl_pipeline import process_pipeline
 
 router = APIRouter()
 
 
 @router.post("/crawl")
-async def crawl(
+def crawl(
     request: CrawlRequest,
     background_tasks: BackgroundTasks,
     db: DbSession,
-) -> list[CrawlResult]:
-    scraped_list: list[ScrapeResult] = []
-    source_ids: dict[str, int] = {}
-    results: list[CrawlResult] = []
+) -> CrawlResponse:
+    """URL 접수 → 즉시 응답. 크롤링·청킹·임베딩은 백그라운드에서 처리."""
+    sources: list[CrawlAccepted] = []
 
     for url in request.urls:
-        scraped = await hybrid_client.scrape(str(url))
-        scraped_list.append(scraped)
-
         source = create_source(
             db=db,
-            url=scraped.url,
-            title=scraped.title,
-            summary=scraped.content,
+            url=str(url),
             notebook_id=request.notebook_id,
             directory_id=request.directory_id,
         )
-        source_ids[scraped.url] = source.id
+        sources.append(CrawlAccepted(source_id=source.id, url=str(url)))
 
-        results.append(
-            CrawlResult(
-                url=scraped.url,
-                title=scraped.title,
-                summary=scraped.content,
-                notebook_id=request.notebook_id,
-                directory_id=request.directory_id,
-            )
-        )
+    source_map = {s.url: s.source_id for s in sources}
+    background_tasks.add_task(process_pipeline, source_map)
 
-    background_tasks.add_task(process_and_callback, scraped_list, request, source_ids)
-
-    return results
+    return CrawlResponse(count=len(sources), sources=sources)
