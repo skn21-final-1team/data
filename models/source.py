@@ -14,5 +14,6 @@ class SourceModel(Base):
     summary = Column(Text, nullable=True)
     notebook_id = Column(Integer, ForeignKey("notebook.id", ondelete="CASCADE"), nullable=False)
     directory_id = Column(Integer, ForeignKey("directory.id", ondelete="CASCADE"), nullable=True)
+    status = Column(String, default="pending", nullable=False)
     is_active = Column(Boolean, default=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=True)
