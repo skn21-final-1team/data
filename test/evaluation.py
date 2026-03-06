@@ -24,7 +24,6 @@ from ragas.metrics import (
 )
 
 from chunk.service import CHUNKER
-from db.database import get_db_context
 from embed.config import DEFAULT_MODEL as EMBED_MODEL
 from test.service import retrieve
 
@@ -65,13 +64,11 @@ def run_retrieval(
         fetch_k = top_k
 
     for i, item in enumerate(testset, 1):
-        with get_db_context() as db:
-            results = retrieve(
-                db=db,
-                query=item["question"],
-                notebook_id=item["notebook_id"],
-                top_k=fetch_k,
-            )
+        results = retrieve(
+            query=item["question"],
+            notebook_id=item["notebook_id"],
+            top_k=fetch_k,
+        )
 
         if use_reranker:
             results = rerank(item["question"], results, top_k=top_k)

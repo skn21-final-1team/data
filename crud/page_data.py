@@ -1,84 +1,53 @@
-from sqlalchemy import text
-from sqlalchemy.orm import Session
+"""page_data CRUD — PGVector 기반 저장/검색."""
 
-from models.page_data import PageDataModel
+from __future__ import annotations
 
+from langchain_postgres.vectorstores import PGVector
 
-def create_page_data(
-    db: Session,
-    source_id: int,
-    chunk_text: str,
-    embedding: list[float],
-    payload: dict[str, str] | None = None,
-) -> PageDataModel:
-    page_data = PageDataModel(
-        source_id=source_id,
-        chunk_text=chunk_text,
-        payload=payload,
-        embedding=embedding,
-    )
-    db.add(page_data)
-    db.commit()
-    db.refresh(page_data)
-    return page_data
+from db.vector_store import get_vector_store
 
 
 def bulk_create_page_data(
-    db: Session,
     source_id: int,
     chunks: list[str],
     embeddings: list[list[float]],
-) -> list[PageDataModel]:
-    records = [
-        PageDataModel(
-            source_id=source_id,
-            chunk_text=chunk_text,
-            embedding=embedding,
-        )
-        for chunk_text, embedding in zip(chunks, embeddings)
-    ]
-    db.add_all(records)
-    db.commit()
-    return records
+    vector_store: PGVector | None = None,
+) -> list[str]:
+    """청크 + 임베딩을 PGVector에 저장. 반환: 생성된 ID 목록."""
+    store = vector_store or get_vector_store()
+    metadatas = [{"source_id": source_id} for _ in chunks]
+    return store.add_embeddings(
+        texts=chunks,
+        embeddings=embeddings,
+        metadatas=metadatas,
+    )
 
 
 def search_by_embedding(
-    db: Session,
-    query_embedding: list[float],
+    query: str,
     notebook_id: int,
     top_k: int = 5,
+    source_ids: list[int] | None = None,
+    vector_store: PGVector | None = None,
 ) -> list[dict]:
-    """pgvector 코사인 유사도 검색 (notebook_id 범위)."""
-    stmt = text("""
-        SELECT
-            pd.id,
-            pd.chunk_text,
-            pd.payload,
-            pd.source_id,
-            s.url   AS source_url,
-            s.title AS source_title,
-            (1 - (pd.embedding <=> :embedding)) AS similarity
-        FROM page_data pd
-        JOIN source s ON pd.source_id = s.id
-        WHERE s.notebook_id = :notebook_id
-        ORDER BY pd.embedding <=> :embedding
-        LIMIT :top_k
-    """)
+    """PGVector 코사인 유사도 검색."""
+    store = vector_store or get_vector_store()
 
-    rows = db.execute(
-        stmt,
-        {"embedding": str(query_embedding), "notebook_id": notebook_id, "top_k": top_k},
-    ).fetchall()
+    filter_dict: dict = {}
+    if source_ids:
+        filter_dict["source_id"] = {"$in": source_ids}
+
+    results = store.similarity_search_with_score(
+        query=query,
+        k=top_k,
+        filter=filter_dict if filter_dict else None,
+    )
 
     return [
         {
-            "id": row.id,
-            "chunk_text": row.chunk_text,
-            "payload": row.payload,
-            "source_id": row.source_id,
-            "source_url": row.source_url,
-            "source_title": row.source_title,
-            "similarity": round(float(row.similarity), 4),
+            "chunk_text": doc.page_content,
+            "source_id": doc.metadata.get("source_id"),
+            "similarity": round(1 - score, 4),
         }
-        for row in rows
+        for doc, score in results
     ]

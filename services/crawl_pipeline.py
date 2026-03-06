@@ -12,19 +12,17 @@ logger = logging.getLogger(__name__)
 
 
 def _chunk_embed_store(source_id: int, content: str) -> int:
-    """청킹 → 임베딩 → page_data 적재. 저장된 건수 반환."""
+    """청킹 → 임베딩 → PGVector 적재. 저장된 건수 반환."""
     chunk_results = chunk_text(content)
     chunks = [c.content for c in chunk_results]
 
     embeddings = embed_texts(chunks)
 
-    with get_db_context() as db:
-        bulk_create_page_data(
-            db=db,
-            source_id=source_id,
-            chunks=chunks,
-            embeddings=embeddings,
-        )
+    bulk_create_page_data(
+        source_id=source_id,
+        chunks=chunks,
+        embeddings=embeddings,
+    )
 
     return len(chunks)
 
@@ -49,7 +47,7 @@ async def _process_single(url: str, source_id: int) -> bool:
         )
     print(f"[크롤링 성공] source_id={source_id}  {url}")
 
-    # 3) 청킹 → 임베딩 → page_data 적재 (실패해도 source status는 유지)
+    # 3) 청킹 → 임베딩 → PGVector 적재 (실패해도 source status는 유지)
     try:
         count = await asyncio.to_thread(_chunk_embed_store, source_id, scraped.content)
         print(f"[임베딩 완료] source_id={source_id}  {count}개 청크 적재")

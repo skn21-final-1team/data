@@ -18,7 +18,7 @@ if config.config_file_name is not None:
 
 target_metadata = Base.metadata
 
-EXTERNAL_TABLES = {"notebook", "directory"}
+EXTERNAL_TABLES = {"notebook", "directory", "langchain_pg_collection", "langchain_pg_embedding"}
 MANAGED_TABLES = set(Base.metadata.tables.keys()) - EXTERNAL_TABLES
 
 
