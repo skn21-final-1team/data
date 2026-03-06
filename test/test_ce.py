@@ -6,22 +6,22 @@
 사용법::
 
     # 테스트 테이블에 적재 (기본: markdown / bge-m3 / 1000 / 100)
-    uv run python test_ce.py 3 --test
+    uv run python -m test.test_ce 3 --test
 
     # 전략 변경
-    uv run python test_ce.py 3 --test --strategy recursive --chunk_size 500 --chunk_overlap 50
+    uv run python -m test.test_ce 3 --test --strategy recursive --chunk_size 500 --chunk_overlap 50
 
     # 기존 데이터 삭제 후 재적재
-    uv run python test_ce.py 3 --test --clear
+    uv run python -m test.test_ce 3 --test --clear
 
     # 특정 source 제외
-    uv run python test_ce.py 3 --test --exclude 20 42 45 47 48 53
+    uv run python -m test.test_ce 3 --test --exclude 20 42 45 47 48 53
 
     # 테스트 테이블 삭제
-    uv run python test_ce.py 3 --test --drop
+    uv run python -m test.test_ce 3 --test --drop
 
     # 본 테이블에 적재 (주의)
-    uv run python test_ce.py 3
+    uv run python -m test.test_ce 3
 
 전략 목록:
     recursive        S1  RecursiveCharacterTextSplitter
@@ -82,10 +82,16 @@ EXCLUDE_IDS = [20, 42, 45, 47, 48, 53]
 
 class PageDataTestModel(Base):
     """실험용 page_data_test 테이블."""
+
     __tablename__ = "page_data_test"
 
     id = Column(BigInteger, primary_key=True, index=True)
-    source_id = Column(BigInteger, ForeignKey("source.id", ondelete="CASCADE"), nullable=False, index=True)
+    source_id = Column(
+        BigInteger,
+        ForeignKey("source.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
     chunk_text = Column(Text, nullable=False)
     payload = Column(JSONB, nullable=True)
     embedding = Column(Vector(EMBEDDING_DIMENSION), nullable=True)
@@ -137,7 +143,9 @@ def clear_data(source_ids: list[int], use_test: bool) -> int:
     return deleted
 
 
-def bulk_insert(source_id: int, chunks: list[str], embeddings: list[list[float]], use_test: bool) -> int:
+def bulk_insert(
+    source_id: int, chunks: list[str], embeddings: list[list[float]], use_test: bool
+) -> int:
     model = PageDataTestModel if use_test else PageDataModel
     records = [
         model(source_id=source_id, chunk_text=ct, embedding=emb)
@@ -152,14 +160,40 @@ def bulk_insert(source_id: int, chunks: list[str], embeddings: list[list[float]]
 def main() -> None:
     parser = argparse.ArgumentParser(description="청킹 + 임베딩 → page_data 적재")
     parser.add_argument("notebook_id", type=int, help="대상 notebook ID")
-    parser.add_argument("--strategy", choices=STRATEGY_MAP.keys(), default="markdown", help="청킹 전략 (기본: markdown)")
-    parser.add_argument("--chunk_size", type=int, default=1000, help="청크 크기 (기본: 1000)")
-    parser.add_argument("--chunk_overlap", type=int, default=100, help="청크 오버랩 (기본: 100)")
-    parser.add_argument("--embed_model", choices=EMBED_MAP.keys(), default="bge-m3", help="임베딩 모델 (기본: bge-m3)")
-    parser.add_argument("--test", action="store_true", help="page_data_test 테이블 사용")
-    parser.add_argument("--clear", action="store_true", help="기존 데이터 삭제 후 재적재")
-    parser.add_argument("--drop", action="store_true", help="테스트 테이블 삭제 후 종료")
-    parser.add_argument("--exclude", nargs="+", type=int, default=EXCLUDE_IDS, help=f"제외할 source ID (기본: {EXCLUDE_IDS})")
+    parser.add_argument(
+        "--strategy",
+        choices=STRATEGY_MAP.keys(),
+        default="markdown",
+        help="청킹 전략 (기본: markdown)",
+    )
+    parser.add_argument(
+        "--chunk_size", type=int, default=1000, help="청크 크기 (기본: 1000)"
+    )
+    parser.add_argument(
+        "--chunk_overlap", type=int, default=100, help="청크 오버랩 (기본: 100)"
+    )
+    parser.add_argument(
+        "--embed_model",
+        choices=EMBED_MAP.keys(),
+        default="bge-m3",
+        help="임베딩 모델 (기본: bge-m3)",
+    )
+    parser.add_argument(
+        "--test", action="store_true", help="page_data_test 테이블 사용"
+    )
+    parser.add_argument(
+        "--clear", action="store_true", help="기존 데이터 삭제 후 재적재"
+    )
+    parser.add_argument(
+        "--drop", action="store_true", help="테스트 테이블 삭제 후 종료"
+    )
+    parser.add_argument(
+        "--exclude",
+        nargs="+",
+        type=int,
+        default=EXCLUDE_IDS,
+        help=f"제외할 source ID (기본: {EXCLUDE_IDS})",
+    )
     args = parser.parse_args()
 
     use_test = args.test
@@ -216,7 +250,9 @@ def main() -> None:
         chunks = [r.content for r in results]
         source_chunks[source.id] = chunks
         total_chunks += len(chunks)
-        print(f"  source {source.id} ({source.title or source.url}): {len(chunks)}개 청크")
+        print(
+            f"  source {source.id} ({source.title or source.url}): {len(chunks)}개 청크"
+        )
 
     chunk_time = time.time() - t0
     print(f"  총 {total_chunks}개 청크 ({chunk_time:.1f}초)")
@@ -257,7 +293,9 @@ def main() -> None:
     # 6. 요약
     total_time = chunk_time + embed_time + save_time
     print(f"\n[완료] {table_name}에 총 {total_saved}건 적재 ({total_time:.1f}초)")
-    print(f"  청킹: {chunk_time:.1f}초 | 임베딩: {embed_time:.1f}초 | 저장: {save_time:.1f}초")
+    print(
+        f"  청킹: {chunk_time:.1f}초 | 임베딩: {embed_time:.1f}초 | 저장: {save_time:.1f}초"
+    )
 
 
 if __name__ == "__main__":

@@ -2,8 +2,8 @@
 
 사용법::
 
-    uv run python test_crawl.py 1
-    uv run python test_crawl.py 1 --urls https://example1.com https://example2.com
+    uv run python -m test.test_crawl 1
+    uv run python -m test.test_crawl 1 --urls https://example1.com https://example2.com
 """
 
 from __future__ import annotations

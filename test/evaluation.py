@@ -1,11 +1,12 @@
-"""Retriever 성능 평가 (RAGAS).
+"""Retriever 성능 평가 (RAGAS) — LLM 호출 비용 발생.
 
 testset.json의 질문-정답 쌍으로 retrieval 품질을 측정한다.
+OPENAI_API_KEY 환경변수 필요.
 
 실행::
-    uv run python -m retriever.evaluation
-    uv run python -m retriever.evaluation --top_k 20
-    uv run python -m retriever.evaluation --mode reranker --top_k 5
+    uv run python -m test.evaluation
+    uv run python -m test.evaluation --top_k 20
+    uv run python -m test.evaluation --mode reranker --top_k 5
 """
 
 from __future__ import annotations
@@ -25,16 +26,16 @@ from ragas.metrics import (
 from chunk.service import CHUNKER
 from db.database import get_db_context
 from embed.config import DEFAULT_MODEL as EMBED_MODEL
-from retriever.service import retrieve
+from test.service import retrieve
 
 logger = logging.getLogger(__name__)
 
-TESTSET_PATH = Path("retriever/testset.json")
-OUTPUT_ROOT = Path("retriever/output")
+RAGAS_MODEL = "gpt-4o"
+TESTSET_PATH = Path("test/testset.json")
+OUTPUT_ROOT = Path("test/output")
 
 
 def _build_output_dir(mode: str, top_k: int) -> Path:
-    """output 경로: {모델}/{청킹전략}/{mode}_top{k}/"""
     model_tag = EMBED_MODEL.replace("/", "_")
     chunk_tag = CHUNKER.config.strategy_name
     return OUTPUT_ROOT / model_tag / chunk_tag / f"{mode}_top{top_k}"
@@ -49,17 +50,14 @@ def run_retrieval(
     top_k: int = 5,
     mode: str = "baseline",
 ) -> Dataset:
-    """각 질문에 대해 retrieve 실행 → RAGAS Dataset 구성.
-
-    mode="reranker" 시 벡터 검색 top-20 → Cross-Encoder 재정렬 → top_k 반환.
-    """
+    """각 질문에 대해 retrieve 실행 → RAGAS Dataset 구성."""
     questions: list[str] = []
     ground_truths: list[str] = []
     contexts_list: list[list[str]] = []
 
     use_reranker = mode == "reranker"
     if use_reranker:
-        from retriever.reranker import rerank
+        from test.reranker import rerank
 
         fetch_k = max(top_k, 20)
         print(f"    Reranker 활성: 벡터검색 top-{fetch_k} → 리랭크 top-{top_k}")
@@ -119,7 +117,6 @@ def main() -> None:
     from ragas.llms import llm_factory
 
     from core.config import get_settings
-    from retriever.config import RAGAS_MODEL
 
     settings = get_settings()
     client = OpenAI(api_key=settings.OPENAI_API_KEY)
@@ -140,7 +137,6 @@ def main() -> None:
     numeric_cols = df.select_dtypes(include="number").columns
     scores = {col: round(df[col].mean(), 4) for col in numeric_cols}
 
-    # 메타데이터 포함 저장
     result_data = {
         "embed_model": EMBED_MODEL,
         "chunk_strategy": CHUNKER.config.strategy_name,

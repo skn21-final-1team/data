@@ -1,8 +1,8 @@
 """Retriever 성능 평가 — IR 지표 (Hit Rate, MRR, NDCG) + MLflow.
 
 실행::
-    uv run python -m retriever.evaluation_ir --mode baseline --top_k 5
-    uv run python -m retriever.evaluation_ir --mode reranker --top_k 5
+    uv run python -m test.evaluation_ir --mode baseline --top_k 5
+    uv run python -m test.evaluation_ir --mode reranker --top_k 5
 """
 
 from __future__ import annotations
@@ -17,13 +17,13 @@ import mlflow
 from chunk.service import CHUNKER
 from db.database import get_db_context
 from embed.config import DEFAULT_MODEL as EMBED_MODEL
-from retriever.metrics import evaluate_batch, evaluate_single
-from retriever.service import retrieve
+from test.service import retrieve
+from test.metrics import evaluate_batch, evaluate_single
 
 logger = logging.getLogger(__name__)
 
-TESTSET_PATH = Path("retriever/testset.json")
-OUTPUT_ROOT = Path("retriever/output")
+TESTSET_PATH = Path("test/testset.json")
+OUTPUT_ROOT = Path("test/output")
 
 
 def _build_output_dir(mode: str, top_k: int) -> Path:
@@ -49,14 +49,14 @@ def run_evaluation(
     """
     use_reranker = mode == "reranker"
     if use_reranker:
-        from retriever.reranker import rerank
+        from test.reranker import rerank
 
         fetch_k = max(top_k, 20)
         print(f"    Reranker 활성: 벡터검색 top-{fetch_k} → 리랭크 top-{top_k}")
     else:
         fetch_k = top_k
 
-    batch_input: list[dict] = []
+    batch_input: list[dict[str, str | list[str]]] = []
     details: list[dict] = []
 
     for i, item in enumerate(testset, 1):
@@ -77,12 +77,14 @@ def run_evaluation(
         scores = evaluate_single(chunks, ground_truth)
         batch_input.append({"chunks": chunks, "ground_truth": ground_truth})
 
-        details.append({
-            "question": item["question"],
-            "ground_truth": ground_truth,
-            "num_results": len(results),
-            **scores,
-        })
+        details.append(
+            {
+                "question": item["question"],
+                "ground_truth": ground_truth,
+                "num_results": len(results),
+                **scores,
+            }
+        )
 
         print(
             f"    [{i}/{len(testset)}] {item['question'][:40]}... "
@@ -113,18 +115,19 @@ def main() -> None:
     )
     print(f"[출력] {output_dir}/\n")
 
-    # MLflow 실험 추적
     mlflow.set_experiment("retriever-evaluation")
 
     with mlflow.start_run(run_name=f"{args.mode}_top{args.top_k}_{chunk_strategy}"):
-        mlflow.log_params({
-            "embed_model": EMBED_MODEL,
-            "chunk_strategy": chunk_strategy,
-            "chunk_size": chunk_size,
-            "chunk_overlap": chunk_overlap,
-            "mode": args.mode,
-            "top_k": args.top_k,
-        })
+        mlflow.log_params(
+            {
+                "embed_model": EMBED_MODEL,
+                "chunk_strategy": chunk_strategy,
+                "chunk_size": chunk_size,
+                "chunk_overlap": chunk_overlap,
+                "mode": args.mode,
+                "top_k": args.top_k,
+            }
+        )
 
         print("[1] 테스트셋 로드...")
         testset = load_testset()
@@ -133,10 +136,8 @@ def main() -> None:
         print("[2] Retrieval + 평가 실행...")
         avg_scores, details = run_evaluation(testset, top_k=args.top_k, mode=args.mode)
 
-        # MLflow 지표 기록
         mlflow.log_metrics(avg_scores)
 
-        # 결과 저장
         result_data = {
             "embed_model": EMBED_MODEL,
             "chunk_strategy": chunk_strategy,
@@ -159,15 +160,16 @@ def main() -> None:
             encoding="utf-8",
         )
 
-        # MLflow artifact 저장
         mlflow.log_artifact(str(result_path))
         mlflow.log_artifact(str(detail_path))
 
-        print(f"\n[결과] {EMBED_MODEL} / {chunk_strategy} / {args.mode} / top_{args.top_k}")
+        print(
+            f"\n[결과] {EMBED_MODEL} / {chunk_strategy} / {args.mode} / top_{args.top_k}"
+        )
         for metric, score in avg_scores.items():
             print(f"  {metric}: {score}")
         print(f"\n[완료] 저장: {output_dir}/")
-        print(f"[MLflow] mlflow ui 로 실험 비교 가능")
+        print("[MLflow] mlflow ui 로 실험 비교 가능")
 
 
 if __name__ == "__main__":

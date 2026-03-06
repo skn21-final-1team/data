@@ -158,30 +158,53 @@ Phase 2에서 확정된 최적 전략 + 사이즈로 임베딩 모델 비교:
 
 ## 실험 실행 방법
 
-### 1. 데이터 재적재
-
-전략/사이즈 변경 시마다 재적재 필요:
+### 0. 공통 전제
 
 ```bash
-# chunk/service.py의 CHUNKER 설정 변경 후
-uvicorn main:app --reload --port 8001
-uv run test.py
+# 프로젝트 루트(data/)에서 실행
+# DB에 notebook_id=27의 source 데이터가 있어야 함
 ```
 
-### 2. 평가 실행
+### 1. 데이터 준비 (최초 1회 또는 새 데이터 필요 시)
 
 ```bash
-uv run python -m retriever.evaluation_ir --mode reranker --top_k 5
+uv run python -m test.test_crawl 27
 ```
 
-### 3. 결과 확인
+### 2. 청킹 + 임베딩 → page_data 적재
+
+전략·모델·사이즈를 변경하며 반복 실행:
+
+```bash
+# 기본 (markdown / bge-m3 / 1000 / 100) — 테스트 테이블 적재
+uv run python -m test.test_ce 27 --test --clear
+
+# 전략 변경 예시
+uv run python -m test.test_ce 27 --test --clear --strategy recursive --chunk_size 500 --chunk_overlap 50
+uv run python -m test.test_ce 27 --test --clear --strategy hierarchical --chunk_size 800 --chunk_overlap 100
+
+# 임베딩 모델 변경 예시
+uv run python -m test.test_ce 27 --test --clear --embed_model e5-large
+```
+
+> **주의**: 전략·사이즈가 바뀔 때마다 `--clear`로 기존 데이터를 삭제하고 재적재해야 한다.
+
+### 3. IR 지표 평가 → MLflow 기록
+
+```bash
+uv run python -m test.evaluation_ir --mode reranker --top_k 5
+```
+
+실행 시 `mlruns/`에 자동 기록. 한 Phase가 끝나면 MLflow UI에서 비교.
+
+### 4. MLflow UI로 비교
 
 ```bash
 uv run mlflow ui --port 5000
 # http://localhost:5000 → retriever-evaluation 실험 선택 → Compare
 ```
 
-MLflow 상세 사용법: `retriever/mlflow-guide.md` 참조
+MLflow 상세 사용법: `mlflow-guide.md` 참조
 
 ---
 
@@ -191,3 +214,4 @@ MLflow 상세 사용법: `retriever/mlflow-guide.md` 참조
 - 기존 `ragas`, `datasets` → 평가 전환 완료 후 제거 예정
 - 추후 `deepeval` → LLM 프롬프트 도입 시 dev 의존성 추가
 - E3 (OpenAI) 사용 시 `openai` 패키지 + API 키 필요
+

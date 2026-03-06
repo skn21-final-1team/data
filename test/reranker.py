@@ -3,7 +3,7 @@
 벡터 검색 결과를 쿼리와 함께 재평가하여 관련성 순으로 재정렬한다.
 
 사용::
-    from retriever.reranker import rerank
+    from test.reranker import rerank
     reranked = rerank(query, results, top_k=5)
 """
 
