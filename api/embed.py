@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
-from embed.config import DEFAULT_MODEL
+from core.config import get_settings
 from embed.service import embed_texts
 
 router = APIRouter()
@@ -22,9 +22,10 @@ class QueryEmbedResponse(BaseModel):
 def embed_query(request: QueryEmbedRequest) -> QueryEmbedResponse:
     """쿼리 텍스트를 임베딩 벡터로 변환한다."""
     embedding = embed_texts([request.query])[0]
+    settings = get_settings()
     return QueryEmbedResponse(
         query=request.query,
         embedding=embedding,
         dimension=len(embedding),
-        model=DEFAULT_MODEL,
+        model=settings.EMBED_MODEL,
     )

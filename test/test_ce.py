@@ -29,8 +29,7 @@
     hierarchical     S6  MarkdownHeader → RecursiveCharacter 재분할
 
 임베딩 모델:
-    bge-m3     BAAI/bge-m3 (1024d)
-    e5-large   intfloat/multilingual-e5-large (1024d)
+    EMBED_MODEL 환경변수로 설정 (서버리스 API 호출)
 """
 
 from __future__ import annotations
@@ -42,7 +41,7 @@ import time
 from sqlalchemy import func
 
 from chunk.config import ChunkerConfig
-from chunk.preprocess import MarkdownPreprocessor
+from crawl.preprocess import MarkdownPreprocessor
 from chunk.strategies import (
     HierarchicalMarkdownChunker,
     MarkdownChunker,
@@ -53,7 +52,7 @@ from chunk.strategies import (
 )
 from db.database import get_db_context
 from db.vector_store import get_vector_store
-from embed.embedders import BgeM3Embedder, MultilingualE5Embedder
+from embed.service import embed_texts
 from models.source import SourceModel
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -65,11 +64,6 @@ STRATEGY_MAP: dict[str, type] = {
     "markdown_header": MarkdownHeaderChunker,
     "markdown": MarkdownChunker,
     "hierarchical": HierarchicalMarkdownChunker,
-}
-
-EMBED_MAP: dict[str, type] = {
-    "bge-m3": BgeM3Embedder,
-    "e5-large": MultilingualE5Embedder,
 }
 
 EXCLUDE_IDS = [20, 42, 45, 47, 48, 53]
@@ -108,7 +102,7 @@ def main() -> None:
     parser.add_argument("--strategy", choices=STRATEGY_MAP.keys(), default="markdown", help="청킹 전략 (기본: markdown)")
     parser.add_argument("--chunk_size", type=int, default=1000, help="청크 크기 (기본: 1000)")
     parser.add_argument("--chunk_overlap", type=int, default=100, help="청크 오버랩 (기본: 100)")
-    parser.add_argument("--embed_model", choices=EMBED_MAP.keys(), default="bge-m3", help="임베딩 모델 (기본: bge-m3)")
+    parser.add_argument("--embed_model", default="bge-m3", help="임베딩 모델 (로깅용, 실제 모델은 EMBED_MODEL 환경변수)")
     parser.add_argument("--test", action="store_true", help="page_data_test 컬렉션 사용")
     parser.add_argument("--clear", action="store_true", help="컬렉션 초기화 후 재적재")
     parser.add_argument("--exclude", nargs="+", type=int, default=EXCLUDE_IDS, help=f"제외할 source ID (기본: {EXCLUDE_IDS})")
@@ -174,9 +168,8 @@ def main() -> None:
     chunk_time = time.time() - t0
     print(f"  총 {total_chunks}개 청크 ({chunk_time:.1f}초)")
 
-    # 3. 임베딩
-    print(f"\n[임베딩] {args.embed_model} 모델로 처리 중...")
-    embedder = EMBED_MAP[args.embed_model]()
+    # 3. 임베딩 (서버리스 API)
+    print(f"\n[임베딩] 서버리스 API로 처리 중...")
 
     all_texts: list[str] = []
     text_source_map: list[int] = []
@@ -186,7 +179,7 @@ def main() -> None:
         text_source_map.extend([source_id] * len(chunks))
 
     t0 = time.time()
-    all_embeddings = embedder.embed(all_texts, show_progress_bar=True)
+    all_embeddings = embed_texts(all_texts)
     embed_time = time.time() - t0
     print(f"  {len(all_embeddings)}개 벡터 생성 ({embed_time:.1f}초)")
 

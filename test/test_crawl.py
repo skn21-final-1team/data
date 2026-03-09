@@ -68,6 +68,8 @@ DEFAULT_URLS = [
     "https://en.wikipedia.org/wiki/List_of_chemical_elements",
     "https://www.lingscars.com/leasing/electric/",
     "https://www.diningcode.com/intro",
+    "https://www.e2news.com/news/articleView.html?idxno=84248",
+    "https://www.saramin.co.kr/zf_user/jobs/public/list",
 ]
 
 

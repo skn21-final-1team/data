@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 from chunk.config import ChunkerConfig, ChunkResult, TextSource
-from chunk.preprocess import MarkdownPreprocessor
 from chunk.strategies import MarkdownChunker
+from crawl.preprocess import MarkdownPreprocessor
 
 CHUNKER = MarkdownChunker(
     ChunkerConfig("markdown_1000c", chunk_size=1000, chunk_overlap=100),
@@ -21,3 +21,8 @@ def chunk_sources(sources: list[TextSource]) -> dict[str, list[ChunkResult]]:
 def chunk_text(text: str) -> list[ChunkResult]:
     """단일 텍스트를 전처리 → 청킹한다."""
     return CHUNKER.chunk(MarkdownPreprocessor.run(text))
+
+
+def chunk_text_only(text: str) -> list[ChunkResult]:
+    """전처리 없이 청킹만 수행한다. (이미 전처리된 텍스트용)"""
+    return CHUNKER.chunk(text)

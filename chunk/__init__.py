@@ -1,7 +1,6 @@
 from chunk.base import BaseChunker
 from chunk.config import ChunkerConfig, ChunkResult, ChunkingRunResult, TextSource
-from chunk.preprocess import MarkdownPreprocessor
-from chunk.service import chunk_sources, chunk_text
+from chunk.service import chunk_sources, chunk_text, chunk_text_only
 from chunk.strategies import (
     HierarchicalMarkdownChunker,
     MarkdownChunker,
@@ -17,9 +16,9 @@ __all__ = [
     "ChunkResult",
     "ChunkingRunResult",
     "TextSource",
-    "MarkdownPreprocessor",
     "chunk_sources",
     "chunk_text",
+    "chunk_text_only",
     "RecursiveChunker",
     "TokenChunker",
     "SemanticChunker",
