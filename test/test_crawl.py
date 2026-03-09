@@ -14,7 +14,8 @@ import sys
 import time
 
 from crawl.client import hybrid_client
-from crud.source import create_source
+from crawl.preprocess import MarkdownPreprocessor
+from crud.source import create_source, update_source_status
 from db.database import get_db_context
 from test.urls import DEFAULT_URLS
 
@@ -30,16 +31,22 @@ async def crawl_all(
         print(f"\n  [{i}/{len(urls)}] {url}")
         try:
             scraped = await hybrid_client.scrape(url)
+            preprocessed = MarkdownPreprocessor.run(scraped.content)
             print(f"    제목: {scraped.title}")
-            print(f"    본문: {len(scraped.content)}자")
+            print(f"    본문: {len(scraped.content)}자 → 전처리: {len(preprocessed)}자")
 
             with get_db_context() as db:
                 source = create_source(
                     db=db,
                     url=scraped.url,
-                    title=scraped.title,
-                    summary=scraped.content,
                     notebook_id=notebook_id,
+                )
+                update_source_status(
+                    db,
+                    source.id,
+                    status="success",
+                    title=scraped.title,
+                    summary=preprocessed,
                 )
             print(f"    → source 저장 완료 (id={source.id})")
             results.append(
