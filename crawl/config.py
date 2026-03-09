@@ -2,9 +2,7 @@ from functools import lru_cache
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-_DEFAULT_USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-)
+_DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
 
 class CrawlSettings(BaseSettings):
@@ -17,7 +15,7 @@ class CrawlSettings(BaseSettings):
 
     playwright_timeout: int = 30000
     playwright_headless: bool = True
-    static_fallback_threshold: int = 150
+    static_fallback_threshold: int = 500
     user_agent: str = _DEFAULT_USER_AGENT
     accept_language: str = "ko-KR,ko;q=0.9"
     min_content_length: int = 30

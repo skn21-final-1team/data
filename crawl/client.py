@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from core.exceptions import CrawlFailedException
 from crawl.config import get_crawl_settings
 from crawl.normalizer import normalize
+from crawl.page_actions import expand_collapsed
 from crawl.parser import parse_duckduckgo_html, parse_html
 from crawl.robots import RobotsChecker
 from crawl.validator import validate
@@ -29,9 +30,20 @@ class HybridClient:
             raise CrawlFailedException(f"robots.txt에 의해 차단된 URL: {url}")
         settings = get_crawl_settings()
         try:
-            title, content = await self._scrape_static(url)
-            if len(content) < settings.static_fallback_threshold:
-                title, content = await self._scrape_dynamic(url)
+            title, static_content = await self._scrape_static(url)
+            print(
+                f"  [정적] {len(static_content)}자 (임계값: {settings.static_fallback_threshold}자)"
+            )
+            if len(static_content) < settings.static_fallback_threshold:
+                print("  [동적] 임계값 미달 → 동적 크롤링 시작")
+                dyn_title, dyn_content = await self._scrape_dynamic(url)
+                print(f"  [동적] 완료: {len(dyn_content)}자")
+                if len(dyn_content) > len(static_content):
+                    title, content = dyn_title, dyn_content
+                else:
+                    content = static_content
+            else:
+                content = static_content
         except CrawlFailedException:
             raise
         except Exception as e:
@@ -73,15 +85,18 @@ class HybridClient:
                 await page.evaluate(
                     "window.scrollTo(0, document.body.scrollHeight / 2)"
                 )
-                await page.wait_for_timeout(1000)
+                await page.wait_for_load_state("networkidle")
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                await page.wait_for_timeout(1000)
+                await page.wait_for_load_state("networkidle")
                 html = await page.content()
                 title = await page.title()
+                accordion_text = await expand_collapsed(page)
             finally:
                 await browser.close()
 
         _, content = parse_html(html)
+        if accordion_text:
+            content = content + "\n\n" + accordion_text
         return title or None, content
 
 

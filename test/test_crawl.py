@@ -69,7 +69,7 @@ DEFAULT_URLS = [
     "https://www.lingscars.com/leasing/electric/",
     "https://www.diningcode.com/intro",
     "https://www.e2news.com/news/articleView.html?idxno=84248",
-    "https://www.saramin.co.kr/zf_user/jobs/public/list",
+    "https://blog.kmong.com/gpt-codex-%EC%8B%A4%EB%AC%B4%EC%97%90-%EB%AA%B0%EB%9E%98-%EC%82%AC%EC%9A%A9-%EA%B2%BD%ED%97%98%EA%B8%B0-1adb16e8a3a5",
 ]
 
 
