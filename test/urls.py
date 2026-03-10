@@ -10,7 +10,6 @@ DEFAULT_URLS = [
     "https://solved.ac/ranking/tier?page=1",
     "https://event.wanted.co.kr/swmaestro17_busan",
     "https://en.wikipedia.org/wiki/Tensor",
-    "https://en.wikipedia.org/wiki/Elon_Musk",
     "https://en.wikipedia.org/wiki/Tesla,_Inc",
     "https://ridibooks.com/webtoon/recommendation",
     "https://mojing.tistory.com/entry/ProgrammersC-PCCP-기출문제-1번-동영상-재생기",
@@ -34,7 +33,6 @@ DEFAULT_URLS = [
     "https://techblog.woowahan.com/25189/",
     "https://techcrunch.com/2026/03/04/anthropic-ceo-dario-amodei-calls-openais-messaging-around-military-deal-straight-up-lies-report-says/",
     "https://developer.mozilla.org/en-US/blog/launching-new-front-end/",
-    "https://stackoverflow.com/questions/79901273/how-to-properly-style-buttons-in-avalonia-c",
     "https://www.inflearn.com/projects/1780001/%EC%9B%B9-%EC%95%B1-%EA%B0%9C%EB%B0%9C-%EC%88%98%EC%9D%B5%EC%84%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%8C%80-%EB%AA%A8%EC%A7%91",
     "https://tech.kakao.com/posts/811",
     "https://d2.naver.com/news/3435170",
@@ -49,6 +47,5 @@ DEFAULT_URLS = [
     "https://en.wikipedia.org/wiki/List_of_chemical_elements",
     "https://www.diningcode.com/intro",
     "https://www.e2news.com/news/articleView.html?idxno=84248",
-    "https://blog.kmong.com/gpt-codex-%EC%8B%A4%EB%AC%B4%EC%97%90-%EB%AA%B0%EB%9E%98-%EC%82%AC%EC%9A%A9-%EA%B2%BD%ED%97%98%EA%B8%B0-1adb16e8a3a5",
     "https://www.hanwha.co.kr/business/manufacture/systems.do",
 ]

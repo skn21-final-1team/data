@@ -41,16 +41,17 @@ async def crawl_all(
                     url=scraped.url,
                     notebook_id=notebook_id,
                 )
+                source_id = source.id
                 update_source_status(
                     db,
-                    source.id,
+                    source_id,
                     status="success",
                     title=scraped.title,
-                    summary=preprocessed,
+                    raw=preprocessed,
                 )
-            print(f"    → source 저장 완료 (id={source.id})")
+            print(f"    → source 저장 완료 (id={source_id})")
             results.append(
-                {"id": source.id, "url": scraped.url, "title": scraped.title}
+                {"id": source_id, "url": scraped.url, "title": scraped.title}
             )
         except Exception as e:
             print(f"    → 실패: {e}")
