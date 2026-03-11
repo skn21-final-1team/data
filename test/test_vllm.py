@@ -17,20 +17,14 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from crawl.preprocess import MarkdownPreprocessor
 from crud.source import get_source_by_id, update_source_status
 from db.database import get_db_context
-from llm.client import (
-    MAX_CONTENT_CHARS,
-    MAX_MODEL_TOKENS,
-    KO_CHARS_PER_TOKEN,
-    refine,
-    summarize,
-)
+from llm.client import refine, summarize
+from llm.config import get_llm_settings
 from llm.prompts import build_refine_prompt, build_summarize_prompt
 
 sys.stdout.reconfigure(encoding="utf-8")
-
-MAX_WORKERS = 2
 
 
 def _parse_ids(raw: list[str]) -> list[int]:
@@ -46,11 +40,12 @@ def _parse_ids(raw: list[str]) -> list[int]:
 
 
 def _print_token_preview(source_id: int, content: str, prompt_builder) -> None:
-    truncated = content[:MAX_CONTENT_CHARS]
+    cfg = get_llm_settings()
+    truncated = content[: cfg.MAX_CONTENT_CHARS]
     prompt = prompt_builder(truncated)
-    est_input = int(len(prompt) / KO_CHARS_PER_TOKEN)
-    est_output = MAX_MODEL_TOKENS - est_input - 500
-    flag = " ⚠" if est_input >= MAX_MODEL_TOKENS else ""
+    est_input = int(len(prompt) / cfg.KO_CHARS_PER_TOKEN)
+    est_output = cfg.MAX_MODEL_TOKENS - est_input - 500
+    flag = " ⚠" if est_input >= cfg.MAX_MODEL_TOKENS else ""
     print(
         f"  {source_id:>4} | {len(content):>7,} | {len(truncated):>7,} "
         f"| {est_input:>9,} | {est_output:>9,}{flag}"
@@ -58,7 +53,8 @@ def _print_token_preview(source_id: int, content: str, prompt_builder) -> None:
 
 
 def _run_refine(source_id: int, url: str, content: str) -> tuple[int, str]:
-    refined_text = refine(content)
+    preprocessed = MarkdownPreprocessor.run(content)
+    refined_text = refine(preprocessed)
     with get_db_context() as db:
         update_source_status(db, source_id, refined=refined_text)
     return source_id, refined_text
@@ -79,7 +75,7 @@ def _run_step(
     start = time.time()
     success = 0
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+    with ThreadPoolExecutor(max_workers=get_llm_settings().MAX_WORKERS) as pool:
         futures = {
             pool.submit(worker_fn, sid, url, content): (sid, url)
             for sid, url, content in source_data

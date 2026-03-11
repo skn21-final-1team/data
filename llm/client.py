@@ -9,29 +9,22 @@ import time
 
 import httpx
 
-from core.config import get_settings
+from llm.config import get_llm_settings
 from llm.prompts import build_refine_prompt, build_summarize_prompt
 
 logger = logging.getLogger(__name__)
 
-POLL_INTERVAL = 1.0
-POLL_TIMEOUT = 300
-MAX_CONTENT_CHARS = 50000
-MAX_MODEL_TOKENS = 32768
-KO_CHARS_PER_TOKEN = 0.7
-COLD_START_RETRIES = 2
-COLD_START_DELAY = 10.0
-
 
 def _run_and_poll(base_url: str, api_key: str, payload: dict) -> dict:
     """RunPod /run 후 /status 폴링으로 결과 수신."""
+    cfg = get_llm_settings()
     headers = {"Authorization": f"Bearer {api_key}"}
 
     resp = httpx.post(f"{base_url}/run", headers=headers, json=payload, timeout=30)
     resp.raise_for_status()
     job_id = resp.json()["id"]
 
-    deadline = time.time() + POLL_TIMEOUT
+    deadline = time.time() + cfg.POLL_TIMEOUT
     while time.time() < deadline:
         status_resp = httpx.get(
             f"{base_url}/status/{job_id}", headers=headers, timeout=30
@@ -44,17 +37,18 @@ def _run_and_poll(base_url: str, api_key: str, payload: dict) -> dict:
         if data["status"] == "FAILED":
             raise RuntimeError(f"RunPod job failed: {data}")
 
-        time.sleep(POLL_INTERVAL)
+        time.sleep(cfg.POLL_INTERVAL)
 
-    raise TimeoutError(f"RunPod job {job_id} timed out after {POLL_TIMEOUT}s")
+    raise TimeoutError(f"RunPod job {job_id} timed out after {cfg.POLL_TIMEOUT}s")
 
 
 def _truncate_content(content: str) -> str:
     """모델 컨텍스트 한계에 맞게 본문 절삭."""
-    if len(content) <= MAX_CONTENT_CHARS:
+    limit = get_llm_settings().MAX_CONTENT_CHARS
+    if len(content) <= limit:
         return content
-    logger.info("본문 절삭: %d → %d자", len(content), MAX_CONTENT_CHARS)
-    return content[:MAX_CONTENT_CHARS]
+    logger.info("본문 절삭: %d → %d자", len(content), limit)
+    return content[:limit]
 
 
 def _extract_raw_output(data: dict) -> str:
@@ -72,9 +66,9 @@ def _extract_raw_output(data: dict) -> str:
 
 def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
     """프롬프트를 RunPod vLLM에 전송하고 raw 텍스트 출력 반환. 콜드스타트 재시도 포함."""
-    settings = get_settings()
-    est_input_tokens = int(len(prompt) / KO_CHARS_PER_TOKEN)
-    max_tokens = max(512, MAX_MODEL_TOKENS - est_input_tokens - 500)
+    cfg = get_llm_settings()
+    est_input_tokens = int(len(prompt) / cfg.KO_CHARS_PER_TOKEN)
+    max_tokens = max(512, cfg.MAX_MODEL_TOKENS - est_input_tokens - 500)
 
     sampling = {"max_tokens": max_tokens, "temperature": 0.1}
     if min_tokens > 0:
@@ -82,7 +76,7 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
 
     payload = {
         "input": {
-            "model": settings.VLLM_MODEL,
+            "model": cfg.VLLM_MODEL,
             "prompt": prompt,
             "sampling_params": sampling,
         }
@@ -96,25 +90,25 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
 
     last_exc: Exception = RuntimeError("재시도 횟수 초과")
     result: dict = {}
-    for attempt in range(1, COLD_START_RETRIES + 1):
+    for attempt in range(1, cfg.COLD_START_RETRIES + 1):
         try:
             result = _run_and_poll(
-                base_url=settings.VLLM_BASE_URL,
-                api_key=settings.RUNPOD_API_KEY,
+                base_url=cfg.VLLM_BASE_URL,
+                api_key=cfg.RUNPOD_API_KEY,
                 payload=payload,
             )
             break
         except RuntimeError as e:
             last_exc = e
-            if attempt < COLD_START_RETRIES:
+            if attempt < cfg.COLD_START_RETRIES:
                 logger.warning(
                     "콜드스타트 실패 (시도 %d/%d), %.0f초 후 재시도: %s",
                     attempt,
-                    COLD_START_RETRIES,
-                    COLD_START_DELAY,
+                    cfg.COLD_START_RETRIES,
+                    cfg.COLD_START_DELAY,
                     e,
                 )
-                time.sleep(COLD_START_DELAY)
+                time.sleep(cfg.COLD_START_DELAY)
     else:
         raise last_exc
 

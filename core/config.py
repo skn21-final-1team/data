@@ -8,8 +8,6 @@ class Settings(BaseSettings):
     BACKEND_CALLBACK_URL: str
     OPENAI_API_KEY: str = ""
 
-    VLLM_BASE_URL: str = ""
-    VLLM_MODEL: str = ""
     EMBED_BASE_URL: str = ""
     EMBED_MODEL: str = ""
     RUNPOD_API_KEY: str = ""
