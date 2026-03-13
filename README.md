@@ -51,3 +51,28 @@ ruff format --check .
 
 - Swagger UI: http://localhost:8001/docs
 - ReDoc: http://localhost:8001/redoc
+
+<br><br><br>
+# dev 서버 설정
+
+## UV 설치
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+## tmux 명령어
+### create session
+```bash
+tmux new -s [name] 
+```
+### hide & visible tmux
+```bash
+ctrl + b + d #hide
+tmux -a -t [name] # visible
+```
+
+
+## 서버실행 및 로깅
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000 > fastapi.log 2>&1 &
+```
