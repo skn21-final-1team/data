@@ -1,0 +1,96 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - devops
+
+jobs:
+  notify-start:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Notification
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "배포 시작"
+          description: "🟡 EC2 서버로 배포를 시작합니다..."
+          color: 0xffff00
+
+  deploy:
+    needs: notify-start
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_GITHUB_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy via SSM
+        env:
+          INSTANCE_ID: ${{ secrets.DEV_EC2_INSTANCE_ID }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: |
+          set -euo pipefail
+
+          COMMAND_ID=$(aws ssm send-command \
+            --region "$AWS_REGION" \
+            --instance-ids "$INSTANCE_ID" \
+            --document-name "AWS-RunShellScript" \
+            --parameters 'commands=["sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace","sudo -iu ubuntu bash -lc '\''set -euo pipefail; export PATH=\"$HOME/.local/bin:$PATH\"; cd /home/ubuntu/workspace; git fetch origin devops; git reset --hard origin/devops; chmod +x ./dev-deploy.sh; ./dev-deploy.sh'\''"]' \
+            --comment "GitHub Actions deploy ${GITHUB_REPOSITORY}@${GITHUB_SHA}" \
+            --query "Command.CommandId" \
+            --output text)
+
+          echo "SSM Command ID: $COMMAND_ID"
+
+          set +e
+          aws ssm wait command-executed \
+            --region "$AWS_REGION" \
+            --command-id "$COMMAND_ID" \
+            --instance-id "$INSTANCE_ID"
+          WAIT_EXIT_CODE=$?
+          set -e
+
+          aws ssm get-command-invocation \
+            --region "$AWS_REGION" \
+            --command-id "$COMMAND_ID" \
+            --instance-id "$INSTANCE_ID" \
+            --query "{Status:Status,ResponseCode:ResponseCode,StandardOutputContent:StandardOutputContent,StandardErrorContent:StandardErrorContent}" \
+            --output json
+
+          COMMAND_STATUS=$(aws ssm get-command-invocation \
+            --region "$AWS_REGION" \
+            --command-id "$COMMAND_ID" \
+            --instance-id "$INSTANCE_ID" \
+            --query "Status" \
+            --output text)
+
+          if [ "$WAIT_EXIT_CODE" -ne 0 ] || [ "$COMMAND_STATUS" != "Success" ]; then
+            echo "SSM 명령 실행이 실패했습니다. 위 StandardErrorContent를 확인하세요."
+            exit 1
+          fi
+
+      - name: Success Notification
+        uses: sarisia/actions-status-discord@v1
+        if: success()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          title: "배포 완료"
+          description: "🟢 EC2 서버로 배포를 완료했습니다."
+          color: 0x00ff00
+
+      - name: Failure Notification
+        uses: sarisia/actions-status-discord@v1
+        if: failure()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          title: "배포 실패"
+          description: "🔴 EC2 서버 배포에 실패했습니다. 로그를 확인해주세요."
+          color: 0xff0000
