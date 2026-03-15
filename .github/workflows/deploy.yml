@@ -41,7 +41,7 @@ jobs:
             --region "$AWS_REGION" \
             --instance-ids "$INSTANCE_ID" \
             --document-name "AWS-RunShellScript" \
-            --parameters 'commands=["sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace","sudo -iu ubuntu bash -lc '\''set -euo pipefail; export PATH=\"$HOME/.local/bin:$PATH\"; cd /home/ubuntu/workspace; git fetch origin devops; git reset --hard origin/devops; chmod +x ./dev-deploy.sh; ./dev-deploy.sh'\''"]' \
+            --parameters 'commands=["sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace","sudo -iu ubuntu bash -lc '\''set -euo pipefail; export PATH=\"$HOME/.local/bin:$PATH\"; cd /home/ubuntu/workspace/data; git fetch origin devops; git reset --hard origin/devops; chmod +x ./dev-deploy.sh; ./dev-deploy.sh'\''"]' \
             --comment "GitHub Actions deploy ${GITHUB_REPOSITORY}@${GITHUB_SHA}" \
             --query "Command.CommandId" \
             --output text)
