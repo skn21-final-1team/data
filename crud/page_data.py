@@ -21,7 +21,7 @@ def delete_page_data_by_source(source_id: int) -> int:
                 WHERE collection_id = (
                     SELECT uuid FROM langchain_pg_collection WHERE name = :col
                 )
-                AND cmetadata @> :filter::jsonb
+                AND cmetadata @> CAST(:filter AS jsonb)
                 """
             ),
             {"col": "page_data", "filter": json.dumps({"source_id": source_id})},
