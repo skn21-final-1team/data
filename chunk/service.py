@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 from chunk.config import ChunkerConfig, ChunkResult, TextSource
-from chunk.strategies import MarkdownChunker
+from chunk.strategies import HierarchicalPrependChunker
 from crawl.preprocess import MarkdownPreprocessor
 
-CHUNKER = MarkdownChunker(
+CHUNKER = HierarchicalPrependChunker(
     ChunkerConfig("markdown_1000c", chunk_size=1000, chunk_overlap=100),
 )
 

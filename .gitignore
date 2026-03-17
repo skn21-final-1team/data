@@ -211,3 +211,4 @@ embed/output/
 retriever/output/
 mlruns/
 mlflow.db
+.deepeval/
