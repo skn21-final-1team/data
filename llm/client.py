@@ -9,6 +9,7 @@ import time
 
 import httpx
 
+from core.config import get_settings
 from llm.config import get_llm_settings
 from llm.prompts import build_refine_prompt, build_summarize_prompt
 
@@ -81,8 +82,8 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
             "sampling_params": sampling,
         }
     }
-    logger.warning(
-        "[DEBUG] max_tokens=%d, est_input=%d, prompt_len=%d",
+    logger.debug(
+        "max_tokens=%d, est_input=%d, prompt_len=%d",
         max_tokens,
         est_input_tokens,
         len(prompt),
@@ -94,7 +95,7 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
         try:
             result = _run_and_poll(
                 base_url=cfg.VLLM_BASE_URL,
-                api_key=cfg.RUNPOD_API_KEY,
+                api_key=get_settings().RUNPOD_API_KEY,
                 payload=payload,
             )
             break
@@ -113,8 +114,8 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
         raise last_exc
 
     raw = _extract_raw_output(result)
-    logger.warning(
-        "[DEBUG] raw_output_len=%d, raw_output[:300]=%s", len(raw), raw[:300]
+    logger.debug(
+        "raw_output_len=%d, raw_output[:300]=%s", len(raw), raw[:300]
     )
     return raw
 

@@ -8,7 +8,6 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class LLMSettings(BaseSettings):
     VLLM_BASE_URL: str = ""
     VLLM_MODEL: str = ""
-    RUNPOD_API_KEY: str = ""
 
     POLL_INTERVAL: float = 1.0
     POLL_TIMEOUT: int = 300
