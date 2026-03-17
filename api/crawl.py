@@ -1,6 +1,6 @@
 from fastapi import APIRouter, BackgroundTasks
 
-from crud.source import create_source
+from crud.source import get_source_by_id
 from db.database import DbSession
 from schemas.crawl import CrawlRequest
 from services.crawl_pipeline import process_pipeline
@@ -16,16 +16,20 @@ def crawl(
 ) -> dict:
     """URL 접수 → 즉시 응답. 크롤링·청킹·임베딩은 백그라운드에서 처리."""
     source_map: dict[str, int] = {}
+    not_found: list[int] = []
 
-    for url in request.urls:
-        source = create_source(
-            db=db,
-            url=str(url),
-            notebook_id=request.notebook_id,
-            directory_id=request.directory_id,
-        )
-        source_map[str(url)] = source.id
+    for item in request.sources:
+        source = get_source_by_id(db, item.source_id)
+        if source is None:
+            not_found.append(item.source_id)
+            continue
+        source_map[str(item.url)] = item.source_id
 
-    background_tasks.add_task(process_pipeline, source_map)
+    if source_map:
+        background_tasks.add_task(process_pipeline, source_map)
 
-    return {"status": "accepted"}
+    return {
+        "status": "accepted",
+        "accepted": list(source_map.values()),
+        "not_found": not_found,
+    }
