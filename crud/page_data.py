@@ -2,9 +2,32 @@
 
 from __future__ import annotations
 
-from langchain_postgres.vectorstores import PGVector
+import json
 
+from langchain_postgres.vectorstores import PGVector
+from sqlalchemy import text
+
+from db.database import get_db_context
 from db.vector_store import get_vector_store
+
+
+def delete_page_data_by_source(source_id: int) -> int:
+    """source_id에 해당하는 page_data(임베딩) 삭제. 삭제된 건수 반환."""
+    with get_db_context() as db:
+        result = db.execute(
+            text(
+                """
+                DELETE FROM langchain_pg_embedding
+                WHERE collection_id = (
+                    SELECT uuid FROM langchain_pg_collection WHERE name = :col
+                )
+                AND cmetadata @> :filter::jsonb
+                """
+            ),
+            {"col": "page_data", "filter": json.dumps({"source_id": source_id})},
+        )
+        db.commit()
+        return result.rowcount
 
 
 def bulk_create_page_data(

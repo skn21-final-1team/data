@@ -5,8 +5,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from chunk.service import chunk_text_only
 from crawl.client import hybrid_client
 from crawl.preprocess import MarkdownPreprocessor
-from crud.page_data import bulk_create_page_data
-from crud.source import update_source_status
+from crud.page_data import bulk_create_page_data, delete_page_data_by_source
+from crud.source import get_source_by_id, update_source_status
 from db.database import get_db_context
 from embed.service import embed_texts
 from llm.client import refine, summarize
@@ -30,18 +30,33 @@ def _detect_stage(exc: Exception) -> str:
 
 def _process_content(source_id: int, raw_content: str) -> int:
     """전처리 → vLLM 정제 → vLLM 요약 → 청킹 → 임베딩 → PGVector 적재. 저장된 건수 반환."""
-    preprocessed = MarkdownPreprocessor.run(raw_content)
 
-    refined_text = refine(preprocessed)
+    # 재시도 시 이미 완료된 단계 건너뛰기 (DB 상태 확인)
     with get_db_context() as db:
-        update_source_status(db, source_id, refined=refined_text)
+        source = get_source_by_id(db, source_id)
+        has_summary = source and source.summary and source.refined
 
-    summary_text = summarize(refined_text)
-    with get_db_context() as db:
-        update_source_status(db, source_id, summary=summary_text)
+    if has_summary:
+        refined_text = source.refined
+        logger.info("재시도: source_id=%d summary 이미 존재 → embed부터 실행", source_id)
+    else:
+        preprocessed = MarkdownPreprocessor.run(raw_content)
 
-    # ── 콜백 1: summary 완료 → Frontend 표시 가능 ──
-    send_callback(source_id, "summary_completed")
+        refined_text = refine(preprocessed)
+        with get_db_context() as db:
+            update_source_status(db, source_id, refined=refined_text)
+
+        summary_text = summarize(refined_text)
+        with get_db_context() as db:
+            update_source_status(db, source_id, summary=summary_text)
+
+        # ── 콜백 1: summary 완료 → Frontend 표시 가능 ──
+        send_callback(source_id, "summary_completed")
+
+    # 재시도 시 기존 page_data 삭제 (중복 적재 방지)
+    deleted = delete_page_data_by_source(source_id)
+    if deleted:
+        logger.info("재시도: source_id=%d 기존 page_data %d건 삭제", source_id, deleted)
 
     chunk_results = chunk_text_only(refined_text)
     chunks = [c.content for c in chunk_results]
