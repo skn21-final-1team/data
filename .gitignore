@@ -213,6 +213,8 @@ mlruns/
 mlflow.db
 .deepeval/
 
-# test/ 전체 제외, output_analysis/만 트래킹
+# test/ 전체 제외, 필요한 파일만 트래킹
 test/
 !test/output_analysis/
+!test/testset.json
+!test/urls.py
