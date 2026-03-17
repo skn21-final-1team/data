@@ -12,6 +12,8 @@ class Settings(BaseSettings):
     EMBED_MODEL: str = ""
     RUNPOD_API_KEY: str = ""
 
+    MAX_WORKERS: int = 2
+
     PROJECT_NAME: str = "data"
     DEBUG: bool = False
 

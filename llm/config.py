@@ -16,7 +16,7 @@ class LLMSettings(BaseSettings):
     KO_CHARS_PER_TOKEN: float = 0.7
     COLD_START_RETRIES: int = 2
     COLD_START_DELAY: float = 10.0
-    MAX_WORKERS: int = 2
+    MAX_RETRIES: int = 2
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", extra="ignore"

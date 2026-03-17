@@ -1,7 +1,8 @@
-"""vLLM 클라이언트 — RunPod Serverless Native API 호출."""
+"""vLLM 클라이언트 — RunPod Serverless Native API 호출 (async)."""
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import re
@@ -16,29 +17,32 @@ from llm.prompts import build_refine_prompt, build_summarize_prompt
 logger = logging.getLogger(__name__)
 
 
-def _run_and_poll(base_url: str, api_key: str, payload: dict) -> dict:
+async def _run_and_poll(base_url: str, api_key: str, payload: dict) -> dict:
     """RunPod /run 후 /status 폴링으로 결과 수신."""
     cfg = get_llm_settings()
     headers = {"Authorization": f"Bearer {api_key}"}
 
-    resp = httpx.post(f"{base_url}/run", headers=headers, json=payload, timeout=30)
-    resp.raise_for_status()
-    job_id = resp.json()["id"]
-
-    deadline = time.time() + cfg.POLL_TIMEOUT
-    while time.time() < deadline:
-        status_resp = httpx.get(
-            f"{base_url}/status/{job_id}", headers=headers, timeout=30
+    async with httpx.AsyncClient() as client:
+        resp = await client.post(
+            f"{base_url}/run", headers=headers, json=payload, timeout=30
         )
-        status_resp.raise_for_status()
-        data = status_resp.json()
+        resp.raise_for_status()
+        job_id = resp.json()["id"]
 
-        if data["status"] == "COMPLETED":
-            return data
-        if data["status"] == "FAILED":
-            raise RuntimeError(f"RunPod job failed: {data}")
+        deadline = time.time() + cfg.POLL_TIMEOUT
+        while time.time() < deadline:
+            status_resp = await client.get(
+                f"{base_url}/status/{job_id}", headers=headers, timeout=30
+            )
+            status_resp.raise_for_status()
+            data = status_resp.json()
 
-        time.sleep(cfg.POLL_INTERVAL)
+            if data["status"] == "COMPLETED":
+                return data
+            if data["status"] == "FAILED":
+                raise RuntimeError(f"RunPod job failed: {data}")
+
+            await asyncio.sleep(cfg.POLL_INTERVAL)
 
     raise TimeoutError(f"RunPod job {job_id} timed out after {cfg.POLL_TIMEOUT}s")
 
@@ -65,7 +69,7 @@ def _extract_raw_output(data: dict) -> str:
     return first.get("text", "").strip()
 
 
-def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
+async def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
     """프롬프트를 RunPod vLLM에 전송하고 raw 텍스트 출력 반환. 콜드스타트 재시도 포함."""
     cfg = get_llm_settings()
     est_input_tokens = int(len(prompt) / cfg.KO_CHARS_PER_TOKEN)
@@ -93,7 +97,7 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
     result: dict = {}
     for attempt in range(1, cfg.COLD_START_RETRIES + 1):
         try:
-            result = _run_and_poll(
+            result = await _run_and_poll(
                 base_url=cfg.VLLM_BASE_URL,
                 api_key=get_settings().RUNPOD_API_KEY,
                 payload=payload,
@@ -109,7 +113,7 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
                     cfg.COLD_START_DELAY,
                     e,
                 )
-                time.sleep(cfg.COLD_START_DELAY)
+                await asyncio.sleep(cfg.COLD_START_DELAY)
     else:
         raise last_exc
 
@@ -120,7 +124,7 @@ def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
     return raw
 
 
-def refine(content: str) -> str:
+async def refine(content: str) -> str:
     """raw 본문 → 노이즈 제거 후 정제된 본문 반환.
 
     Returns
@@ -129,7 +133,7 @@ def refine(content: str) -> str:
     """
     truncated = _truncate_content(content)
     prompt = build_refine_prompt(truncated)
-    raw_output = _call_vllm(prompt)
+    raw_output = await _call_vllm(prompt)
 
     # 프롬프트가 '{"refined": "' 로 시작을 유도하므로 출력에 이어붙여 JSON 파싱
     json_str = '{"refined": "' + raw_output
@@ -150,7 +154,7 @@ def refine(content: str) -> str:
     return raw_output
 
 
-def summarize(content: str) -> str:
+async def summarize(content: str) -> str:
     """refined 본문 → 요약 문자열 반환.
 
     Returns
@@ -159,7 +163,7 @@ def summarize(content: str) -> str:
     """
     truncated = _truncate_content(content)
     prompt = build_summarize_prompt(truncated)
-    raw_output = _call_vllm(prompt)
+    raw_output = await _call_vllm(prompt)
 
     try:
         result = json.loads(raw_output)
