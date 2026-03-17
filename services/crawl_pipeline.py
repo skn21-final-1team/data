@@ -87,6 +87,7 @@ async def _crawl_single(url: str, source_id: int) -> tuple[int, str] | None:
         )
         with get_db_context() as db:
             update_source_status(db, source_id, status="failed")
+        send_callback(source_id, "failed", stage="crawl", error=str(exc))
         return None
 
     with get_db_context() as db:
