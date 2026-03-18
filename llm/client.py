@@ -64,6 +64,34 @@ def _truncate_content(content: str) -> str:
     return content[:limit]
 
 
+def _max_refine_chunk_chars() -> int:
+    """refine 1회 호출 시 입력 content의 최대 글자 수."""
+    cfg = get_llm_settings()
+    prompt_overhead_tokens = 1200  # 프롬프트 템플릿 + 여유분
+    available = cfg.MAX_MODEL_TOKENS - prompt_overhead_tokens
+    # refine: output ≈ input → 2로 나눔
+    return int((available // 2) * cfg.KO_CHARS_PER_TOKEN)
+
+
+def _split_for_refine(content: str, max_chars: int) -> list[str]:
+    """문단 경계(\\n\\n)를 기준으로 content를 max_chars 이하 청크로 분할."""
+    if len(content) <= max_chars:
+        return [content]
+    paragraphs = content.split("\n\n")
+    chunks: list[str] = []
+    current = ""
+    for para in paragraphs:
+        candidate = (current + "\n\n" + para) if current else para
+        if len(candidate) > max_chars and current:
+            chunks.append(current)
+            current = para
+        else:
+            current = candidate
+    if current:
+        chunks.append(current)
+    return chunks
+
+
 def _extract_raw_output(data: dict) -> str:
     """RunPod 응답에서 텍스트 출력 추출."""
     output = data.get("output", [])
@@ -134,34 +162,70 @@ async def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
     return raw
 
 
-async def refine(content: str) -> str:
-    """raw 본문 → 노이즈 제거 후 정제된 본문 반환.
+def _collapse_repetitions(text: str) -> str:
+    """3~50자 패턴이 10회 이상 연속 반복된 부분을 1회로 축소."""
+    return re.sub(r"(.{3,50}?)\1{9,}", r"\1", text)
 
-    Returns
-    -------
-    정제된 본문 문자열
-    """
-    truncated = _truncate_content(content)
-    prompt = build_refine_prompt(truncated)
-    raw_output = await _call_vllm(prompt)
 
+def _parse_refine_output(raw_output: str, fallback: str) -> str:
+    """refine vLLM 출력에서 정제된 텍스트를 추출."""
     # 프롬프트가 '{"refined": "' 로 시작을 유도하므로 출력에 이어붙여 JSON 파싱
     json_str = '{"refined": "' + raw_output
     try:
         result = json.loads(json_str)
         refined = result.get("refined", "")
         if refined:
-            return refined
+            text = refined
+        else:
+            text = None
     except json.JSONDecodeError:
         # 잘린 JSON이면 마지막 '"}'  이전까지 추출
         match = re.search(r'^(.*?)(?:"\s*}?\s*$)', raw_output, re.DOTALL)
-        if match and match.group(1).strip():
-            return match.group(1)
+        text = match.group(1) if match and match.group(1).strip() else None
 
-    if not raw_output.strip():
-        logger.warning("refine 출력이 비어있음, 원본 반환")
-        return content
-    return raw_output
+    if text is None:
+        if not raw_output.strip():
+            logger.warning("refine 출력이 비어있음, 원본 반환")
+            return fallback
+        text = raw_output
+
+    # 반복 패턴 축소
+    cleaned = _collapse_repetitions(text)
+    if len(cleaned) < len(text):
+        logger.warning("반복 패턴 제거: %d → %d자", len(text), len(cleaned))
+
+    # 축소 후에도 원본 대비 110% 초과면 원본 사용
+    if len(cleaned) > len(fallback) * 1.1:
+        logger.warning(
+            "정제 결과 비정상 (원본 %d자, 정제 %d자), 원본 사용",
+            len(fallback), len(cleaned),
+        )
+        return fallback
+
+    return cleaned
+
+
+async def refine(content: str) -> str:
+    """raw 본문 → 노이즈 제거 후 정제된 본문 반환."""
+    truncated = _truncate_content(content)
+    max_chars = _max_refine_chunk_chars()
+    chunks = _split_for_refine(truncated, max_chars)
+
+    if len(chunks) == 1:
+        prompt = build_refine_prompt(chunks[0])
+        raw_output = await _call_vllm(prompt)
+        return _parse_refine_output(raw_output, content)
+
+    # 분할 정제 — 순차 처리 (RunPod 동시 job 부하 방지)
+    logger.info("분할 정제: %d개 청크 (원문 %d자)", len(chunks), len(truncated))
+    refined_parts = []
+    for i, chunk in enumerate(chunks, 1):
+        logger.info("  청크 %d/%d (%d자)", i, len(chunks), len(chunk))
+        prompt = build_refine_prompt(chunk)
+        raw_output = await _call_vllm(prompt)
+        refined_parts.append(_parse_refine_output(raw_output, chunk))
+
+    return "\n\n".join(refined_parts)
 
 
 async def summarize(content: str) -> str:
