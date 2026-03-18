@@ -1,6 +1,6 @@
 import re
 
-from core.exceptions import CrawlFailedException
+from core.exceptions import ContentTooShortError, GarbageContentError
 from crawl.config import get_crawl_settings
 
 _GARBAGE_PATTERNS: list[re.Pattern[str]] = [
@@ -21,7 +21,7 @@ def validate(content: str) -> None:
     settings = get_crawl_settings()
 
     if len(content) < settings.min_content_length:
-        raise CrawlFailedException("콘텐츠가 너무 짧습니다.")
+        raise ContentTooShortError("콘텐츠가 너무 짧습니다.")
 
     if len(content) > settings.garbage_check_max_length:
         return
@@ -29,4 +29,4 @@ def validate(content: str) -> None:
     for pattern in _GARBAGE_PATTERNS:
         if pattern.search(content):
             msg = f"Garbage 콘텐츠 감지: {pattern.pattern}"
-            raise CrawlFailedException(msg)
+            raise GarbageContentError(msg)

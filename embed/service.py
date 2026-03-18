@@ -9,6 +9,7 @@ import time
 import httpx
 
 from core.config import get_settings
+from core.exceptions import EmbedConnectionError
 from embed.config import get_embed_settings
 
 logger = logging.getLogger(__name__)
@@ -19,31 +20,36 @@ async def _run_and_poll(base_url: str, api_key: str, payload: dict) -> dict:
     cfg = get_embed_settings()
     headers = {"Authorization": f"Bearer {api_key}"}
 
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"{base_url}/run", headers=headers, json=payload, timeout=30
-        )
-        resp.raise_for_status()
-        job_id = resp.json()["id"]
-
-        deadline = time.time() + cfg.POLL_TIMEOUT
-        while time.time() < deadline:
-            st = await client.get(
-                f"{base_url}/status/{job_id}", headers=headers, timeout=30
+    try:
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(
+                f"{base_url}/run", headers=headers, json=payload, timeout=30
             )
-            st.raise_for_status()
-            data = st.json()
+            resp.raise_for_status()
+            job_id = resp.json()["id"]
 
-            if data["status"] == "COMPLETED":
-                return data
-            if data["status"] == "FAILED":
-                raise RuntimeError(f"RunPod embed job failed: {data}")
+            deadline = time.time() + cfg.POLL_TIMEOUT
+            while time.time() < deadline:
+                st = await client.get(
+                    f"{base_url}/status/{job_id}", headers=headers, timeout=30
+                )
+                st.raise_for_status()
+                data = st.json()
 
-            await asyncio.sleep(cfg.POLL_INTERVAL)
+                if data["status"] == "COMPLETED":
+                    return data
+                if data["status"] == "FAILED":
+                    raise EmbedConnectionError(f"RunPod embed job failed: {data}")
 
-    raise TimeoutError(
-        f"RunPod embed job {job_id} timed out after {cfg.POLL_TIMEOUT}s"
-    )
+                await asyncio.sleep(cfg.POLL_INTERVAL)
+
+        raise EmbedConnectionError(
+            f"RunPod embed job {job_id} timed out after {cfg.POLL_TIMEOUT}s"
+        )
+    except EmbedConnectionError:
+        raise
+    except Exception as e:
+        raise EmbedConnectionError(f"임베딩 서버 연결 실패: {e}") from e
 
 
 async def embed_texts(texts: list[str]) -> list[list[float]]:
@@ -61,7 +67,7 @@ async def embed_texts(texts: list[str]) -> list[list[float]]:
         }
     }
 
-    last_exc: Exception = RuntimeError("임베딩 재시도 횟수 초과")
+    last_exc: Exception | None = None
     result: dict = {}
     for attempt in range(1, cfg.COLD_START_RETRIES + 1):
         try:
@@ -71,7 +77,7 @@ async def embed_texts(texts: list[str]) -> list[list[float]]:
                 payload=payload,
             )
             break
-        except RuntimeError as e:
+        except EmbedConnectionError as e:
             last_exc = e
             if attempt < cfg.COLD_START_RETRIES:
                 logger.warning(
@@ -83,7 +89,9 @@ async def embed_texts(texts: list[str]) -> list[list[float]]:
                 )
                 await asyncio.sleep(cfg.COLD_START_DELAY)
     else:
-        raise last_exc
+        raise EmbedConnectionError(
+            f"임베딩 콜드스타트 재시도 횟수를 초과했습니다: {last_exc}"
+        ) from last_exc
 
     output = result.get("output", [])
     data = output[0].get("data", []) if output else []

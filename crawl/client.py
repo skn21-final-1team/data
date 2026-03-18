@@ -4,7 +4,7 @@ from playwright_stealth import Stealth
 
 from dataclasses import dataclass
 
-from core.exceptions import CrawlFailedException
+from core.exceptions import CrawlFailedError, RobotsBlockedError, ScrapeFetchError
 from crawl.config import get_crawl_settings
 from crawl.normalizer import normalize
 from crawl.page_actions import expand_collapsed
@@ -27,7 +27,7 @@ class HybridClient:
     async def scrape(self, url: str) -> ScrapeResult:
         url = normalize(url)
         if not await self._robots.is_allowed(url):
-            raise CrawlFailedException(f"robots.txt에 의해 차단된 URL: {url}")
+            raise RobotsBlockedError(f"robots.txt에 의해 차단된 URL: {url}")
         settings = get_crawl_settings()
         try:
             title, static_content = await self._scrape_static(url)
@@ -44,10 +44,10 @@ class HybridClient:
                     content = static_content
             else:
                 content = static_content
-        except CrawlFailedException:
+        except ScrapeFetchError:
             raise
         except Exception as e:
-            raise CrawlFailedException from e
+            raise ScrapeFetchError(str(e)) from e
 
         validate(content)
         return ScrapeResult(url=url, title=title or None, content=content)

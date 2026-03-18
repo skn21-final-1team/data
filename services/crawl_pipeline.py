@@ -8,22 +8,21 @@ from crud.page_data import bulk_create_page_data, delete_page_data_by_source
 from crud.source import get_source_by_id, update_source_status
 from db.database import get_db_context
 from core.config import get_settings
+from core.exceptions import (
+    EmbedError,
+    PageDataSaveError,
+    PipelineStageError,
+    RefineError,
+    RefinedSaveError,
+    SummarizeError,
+    SummarySaveError,
+)
 from embed.service import embed_texts
 from llm.client import refine, summarize
 from llm.config import get_llm_settings
 from services.callback import send_callback
 
 logger = logging.getLogger(__name__)
-
-
-def _detect_stage(exc: Exception) -> str:
-    """예외 정보로 실패 단계 추정."""
-    msg = str(exc).lower()
-    if "refine" in msg or "정제" in msg:
-        return "refine"
-    if "summar" in msg or "요약" in msg:
-        return "summarize"
-    return "embed"
 
 
 async def _process_content(source_id: int, raw_content: str) -> int:
@@ -40,32 +39,53 @@ async def _process_content(source_id: int, raw_content: str) -> int:
     else:
         preprocessed = MarkdownPreprocessor.run(raw_content)
 
-        refined_text = await refine(preprocessed)
-        with get_db_context() as db:
-            update_source_status(db, source_id, refined=refined_text)
+        try:
+            refined_text = await refine(preprocessed)
+        except Exception as e:
+            raise RefineError(str(e)) from e
+        try:
+            with get_db_context() as db:
+                update_source_status(db, source_id, refined=refined_text)
+        except Exception as e:
+            raise RefinedSaveError(f"refined 저장 실패: {e}") from e
 
-        summary_text = await summarize(refined_text)
-        with get_db_context() as db:
-            update_source_status(db, source_id, summary=summary_text)
+        try:
+            summary_text = await summarize(refined_text)
+        except Exception as e:
+            raise SummarizeError(str(e)) from e
+        try:
+            with get_db_context() as db:
+                update_source_status(db, source_id, summary=summary_text)
+        except Exception as e:
+            raise SummarySaveError(f"summary 저장 실패: {e}") from e
 
         # ── 콜백 1: summary 완료 → Frontend 표시 가능 ──
         await send_callback(source_id, "summary_completed")
 
     # 재시도 시 기존 page_data 삭제 (중복 적재 방지)
-    deleted = delete_page_data_by_source(source_id)
-    if deleted:
-        logger.info("재시도: source_id=%d 기존 page_data %d건 삭제", source_id, deleted)
+    try:
+        deleted = delete_page_data_by_source(source_id)
+        if deleted:
+            logger.info("재시도: source_id=%d 기존 page_data %d건 삭제", source_id, deleted)
+    except Exception as e:
+        raise PageDataSaveError(f"기존 page_data 삭제 실패: {e}") from e
 
     chunk_results = chunk_text_only(refined_text)
     chunks = [c.content for c in chunk_results]
 
-    embeddings = await embed_texts(chunks)
+    try:
+        embeddings = await embed_texts(chunks)
+    except Exception as e:
+        raise EmbedError(str(e)) from e
 
-    bulk_create_page_data(
-        source_id=source_id,
-        chunks=chunks,
-        embeddings=embeddings,
-    )
+    try:
+        bulk_create_page_data(
+            source_id=source_id,
+            chunks=chunks,
+            embeddings=embeddings,
+        )
+    except Exception as e:
+        raise PageDataSaveError(f"PGVector 적재 실패: {e}") from e
 
     # ── 콜백 2: 임베딩 완료 → 질문 검색 가능 ──
     await send_callback(source_id, "embed_completed")
@@ -87,7 +107,10 @@ async def _crawl_single(url: str, source_id: int) -> tuple[int, str] | None:
         )
         with get_db_context() as db:
             update_source_status(db, source_id, status="failed")
-        await send_callback(source_id, "failed", stage="crawl", error=str(exc))
+        await send_callback(
+            source_id, "failed",
+            stage="crawl", error_type=type(exc).__name__, error=str(exc),
+        )
         return None
 
     with get_db_context() as db:
@@ -132,23 +155,26 @@ async def _run_parallel_processing(crawled: list[tuple[int, str]]) -> int:
                     attempt + 1,
                     exc_info=result,
                 )
+                stage = result.stage if isinstance(result, PipelineStageError) else "unknown"
+                error_type = type(result).__name__
                 if attempt + 1 < max_retries:
                     print(
                         f"[재시도 예정] source_id={sid}"
                         f"  → 순번 밀기 ({attempt + 2}/{max_retries})"
                     )
-                    await send_callback(sid, "retrying", error=str(result))
+                    await send_callback(
+                        sid, "retrying",
+                        stage=stage, error_type=error_type, error=str(result),
+                    )
                     queue.append((sid, content, attempt + 1))
                 else:
                     print(
                         f"[최종 실패] source_id={sid}"
-                        f"  → {type(result).__name__}: {result}"
+                        f"  → {error_type}: {result}"
                     )
                     await send_callback(
-                        sid,
-                        "failed",
-                        stage=_detect_stage(result),
-                        error=str(result),
+                        sid, "failed",
+                        stage=stage, error_type=error_type, error=str(result),
                     )
                     with get_db_context() as db:
                         update_source_status(db, sid, status="failed")

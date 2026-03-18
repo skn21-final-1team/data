@@ -1,78 +1,100 @@
 import logging
-import traceback
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
-from core.exceptions import CrawlFailedException
+from core.exceptions.base import CustomException
+from core.exceptions.crawl import (
+    ContentTooShortError,
+    CrawlFailedError,
+    GarbageContentError,
+    RobotsBlockedError,
+    ScrapeFetchError,
+)
+from core.exceptions.db import (
+    PageDataSaveError,
+    RefinedSaveError,
+    SourceSaveError,
+    SummarySaveError,
+)
+from core.exceptions.embed import (
+    EmbedConnectionError,
+    EmbedError,
+)
+from core.exceptions.pipeline import PipelineStageError
+from core.exceptions.vllm import (
+    RefineError,
+    SummarizeError,
+    VLLMColdStartError,
+    VLLMConnectionError,
+)
 
 logger = logging.getLogger(__name__)
 
 
-def _log(tag: str, request: Request, exc: Exception) -> None:
-    """공통 로그 출력."""
-    body_hint = ""
-    if hasattr(request, "_body"):
-        raw = request._body[:500] if len(request._body) > 500 else request._body
-        body_hint = f"\n  요청 body: {raw.decode('utf-8', errors='replace')}"
-    print(
-        f"\n{'=' * 60}\n"
-        f"[{tag}] {request.method} {request.url}\n"
-        f"  클라이언트: {request.client.host if request.client else 'unknown'}\n"
-        f"  예외 타입 : {type(exc).__name__}\n"
-        f"  메시지    : {exc}"
-        f"{body_hint}\n"
-        f"{'=' * 60}"
+def custom_base_handler(_: Request, exc: CustomException) -> JSONResponse:
+    return JSONResponse(
+        status_code=exc.code,
+        content={"error": type(exc).__name__, "message": exc.message, "code": exc.code},
     )
 
 
-def register_exception_handlers(app: FastAPI) -> None:
-    @app.exception_handler(CrawlFailedException)
-    async def crawl_failed_handler(
-        request: Request, exc: CrawlFailedException
-    ) -> JSONResponse:
-        _log("CrawlFailed", request, exc)
-        traceback.print_exc()
-        return JSONResponse(
-            status_code=422,
-            content={
-                "error": "CrawlFailed",
-                "detail": f"크롤링 실패: {exc}",
-                "hint": "URL이 유효한지, robots.txt에 차단되지 않았는지 확인하세요.",
-            },
-        )
+def pipeline_stage_handler(_: Request, exc: PipelineStageError) -> JSONResponse:
+    return JSONResponse(
+        status_code=exc.code,
+        content={
+            "error": type(exc).__name__,
+            "stage": exc.stage,
+            "message": exc.message,
+            "code": exc.code,
+        },
+    )
 
-    @app.exception_handler(RequestValidationError)
-    async def validation_error_handler(
-        request: Request, exc: RequestValidationError
-    ) -> JSONResponse:
-        errors = []
-        for err in exc.errors():
-            loc = " → ".join(str(part) for part in err["loc"])
-            errors.append({"field": loc, "message": err["msg"], "type": err["type"]})
-        _log("ValidationError", request, exc)
-        print(f"  필드별 오류: {errors}")
-        return JSONResponse(
-            status_code=422,
-            content={
-                "error": "ValidationError",
-                "detail": "요청 형식이 올바르지 않습니다.",
-                "fields": errors,
-            },
-        )
 
-    @app.exception_handler(Exception)
-    async def global_exception_handler(
-        request: Request, exc: Exception
-    ) -> JSONResponse:
-        _log("UnhandledError", request, exc)
-        traceback.print_exc()
-        return JSONResponse(
-            status_code=500,
-            content={
-                "error": type(exc).__name__,
-                "detail": f"서버 내부 오류가 발생했습니다: {exc}",
-                "hint": "Data 서버 로그를 확인하세요.",
-            },
-        )
+def validation_handler(_: Request, exc: RequestValidationError) -> JSONResponse:
+    errors = exc.errors()
+    messages = [f"{'.'.join(str(loc) for loc in e['loc'])}: {e['msg']}" for e in errors]
+    return JSONResponse(
+        status_code=422,
+        content={"error": "ValidationError", "message": "; ".join(messages), "code": 422},
+    )
+
+
+def global_handler(_: Request, exc: Exception) -> JSONResponse:
+    logger.exception("Unhandled exception: %s", exc)
+    return JSONResponse(
+        status_code=500,
+        content={
+            "error": type(exc).__name__,
+            "message": f"서버 내부 오류가 발생했습니다: {exc}",
+            "code": 500,
+        },
+    )
+
+
+def init_exception_handlers(app: FastAPI) -> None:
+    app.add_exception_handler(RequestValidationError, validation_handler)
+    # crawl
+    app.add_exception_handler(RobotsBlockedError, custom_base_handler)
+    app.add_exception_handler(ContentTooShortError, custom_base_handler)
+    app.add_exception_handler(GarbageContentError, custom_base_handler)
+    app.add_exception_handler(ScrapeFetchError, custom_base_handler)
+    app.add_exception_handler(CrawlFailedError, custom_base_handler)
+    # pipeline — vLLM
+    app.add_exception_handler(RefineError, pipeline_stage_handler)
+    app.add_exception_handler(SummarizeError, pipeline_stage_handler)
+    app.add_exception_handler(VLLMConnectionError, pipeline_stage_handler)
+    app.add_exception_handler(VLLMColdStartError, pipeline_stage_handler)
+    # pipeline — embed
+    app.add_exception_handler(EmbedError, pipeline_stage_handler)
+    app.add_exception_handler(EmbedConnectionError, pipeline_stage_handler)
+    # pipeline — db
+    app.add_exception_handler(RefinedSaveError, pipeline_stage_handler)
+    app.add_exception_handler(SummarySaveError, pipeline_stage_handler)
+    app.add_exception_handler(SourceSaveError, pipeline_stage_handler)
+    app.add_exception_handler(PageDataSaveError, pipeline_stage_handler)
+    # base
+    app.add_exception_handler(PipelineStageError, pipeline_stage_handler)
+    app.add_exception_handler(CustomException, custom_base_handler)
+    app.add_exception_handler(Exception, global_handler)

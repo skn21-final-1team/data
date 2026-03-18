@@ -11,6 +11,7 @@ import time
 import httpx
 
 from core.config import get_settings
+from core.exceptions import VLLMColdStartError, VLLMConnectionError
 from llm.config import get_llm_settings
 from llm.prompts import build_refine_prompt, build_summarize_prompt
 
@@ -22,29 +23,36 @@ async def _run_and_poll(base_url: str, api_key: str, payload: dict) -> dict:
     cfg = get_llm_settings()
     headers = {"Authorization": f"Bearer {api_key}"}
 
-    async with httpx.AsyncClient() as client:
-        resp = await client.post(
-            f"{base_url}/run", headers=headers, json=payload, timeout=30
-        )
-        resp.raise_for_status()
-        job_id = resp.json()["id"]
-
-        deadline = time.time() + cfg.POLL_TIMEOUT
-        while time.time() < deadline:
-            status_resp = await client.get(
-                f"{base_url}/status/{job_id}", headers=headers, timeout=30
+    try:
+        async with httpx.AsyncClient() as client:
+            resp = await client.post(
+                f"{base_url}/run", headers=headers, json=payload, timeout=30
             )
-            status_resp.raise_for_status()
-            data = status_resp.json()
+            resp.raise_for_status()
+            job_id = resp.json()["id"]
 
-            if data["status"] == "COMPLETED":
-                return data
-            if data["status"] == "FAILED":
-                raise RuntimeError(f"RunPod job failed: {data}")
+            deadline = time.time() + cfg.POLL_TIMEOUT
+            while time.time() < deadline:
+                status_resp = await client.get(
+                    f"{base_url}/status/{job_id}", headers=headers, timeout=30
+                )
+                status_resp.raise_for_status()
+                data = status_resp.json()
 
-            await asyncio.sleep(cfg.POLL_INTERVAL)
+                if data["status"] == "COMPLETED":
+                    return data
+                if data["status"] == "FAILED":
+                    raise VLLMConnectionError(f"RunPod job failed: {data}")
 
-    raise TimeoutError(f"RunPod job {job_id} timed out after {cfg.POLL_TIMEOUT}s")
+                await asyncio.sleep(cfg.POLL_INTERVAL)
+
+        raise VLLMConnectionError(
+            f"RunPod job {job_id} timed out after {cfg.POLL_TIMEOUT}s"
+        )
+    except VLLMConnectionError:
+        raise
+    except Exception as e:
+        raise VLLMConnectionError(f"vLLM 서버 연결 실패: {e}") from e
 
 
 def _truncate_content(content: str) -> str:
@@ -93,7 +101,7 @@ async def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
         len(prompt),
     )
 
-    last_exc: Exception = RuntimeError("재시도 횟수 초과")
+    last_exc: Exception | None = None
     result: dict = {}
     for attempt in range(1, cfg.COLD_START_RETRIES + 1):
         try:
@@ -103,7 +111,7 @@ async def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
                 payload=payload,
             )
             break
-        except RuntimeError as e:
+        except VLLMConnectionError as e:
             last_exc = e
             if attempt < cfg.COLD_START_RETRIES:
                 logger.warning(
@@ -115,7 +123,9 @@ async def _call_vllm(prompt: str, *, min_tokens: int = 0) -> str:
                 )
                 await asyncio.sleep(cfg.COLD_START_DELAY)
     else:
-        raise last_exc
+        raise VLLMColdStartError(
+            f"vLLM 콜드스타트 재시도 횟수를 초과했습니다: {last_exc}"
+        ) from last_exc
 
     raw = _extract_raw_output(result)
     logger.debug(
