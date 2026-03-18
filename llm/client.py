@@ -228,24 +228,33 @@ async def refine(content: str) -> str:
     return "\n\n".join(refined_parts)
 
 
-async def summarize(content: str) -> str:
-    """refined 본문 → 요약 문자열 반환.
+def _limit_sentences(text: str, max_sentences: int = 5) -> str:
+    """문장 수를 제한한다. 한국어/영어 문장 종결 기준."""
+    # 마침표·느낌표·물음표 뒤 공백 또는 끝을 기준으로 분리
+    sentences = re.split(r"(?<=[.!?])\s+", text.strip())
+    if len(sentences) <= max_sentences:
+        return text.strip()
+    logger.warning("요약 문장 수 초과: %d → %d문장으로 제한", len(sentences), max_sentences)
+    return " ".join(sentences[:max_sentences])
 
-    Returns
-    -------
-    요약 문자열 (1~2문장)
-    """
+
+async def summarize(content: str) -> str:
+    """refined 본문 → 요약 문자열 반환."""
     truncated = _truncate_content(content)
     prompt = build_summarize_prompt(truncated)
     raw_output = await _call_vllm(prompt)
 
     try:
         result = json.loads(raw_output)
-        return result.get("summary", "")
+        summary = result.get("summary", "")
     except (json.JSONDecodeError, AttributeError):
         # JSON이 아닌 plain text로 요약이 나온 경우 그대로 사용
-        stripped = raw_output.strip()
-        if stripped:
-            logger.info("summarize JSON 파싱 실패, plain text 사용: %s", stripped[:100])
-            return stripped
+        summary = raw_output.strip()
+        if summary:
+            logger.info("summarize JSON 파싱 실패, plain text 사용: %s", summary[:100])
+
+    if not summary:
         return ""
+
+    summary = _collapse_repetitions(summary)
+    return _limit_sentences(summary)
