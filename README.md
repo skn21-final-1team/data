@@ -1,14 +1,14 @@
 # Data
 
-웹 페이지를 크롤링하고, 텍스트를 청킹·임베딩하여 벡터 DB에 적재하는 ETL 파이프라인 서버.
+웹 페이지를 크롤링하고, vLLM으로 정제/요약한 뒤 청킹·임베딩하여 벡터 DB에 적재하는 데이터 파이프라인 서버.
 
 - **Extract** — Trafilatura + Playwright 하이브리드 크롤링
-- **Transform** — Markdown 기반 청킹 + BAAI/bge-m3 임베딩 (1024차원)
+- **Transform** — vLLM 정제/요약 (RunPod Serverless) → HierarchicalPrepend 청킹 → 서버리스 임베딩
 - **Load** — PostgreSQL + pgvector (HNSW 인덱스)
 
 ### 기술 스택
 
-FastAPI · Uvicorn · SQLAlchemy · pgvector · Trafilatura · Playwright · BAAI/bge-m3
+FastAPI · Uvicorn · SQLAlchemy · pgvector · Trafilatura · Playwright · RunPod Serverless (vLLM + Embedding)
 
 ## 실행 전 필수 사항
 
@@ -31,8 +31,8 @@ uv run playwright install chromium
 
 | 구분 | 설치 명령 | 포함 패키지 |
 |---|---|---|
-| **core** | `uv sync` | FastAPI, sentence-transformers, Playwright, Trafilatura, SQLAlchemy, pgvector 등 |
-| **dev** | `uv sync --extra dev` | langchain-experimental, langchain-huggingface, ragas, datasets, tiktoken |
+| **core** | `uv sync` | FastAPI, httpx, Playwright, Trafilatura, SQLAlchemy, pgvector, langchain-postgres 등 |
+| **dev** | `uv sync --extra dev` | ruff |
 
 ## 서버 실행
 

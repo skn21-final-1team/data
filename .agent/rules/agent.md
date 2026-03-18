@@ -5,25 +5,32 @@ trigger: always_on
 # Architecture Overview
 
 data 레포지토리는 **backend2(데이터 처리 서버)**에 배포될 코드입니다.
-기존 backend로부터 URL을 전달받아 크롤링, vLLM 정제/요약, 청킹, 서버리스 임베딩, PGVector 적재까지 전체 데이터 파이프라인을 자체 처리합니다.
+기존 backend로부터 source_id + URL을 전달받아 크롤링, vLLM 정제/요약, 청킹, 서버리스 임베딩, PGVector 적재까지 전체 데이터 파이프라인을 자체 처리합니다.
 FastAPI 기반 서버이며, 공유 DB(PostgreSQL + PGVector)에 직접 접근합니다.
 
 ## Data Pipeline Flow
 
 ```
-backend → POST /crawl (urls)
+backend → POST /crawl (source_id + url 목록)
   │
-  ├─ [동기 응답] source 테이블에 URL 등록 → {"status": "accepted"} 즉시 반환
+  ├─ [동기 응답] source_id 존재 여부 검증 → {"status": "accepted"} 즉시 반환
   │
-  └─ [비동기 백그라운드] URL별 독립 처리:
-       1. 크롤링 (정적 → 임계값 미달 시 동적 fallback)
-       2. source 상태 업데이트 (status=success, title 저장)
-       3. 마크다운 전처리 (MarkdownPreprocessor)
-       4. vLLM 정제/요약 (RunPod Serverless → /run + polling)
-       5. source.summary 업데이트
-       6. 정제된 본문 청킹 (MarkdownTextSplitter)
-       7. 서버리스 임베딩 (RunPod Serverless → /runsync)
-       8. PGVector 적재 (langchain-postgres)
+  └─ [비동기 백그라운드]
+       ┌─ Phase 1: 크롤링 (순차, 외부 사이트 부하 방지)
+       │    URL별: 정적 크롤링 → 임계값 미달 시 동적(Playwright) fallback
+       │    → source 상태 업데이트 (status=success, title, raw 저장)
+       │
+       └─ Phase 2: LLM + 임베딩 (asyncio.gather + Semaphore 병렬)
+            source별 독립 처리 (동시 실행 수 = MAX_WORKERS):
+            1. 마크다운 전처리 (MarkdownPreprocessor)
+            2. vLLM 정제 — refine (RunPod /run + polling, async)
+            3. vLLM 요약 — summarize (RunPod /run + polling, async)
+            4. → 콜백: summary_completed (Backend에 요약 완료 알림)
+            5. 정제된 본문 청킹 (HierarchicalPrependChunker)
+            6. 서버리스 임베딩 (RunPod /run + polling, async)
+            7. PGVector 적재 (langchain-postgres)
+            8. → 콜백: embed_completed (Backend에 검색 가능 알림)
+            ※ 실패 시 순번 밀기 재시도 (MAX_RETRIES), 최종 실패 시 failed 콜백
 ```
 
 
@@ -36,10 +43,10 @@ backend → POST /crawl (urls)
 │   ├── crawl.py         # /crawl 라우터
 │   └── health.py        # /health 라우터
 ├── services/            # 파이프라인 오케스트레이션 (비동기 백그라운드 처리)
-│   ├── crawl_pipeline.py  # 크롤링 → vLLM → 청킹 → 임베딩 → 적재 오케스트레이션
-│   └── callback.py        # 완료 후 backend 콜백 처리
+│   ├── crawl_pipeline.py  # Phase 1(크롤링) + Phase 2(LLM+임베딩) asyncio 오케스트레이션
+│   └── callback.py        # Backend 콜백 전송 (async, fire-and-forget)
 ├── core/
-│   ├── config.py        # 환경변수(pydantic-settings) 및 설정
+│   ├── config.py        # 공통 환경변수 (pydantic-settings) — DB, RunPod, MAX_WORKERS 등
 │   └── exceptions/      # 커스텀 예외 클래스 + FastAPI exception_handler 등록
 │       ├── __init__.py
 │       └── handlers.py
@@ -53,7 +60,7 @@ backend → POST /crawl (urls)
 ├── crawl/               # 크롤링 로직 (URL → 원본 데이터 수집)
 │   ├── client.py        # HybridClient — 정적/동적 크롤링 전략 결정
 │   ├── page_actions.py  # Playwright 페이지 인터랙션 (아코디언 펼치기 등)
-│   ├── parser.py        # HTML → 텍스트 파싱
+│   ├── parser.py        # HTML → 마크다운 파싱 (trafilatura)
 │   ├── config.py        # 크롤링 설정 (임계값, User-Agent 등)
 │   ├── normalizer.py    # URL 정규화
 │   ├── validator.py     # 크롤링 결과 유효성 검사
@@ -61,20 +68,20 @@ backend → POST /crawl (urls)
 │   └── robots.py        # robots.txt 준수 체크
 ├── chunk/               # 청킹 로직 (본문 → 청크 분할)
 ├── embed/               # 임베딩 로직 (RunPod Serverless API 호출)
-│   ├── service.py       # embed_texts() — RunPod /runsync로 벡터 변환
+│   ├── config.py        # 임베딩 전용 설정 (폴링 간격, 타임아웃, 콜드스타트 재시도)
+│   ├── service.py       # embed_texts() — async RunPod /run + polling
 │   └── langchain_wrapper.py  # LangChain Embeddings 어댑터 (PGVector 연동용)
 ├── llm/                 # vLLM 정제/요약 (RunPod Serverless API 호출)
-│   ├── client.py        # refine_and_summarize() — RunPod /run + polling
+│   ├── config.py        # LLM 전용 설정 (폴링, 토큰 제한, 콜드스타트 재시도, MAX_RETRIES)
+│   ├── client.py        # async refine(), summarize() — RunPod /run + polling
 │   └── prompts.py       # 정제/요약 프롬프트 템플릿
 ├── schemas/             # backend 통신용 요청/응답 스키마 (Pydantic)
-├── test/                # 독립 실행 테스트 스크립트
-│   ├── test_crawl.py    # 크롤링 → source DB 적재 테스트
-│   ├── test_ce.py       # 청킹/임베딩 테스트
-│   ├── evaluation.py    # 검색 품질 평가
-│   ├── evaluation_ir.py # IR 평가
-│   ├── metrics.py       # 평가 지표
-│   ├── reranker.py      # 리랭커 테스트
-│   └── service.py       # 서비스 레이어 테스트
+│   ├── crawl.py         # CrawlRequest, CrawlSourceItem, CrawlResponse
+│   └── health.py        # HealthResponse
+├── test/                # 독립 실행 테스트 스크립트 + 평가 결과
+│   ├── urls.py          # 평가용 URL 목록
+│   ├── testset.json     # Ground truth 테스트셋
+│   └── output_analysis/ # 실험 결과 분석 리포트
 ├── alembic/             # DB 마이그레이션
 ├── .env                 # 환경변수 파일
 ├── pyproject.toml       # 의존성 관리
@@ -83,15 +90,22 @@ backend → POST /crawl (urls)
 
 ## 주요 환경변수
 
-| 변수 | 설명 |
-|---|---|
-| `DATABASE_URL` | PostgreSQL 연결 문자열 |
-| `RUNPOD_API_KEY` | RunPod Serverless API 키 (임베딩 + vLLM 공통) |
-| `EMBED_BASE_URL` | 임베딩 RunPod 엔드포인트 (예: `https://api.runpod.ai/v2/{pod_id}`) |
-| `EMBED_MODEL` | 임베딩 모델명 |
-| `VLLM_BASE_URL` | vLLM RunPod 엔드포인트 |
-| `VLLM_MODEL` | vLLM 모델명 |
-| `BACKEND_CALLBACK_URL` | backend 콜백 URL |
+| 변수 | 위치 | 설명 |
+|---|---|---|
+| `DATABASE_URL` | core/config.py | PostgreSQL 연결 문자열 |
+| `RUNPOD_API_KEY` | core/config.py | RunPod Serverless API 키 (임베딩 + vLLM 공통) |
+| `EMBED_BASE_URL` | core/config.py | 임베딩 RunPod 엔드포인트 |
+| `EMBED_MODEL` | core/config.py | 임베딩 모델명 |
+| `VLLM_BASE_URL` | llm/config.py | vLLM RunPod 엔드포인트 |
+| `VLLM_MODEL` | llm/config.py | vLLM 모델명 |
+| `BACKEND_CALLBACK_URL` | core/config.py | Backend 콜백 URL |
+| `MAX_WORKERS` | core/config.py | 파이프라인 동시 source 처리 수 (기본값: 2) |
+| `POLL_INTERVAL` | llm/config.py | vLLM 폴링 간격 초 (기본값: 1.0) |
+| `POLL_TIMEOUT` | llm/config.py | vLLM 폴링 타임아웃 초 (기본값: 300) |
+| `MAX_RETRIES` | llm/config.py | 파이프라인 실패 시 재시도 횟수 (기본값: 2) |
+| `EMBED_POLL_INTERVAL` | embed/config.py | 임베딩 폴링 간격 초 (기본값: 1.0) |
+| `EMBED_POLL_TIMEOUT` | embed/config.py | 임베딩 폴링 타임아웃 초 (기본값: 300) |
+| `EMBED_COLD_START_RETRIES` | embed/config.py | 임베딩 콜드스타트 재시도 횟수 (기본값: 2) |
 
 
 
@@ -127,7 +141,9 @@ depth가 깊게 코딩하지 마세요. 깊이는 최소한으로 합니다.
 
 ## 1. Environment
 
-- 모든 환경 변수는 `core/config.py`의 `Pydantic Settings`를 통해서만 접근합니다.
+- 공통 환경 변수는 `core/config.py`의 `Settings`를 통해 접근합니다.
+- LLM 전용 설정은 `llm/config.py`의 `LLMSettings`를 통해 관리합니다.
+- 임베딩 전용 설정은 `embed/config.py`의 `EmbedSettings`를 통해 관리합니다 (`env_prefix="EMBED_"`).
 - 크롤링 전용 설정은 `crawl/config.py`의 `CrawlSettings`를 통해 관리합니다.
 - 타입 명시 시 `Optional` 대신 Python 3.12+ 스타일인 `| None`을 사용합니다.
 
@@ -139,7 +155,7 @@ depth가 깊게 코딩하지 마세요. 깊이는 최소한으로 합니다.
 ## 3. 파이프라인 모듈 설계 원칙
 
 - `crawl/`, `llm/`, `chunk/`, `embed/`은 각각 독립적인 모듈이며, 서로를 직접 import하지 않습니다.
-- 각 모듈은 순수 함수처럼 입력을 받아 출력만 반환합니다.
+- 각 모듈은 입력을 받아 출력만 반환합니다.
 - 파이프라인 조합(오케스트레이션)은 `services/`에서 수행하며, `api/`는 요청/응답만 담당하는 thin endpoint입니다.
 
 ```python
@@ -149,22 +165,25 @@ async def scrape(url: str) -> ScrapeResult: ...
 # crawl/preprocess — 원본 → 마크다운 전처리
 def run(content: str) -> str: ...
 
-# llm/ — 전처리된 본문 → 정제 + 요약 (RunPod /run + polling)
-def refine_and_summarize(content: str) -> dict[str, str]: ...
+# llm/ — 전처리된 본문 → 정제 (async, RunPod /run + polling)
+async def refine(content: str) -> str: ...
+
+# llm/ — 정제된 본문 → 요약 (async, RunPod /run + polling)
+async def summarize(content: str) -> str: ...
 
 # chunk/ — 정제된 본문 → 청크 리스트
 def chunk_text_only(text: str) -> list[ChunkResult]: ...
 
-# embed/ — 청크 → 벡터 리스트 (RunPod /runsync)
-def embed_texts(texts: list[str]) -> list[list[float]]: ...
+# embed/ — 청크 → 벡터 리스트 (async, RunPod /run + polling)
+async def embed_texts(texts: list[str]) -> list[list[float]]: ...
 ```
 
 ## 4. 외부 API 호출 (RunPod Serverless)
 
 - 임베딩과 vLLM 모두 RunPod Serverless Native API를 사용합니다.
-- `httpx`로 직접 호출하며, OpenAI SDK는 사용하지 않습니다.
-- 임베딩: `/runsync` (동기, 빠른 응답)
-- vLLM: `/run` → `/status/{job_id}` polling (콜드스타트 대응)
+- `httpx.AsyncClient`로 비동기 호출하며, OpenAI SDK는 사용하지 않습니다.
+- 모든 RunPod 호출: `/run` → `/status/{job_id}` polling (async)
+- 콜드스타트 대응: 실패 시 자동 재시도 (`COLD_START_RETRIES`, `COLD_START_DELAY`)
 - RunPod 응답의 `output`은 리스트로 감싸져 있을 수 있으므로 파싱 시 주의합니다.
 
 ## 5. Schemas
