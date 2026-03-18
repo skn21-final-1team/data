@@ -36,7 +36,11 @@ logger = logging.getLogger(__name__)
 def custom_base_handler(_: Request, exc: CustomException) -> JSONResponse:
     return JSONResponse(
         status_code=exc.code,
-        content={"error": type(exc).__name__, "message": exc.message, "code": exc.code},
+        content={
+            "error": type(exc).__name__,
+            "message": exc.message,
+            "code": exc.code,
+        },
     )
 
 
