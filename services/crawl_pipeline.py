@@ -41,6 +41,8 @@ async def _process_content(source_id: int, raw_content: str) -> int:
 
         try:
             refined_text = await refine(preprocessed)
+        except PipelineStageError:
+            raise
         except Exception as e:
             raise RefineError(str(e)) from e
         try:
@@ -51,6 +53,8 @@ async def _process_content(source_id: int, raw_content: str) -> int:
 
         try:
             summary_text = await summarize(refined_text)
+        except PipelineStageError:
+            raise
         except Exception as e:
             raise SummarizeError(str(e)) from e
         try:
@@ -75,6 +79,8 @@ async def _process_content(source_id: int, raw_content: str) -> int:
 
     try:
         embeddings = await embed_texts(chunks)
+    except PipelineStageError:
+        raise
     except Exception as e:
         raise EmbedError(str(e)) from e
 
