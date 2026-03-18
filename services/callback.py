@@ -15,6 +15,6 @@ async def send_callback(source_id: int, event: str, **data) -> None:
     payload = {"source_id": source_id, "event": event, **data}
     try:
         async with httpx.AsyncClient() as client:
-            await client.post(url, json=payload, timeout=10)
+            await client.post(url, json=payload, timeout=3)
     except Exception:
         logger.warning("콜백 전송 실패: source_id=%d event=%s", source_id, event)
