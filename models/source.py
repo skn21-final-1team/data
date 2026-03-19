@@ -32,3 +32,17 @@ class SourceModel(Base):
         DateTime(timezone=True), server_default=func.now(), nullable=True
     )
     status = Column(String, default="pending", nullable=False)
+
+
+class CrawlModel(Base):
+    __tablename__ = "source"
+
+    id = Column(Integer, primary_key=True, index=True)
+    notebook_id = Column(
+        Integer, ForeignKey("notebook.id", ondelete="CASCADE"), nullable=False
+    )
+    url = Column(String, nullable=False)
+    raw = Column(Text, nullable=True)
+    refined = Column(Text, nullable=True)
+    summary = Column(Text, nullable=True)
+    status = Column(String, default="pending", nullable=False)
