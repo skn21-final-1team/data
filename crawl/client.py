@@ -34,8 +34,16 @@ class HybridClient:
             print(
                 f"  [정적] {len(static_content)}자 (임계값: {settings.static_fallback_threshold}자)"
             )
-            if len(static_content) < settings.static_fallback_threshold:
-                print("  [동적] 임계값 미달 → 동적 크롤링 시작")
+            need_dynamic = len(static_content) < settings.static_fallback_threshold
+        except Exception as e:
+            print(f"  [정적] 실패 → 동적 크롤링으로 전환: {e}")
+            static_content = ""
+            title = None
+            need_dynamic = True
+
+        try:
+            if need_dynamic:
+                print("  [동적] 동적 크롤링 시작")
                 dyn_title, dyn_content = await self._scrape_dynamic(url)
                 print(f"  [동적] 완료: {len(dyn_content)}자")
                 if len(dyn_content) > len(static_content):
@@ -80,14 +88,17 @@ class HybridClient:
                 )
                 page = await context.new_page()
                 await page.goto(
-                    url, wait_until="networkidle", timeout=settings.playwright_timeout
+                    url,
+                    wait_until="domcontentloaded",
+                    timeout=settings.playwright_timeout,
                 )
+                await page.wait_for_timeout(2000)
                 await page.evaluate(
                     "window.scrollTo(0, document.body.scrollHeight / 2)"
                 )
-                await page.wait_for_load_state("networkidle")
+                await page.wait_for_timeout(1000)
                 await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                await page.wait_for_load_state("networkidle")
+                await page.wait_for_timeout(1000)
                 html = await page.content()
                 title = await page.title()
                 accordion_text = await expand_collapsed(page)
