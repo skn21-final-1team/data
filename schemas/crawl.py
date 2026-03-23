@@ -19,3 +19,12 @@ class CrawlResponse(BaseModel):
     status: str = "accepted"
     accepted: list[int] = Field(default_factory=list, description="접수된 source_id 목록")
     not_found: list[int] = Field(default_factory=list, description="존재하지 않는 source_id 목록")
+
+
+class CrawlSyncRequest(BaseModel):
+    source_ids: list[int] = Field(
+        ...,
+        min_length=1,
+        description="동기화 크롤링할 source_id 목록",
+    )
+    notebook_id: int
