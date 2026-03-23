@@ -1,9 +1,9 @@
 from fastapi import APIRouter, BackgroundTasks
 
-from crud.source import get_source_by_id
+from crud.source import get_source_by_id, get_sources_for_crawl
 from db.database import DbSession
 from schemas.crawl import CrawlRequest, CrawlResponse, CrawlSyncRequest
-from services.crawl_pipeline import process_pipeline
+from services.crawl_pipeline import process_pipeline, process_pipelines_parallel
 
 router = APIRouter()
 
@@ -41,20 +41,19 @@ def crawl_sync(
     db: DbSession,
 ) -> CrawlResponse:
     """북마크 동기화 크롤링 접수. 크롤링·청킹·임베딩은 백그라운드에서 처리."""
-    source_map: dict[str, int] = {}
-    not_found: list[int] = []
+    source_ids = [item.source_id for item in request.sources]
+    request_map = {item.source_id: item for item in request.sources}
 
-    for item in request.sources:
-        source = get_source_by_id(db, item.source_id)
-        if source is None:
-            not_found.append(item.source_id)
-            continue
-        source_map[str(item.url)] = item.source_id
+    found_sources = get_sources_for_crawl(db, source_ids)
+    found_ids = {s.id for s in found_sources}
 
-    if source_map:
-        background_tasks.add_task(process_pipeline, source_map)
+    accepted = [sid for sid in source_ids if sid in found_ids]
+    not_found = [sid for sid in source_ids if sid not in found_ids]
 
-    return CrawlResponse(
-        accepted=list(source_map.values()),
-        not_found=not_found,
-    )
+    if accepted:
+        source_maps = [
+            {str(request_map[sid].url): sid} for sid in accepted
+        ]
+        background_tasks.add_task(process_pipelines_parallel, source_maps)
+
+    return CrawlResponse(accepted=accepted, not_found=not_found)
