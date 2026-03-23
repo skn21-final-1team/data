@@ -2,8 +2,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy import select
 
 from models.source import SourceModel, CrawlModel
-from schemas.crawl import CrawlSyncBody
-
 
 def get_source_by_id(db: Session, source_id: int) -> SourceModel | None:
     return db.query(SourceModel).filter(SourceModel.id == source_id).first()
@@ -34,8 +32,7 @@ def update_source_status(
         db.commit()
 
 
-def get_sources_for_crawl(db: Session, body:list[int]) -> list[CrawlModel]:
-    """소스를 조회할때 바로 소스로 조회합니다."""
-    stmt = select(CrawlModel.id).where(CrawlModel.notebook_id == notebook_id)
-
+def get_sources_for_crawl(db: Session, source_ids: list[int]) -> list[CrawlModel]:
+    """소스 ID 리스트로 CrawlModel을 벌크 조회합니다."""
+    stmt = select(CrawlModel).where(CrawlModel.id.in_(source_ids))
     return list(db.scalars(stmt).all())
