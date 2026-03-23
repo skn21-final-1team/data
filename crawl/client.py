@@ -4,7 +4,7 @@ from playwright_stealth import Stealth
 
 from dataclasses import dataclass
 
-from core.exceptions import CrawlFailedError, RobotsBlockedError, ScrapeFetchError
+from core.exceptions import RobotsBlockedError, ScrapeFetchError
 from crawl.config import get_crawl_settings
 from crawl.normalizer import normalize
 from crawl.page_actions import expand_collapsed
