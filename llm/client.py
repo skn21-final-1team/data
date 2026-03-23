@@ -214,7 +214,7 @@ async def refine(content: str) -> str:
     if len(chunks) == 1:
         prompt = build_refine_prompt(chunks[0])
         raw_output = await _call_vllm(prompt)
-        return _parse_refine_output(raw_output, content)
+        return _parse_refine_output(raw_output, truncated)
 
     # 분할 정제 — 순차 처리 (RunPod 동시 job 부하 방지)
     logger.info("분할 정제: %d개 청크 (원문 %d자)", len(chunks), len(truncated))

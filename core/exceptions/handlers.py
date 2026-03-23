@@ -77,7 +77,7 @@ def global_handler(_: Request, exc: Exception) -> JSONResponse:
     )
 
 
-def init_exception_handlers(app: FastAPI) -> None:
+def register_exception_handlers(app: FastAPI) -> None:
     app.add_exception_handler(RequestValidationError, validation_handler)
     # crawl
     app.add_exception_handler(RobotsBlockedError, custom_base_handler)

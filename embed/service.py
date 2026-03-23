@@ -95,4 +95,12 @@ async def embed_texts(texts: list[str]) -> list[list[float]]:
 
     output = result.get("output", [])
     data = output[0].get("data", []) if output else []
-    return [item["embedding"] for item in data]
+    if not data:
+        raise EmbedConnectionError("임베딩 응답에 data가 비어있습니다")
+    embeddings = []
+    for item in data:
+        vec = item.get("embedding")
+        if vec is None:
+            raise EmbedConnectionError(f"임베딩 응답에 embedding 키 누락: {list(item.keys())}")
+        embeddings.append(vec)
+    return embeddings

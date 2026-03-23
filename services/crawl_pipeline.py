@@ -31,11 +31,27 @@ async def _process_content(source_id: int, raw_content: str) -> int:
     # 재시도 시 이미 완료된 단계 건너뛰기 (DB 상태 확인)
     with get_db_context() as db:
         source = get_source_by_id(db, source_id)
-        has_summary = source and source.summary and source.refined
+        has_refined = source and source.refined
+        has_summary = has_refined and source.summary
 
     if has_summary:
         refined_text = source.refined
         logger.info("재시도: source_id=%d summary 이미 존재 → embed부터 실행", source_id)
+    elif has_refined:
+        refined_text = source.refined
+        logger.info("재시도: source_id=%d refined 이미 존재 → summarize부터 실행", source_id)
+
+        try:
+            summary_text = await summarize(refined_text)
+        except PipelineStageError:
+            raise
+        except Exception as e:
+            raise SummarizeError(str(e)) from e
+        try:
+            with get_db_context() as db:
+                update_source_status(db, source_id, summary=summary_text)
+        except Exception as e:
+            raise SummarySaveError(f"summary 저장 실패: {e}") from e
     else:
         preprocessed = MarkdownPreprocessor.run(raw_content)
 
@@ -62,9 +78,6 @@ async def _process_content(source_id: int, raw_content: str) -> int:
                 update_source_status(db, source_id, summary=summary_text)
         except Exception as e:
             raise SummarySaveError(f"summary 저장 실패: {e}") from e
-
-        # ── 콜백 1: summary 완료 → Frontend 표시 가능 ──
-        await send_callback(source_id, "summary_completed")
 
     # 재시도 시 기존 page_data 삭제 (중복 적재 방지)
     try:
@@ -93,9 +106,6 @@ async def _process_content(source_id: int, raw_content: str) -> int:
     except Exception as e:
         raise PageDataSaveError(f"PGVector 적재 실패: {e}") from e
 
-    # ── 콜백 2: 임베딩 완료 → 질문 검색 가능 ──
-    await send_callback(source_id, "embed_completed")
-
     return len(chunks)
 
 
@@ -111,21 +121,15 @@ async def _crawl_single(url: str, source_id: int) -> tuple[int, str] | None:
         print(
             f"[크롤링 실패] source_id={source_id}  {url}  → {type(exc).__name__}: {exc}"
         )
+        reason = f"[{type(exc).__name__}] {exc}"
         with get_db_context() as db:
-            update_source_status(db, source_id, status="failed")
-        await send_callback(
-            source_id, "failed",
-            stage="crawl",
-            error_type=type(exc).__name__,
-            error=str(exc),
-        )
+            update_source_status(db, source_id, status="failed", reason=reason)
         return None
 
     with get_db_context() as db:
         update_source_status(
             db,
             source_id,
-            status="success",
             title=scraped.title,
             raw=scraped.content,
         )
@@ -163,17 +167,11 @@ async def _run_parallel_processing(crawled: list[tuple[int, str]]) -> int:
                     attempt + 1,
                     exc_info=result,
                 )
-                stage = result.stage if isinstance(result, PipelineStageError) else "unknown"
                 error_type = type(result).__name__
                 if attempt + 1 < max_retries:
                     print(
                         f"[재시도 예정] source_id={sid}"
                         f"  → 순번 밀기 ({attempt + 2}/{max_retries})"
-                    )
-                    await send_callback(
-                        sid, "retrying",
-                        stage=stage,
-                        error_type=error_type, error=str(result),
                     )
                     queue.append((sid, content, attempt + 1))
                 else:
@@ -181,19 +179,32 @@ async def _run_parallel_processing(crawled: list[tuple[int, str]]) -> int:
                         f"[최종 실패] source_id={sid}"
                         f"  → {error_type}: {result}"
                     )
-                    await send_callback(
-                        sid, "failed",
-                        stage=stage,
-                        error_type=error_type, error=str(result),
-                    )
+                    reason = f"[{error_type}] {result}"
                     with get_db_context() as db:
-                        update_source_status(db, sid, status="failed")
+                        update_source_status(db, sid, status="failed", reason=reason)
             else:
                 source_id, count = result
+                with get_db_context() as db:
+                    update_source_status(db, source_id, status="success")
                 print(f"[적재 완료] source_id={source_id}  {count}개 청크 적재")
                 success += 1
 
     return success
+
+
+async def _notify_notebook_done(source_map: dict[str, int]) -> None:
+    """파이프라인 완료 후 notebook_id를 조회하여 backend에 완료 콜백 전송."""
+    first_source_id = next(iter(source_map.values()), None)
+    if first_source_id is None:
+        return
+    with get_db_context() as db:
+        source = get_source_by_id(db, first_source_id)
+    if source is None:
+        return
+    await send_callback(
+        first_source_id, "pipeline_completed",
+        notebook_id=source.notebook_id,
+    )
 
 
 # ── 파이프라인 진입점 ────────────────────────────────────────────
@@ -215,9 +226,11 @@ async def process_pipeline(source_map: dict[str, int]) -> None:
 
     if not crawled:
         print("[파이프라인 종료] 크롤링 성공 건 없음")
+        await _notify_notebook_done(source_map)
         return
 
     # Phase 2 — LLM 정제/요약 + 임베딩 (asyncio 병렬)
     success = await _run_parallel_processing(crawled)
 
     print(f"[파이프라인 완료] 적재 {success}/{len(crawled)}건")
+    await _notify_notebook_done(source_map)
