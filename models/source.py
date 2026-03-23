@@ -32,3 +32,4 @@ class SourceModel(Base):
         DateTime(timezone=True), server_default=func.now(), nullable=True
     )
     status = Column(String, default="pending", nullable=False)
+    reason = Column(String, nullable=True)

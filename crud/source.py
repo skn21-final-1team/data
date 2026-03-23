@@ -15,6 +15,7 @@ def update_source_status(
     raw: str | None = None,
     refined: str | None = None,
     summary: str | None = None,
+    reason: str | None = None,
 ) -> None:
     updates: dict[str, object] = {}
     if status is not None:
@@ -27,6 +28,8 @@ def update_source_status(
         updates["refined"] = refined
     if summary is not None:
         updates["summary"] = summary
+    if reason is not None:
+        updates["reason"] = reason
     if updates:
         db.query(SourceModel).filter(SourceModel.id == source_id).update(updates)
         db.commit()
