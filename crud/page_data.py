@@ -38,7 +38,7 @@ def bulk_create_page_data(
 ) -> list[str]:
     """청크 + 임베딩을 PGVector에 저장. 반환: 생성된 ID 목록."""
     store = vector_store or get_vector_store()
-    metadatas = [{"source_id": source_id} for _ in chunks]
+    metadatas = [{"source_id": source_id, "seq": i} for i, _ in enumerate(chunks)]
     return store.add_embeddings(
         texts=chunks,
         embeddings=embeddings,
