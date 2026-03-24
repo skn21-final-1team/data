@@ -28,6 +28,7 @@ git -c safe.directory=/home/ubuntu/workspace reset --hard origin/devops
 echo "의존성 설치 중..."
 source .venv/bin/activate
 uv sync
+playwright install chromium
 
 tmux new-session -d -s myserver "source .venv/bin/activate && uvicorn main:app --host 0.0.0.0 --port 8000 --workers 2 > fastapi.log 2>&1"
 
