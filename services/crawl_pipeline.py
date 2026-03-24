@@ -210,6 +210,11 @@ async def _notify_notebook_done(source_map: dict[str, int]) -> None:
 # ── 파이프라인 진입점 ────────────────────────────────────────────
 
 
+async def process_pipelines_parallel(source_maps: list[dict[str, int]]) -> None:
+    """소스 별 process_pipeline을 asyncio.gather로 병렬 실행."""
+    await asyncio.gather(*(process_pipeline(sm) for sm in source_maps))
+
+
 async def process_pipeline(source_map: dict[str, int]) -> None:
     """Phase 1: 크롤링(순차) → Phase 2: LLM+임베딩(asyncio 병렬)."""
     total = len(source_map)
