@@ -8,7 +8,7 @@ from core.exceptions import RobotsBlockedError, ScrapeFetchError
 from crawl.config import get_crawl_settings
 from crawl.normalizer import normalize
 from crawl.page_actions import expand_collapsed
-from crawl.parser import parse_duckduckgo_html, parse_html
+from crawl.parser import parse_duckduckgo_html, parse_html, parse_spreadsheet_html
 from crawl.robots import RobotsChecker
 from crawl.validator import validate
 
@@ -74,6 +74,8 @@ class HybridClient:
         html = response.text
         if "duckduckgo.com" in url:
             return "DuckDuckGo 검색 결과", parse_duckduckgo_html(html)
+        if "docs.google.com/spreadsheets" in url:
+            return parse_spreadsheet_html(html)
         return parse_html(html)
 
     async def _scrape_dynamic(self, url: str) -> tuple[str | None, str]:
@@ -105,7 +107,10 @@ class HybridClient:
             finally:
                 await browser.close()
 
-        _, content = parse_html(html)
+        if "docs.google.com/spreadsheets" in url:
+            _, content = parse_spreadsheet_html(html)
+        else:
+            _, content = parse_html(html)
         if accordion_text:
             content = content + "\n\n" + accordion_text
         return title or None, content

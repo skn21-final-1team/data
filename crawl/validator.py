@@ -16,6 +16,8 @@ _GARBAGE_PATTERNS: list[re.Pattern[str]] = [
         r"페이지.{0,10}사용.{0,10}권한.{0,10}없음",
         r"JavaScript must be enabled.*Notion",
         r"일시적.?오류|service.?unavailable|503",
+        r"에게 메시지를 보냄으로써[\s\S]{0,50}이용 약관",
+        r"로그인[\s\S]{0,20}가입하기",
     ]
 ]
 
