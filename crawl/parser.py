@@ -23,19 +23,29 @@ def parse_html(html: str) -> tuple[str | None, str]:
 
 
 def _strip_spreadsheet_noise(content: str) -> str:
-    """Google Sheets 파싱 결과에서 열 문자(A/B/C) 행과 행 번호 열을 제거한다."""
+    """Google Sheets 파싱 결과에서 열 문자(A/B/C) 행과 행 번호 행을 제거한다."""
     lines = content.splitlines()
     cleaned = []
     for line in lines:
-        # 테이블 행에서 셀 추출
+        stripped = line.strip()
+
+        # 파이프 테이블 형식: | A | B | C |
         cells = [c.strip() for c in re.findall(r"(?<=\|)([^|]+)(?=\|)", line)]
         if cells:
-            # 모든 셀이 단일 대문자인 경우 → 열 헤더 행 (A, B, C, ...)
             if all(re.fullmatch(r"[A-Z]{1,2}", c) for c in cells):
                 continue
-            # 모든 셀이 숫자인 경우 → 행 번호 행
             if all(re.fullmatch(r"\d+", c) for c in cells):
                 continue
+
+        # 평문 형식: "A B C D" 또는 "A\tB\tC"
+        tokens = re.split(r"[\s\t]+", stripped)
+        if tokens and all(re.fullmatch(r"[A-Z]{1,2}", t) for t in tokens if t):
+            continue
+
+        # 단독 행 번호: "1", "23"
+        if re.fullmatch(r"\d{1,3}", stripped):
+            continue
+
         cleaned.append(line)
     return "\n".join(cleaned)
 

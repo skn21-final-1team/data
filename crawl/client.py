@@ -75,7 +75,7 @@ class HybridClient:
         if "duckduckgo.com" in url:
             return "DuckDuckGo 검색 결과", parse_duckduckgo_html(html)
         if "docs.google.com/spreadsheets" in url:
-            return parse_spreadsheet_html(html)
+            return None, ""  # JS 렌더링 필수 → 동적 크롤링으로 강제 위임
         return parse_html(html)
 
     async def _scrape_dynamic(self, url: str) -> tuple[str | None, str]:
