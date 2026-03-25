@@ -11,7 +11,10 @@ _GARBAGE_PATTERNS: list[re.Pattern[str]] = [
         r"access.?denied|접근.?거부",
         r"403.?forbidden|404.?not.?found|페이지를.?찾을.?수.?없",
         r"로그인이.?필요|login.?required|sign.?in.?to.?continue",
-        r"존재하지.?않는.?페이지|삭제된.?게시물",
+        r"존재하지.{0,5}않는[\s\S]{0,5}페이지|삭제된.?게시물",
+        r"권한이.{0,5}없거나",
+        r"페이지.{0,10}사용.{0,10}권한.{0,10}없음",
+        r"JavaScript must be enabled.*Notion",
         r"일시적.?오류|service.?unavailable|503",
     ]
 ]
