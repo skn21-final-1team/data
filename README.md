@@ -39,8 +39,11 @@ POST /crawl
     │      ├─ Chunker              ← HierarchicalPrependChunker
     │      └─ Embed.embed_texts()  ← RunPod Serverless (BAAI/bge-m3)
     │
-    └─ [Load]
-           └─ pgvector             ← PostgreSQL HNSW Index
+    ├─ [Load]
+    │      └─ pgvector             ← PostgreSQL HNSW Index
+    │
+    └─ [Callback]
+           └─ POST BACKEND_CALLBACK_URL  ← 처리 완료 알림
 ```
 
 ### 디렉토리 구조
