@@ -128,11 +128,7 @@ uv run alembic upgrade head
 ## 서버 실행
 
 ```bash
-# 로컬 개발
-uvicorn main:app --reload --port 8001
-
-# 운영 (EC2)
-uvicorn main:app --host 0.0.0.0 --port 8000 --workers 2
+uvicorn main:app --reload --port 8000
 ```
 
 ---
@@ -188,8 +184,8 @@ ruff format .
 
 ### 대화형 문서
 
-- **Swagger UI**: http://localhost:8001/docs
-- **ReDoc**: http://localhost:8001/redoc
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
 
 ---
 
